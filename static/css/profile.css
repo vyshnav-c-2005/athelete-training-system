@@ -1,0 +1,254 @@
+/* GLOBAL */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background-color: #0d47a1;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* PAGE WRAPPER */
+.profile-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* CARD */
+.profile-card {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* HEADER (BLUE GRADIENT LIKE DASHBOARD TONE) */
+.profile-header {
+    text-align: center;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+}
+
+/* AVATAR */
+.avatar-circle {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #0d47a1;
+    font-weight: 800;
+    font-size: 42px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* NAME + EMAIL */
+.profile-header h2 {
+    margin: 5px 0 0;
+    font-size: 1.9rem;
+}
+
+.profile-email {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    color: #e3f2fd;
+}
+
+/* DETAILS SECTION */
+.profile-details {
+    padding: 30px 40px;
+}
+
+/* GRID */
+.details-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* FIELD CARD */
+.detail-item {
+    background: #f2f5ff;
+    border-radius: 10px;
+    border: 1px solid #d6e2ff;
+    padding: 14px 16px;
+    box-shadow: 0 2px 6px rgba(25, 118, 210, 0.1);
+}
+
+/* LABEL */
+.detail-label {
+    color: #0d47a1;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+/* VALUE */
+.detail-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0b305e;
+}
+
+/* ACTION BAR */
+.profile-actions {
+    padding: 25px 30px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* PRIMARY (BLUE) */
+.btn-primary {
+    background: #0d47a1;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #083275;
+}
+
+/* SECONDARY */
+.btn-secondary {
+    background: white;
+    color: #555;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background: #f2f2f2;
+}
+
+/* DANGER */
+.btn-danger {
+    background: white;
+    color: #d32f2f;
+    border: 1px solid #ffcdd2;
+}
+
+.btn-danger:hover {
+    background: #ffebee;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+    .profile-header {
+        padding: 30px 20px;
+    }
+
+    .profile-details {
+        padding: 20px;
+    }
+
+    .profile-actions {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* FORM STYLES */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0d47a1;
+    box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.1);
+}
+
+select.form-control {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.762L10.825 4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 30px;
+}

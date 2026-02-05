@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Nutrition</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nutrition.css' %}">
+    <style>
+        .search-result-item {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+        }
+
+        .search-result-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .search-result-item.no-result {
+            color: #888;
+            cursor: default;
+        }
+
+        .macro-badge {
+            display: inline-block;
+            background: #e0e0e0;
+            border-radius: 12px;
+            padding: 2px 8px;
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+
+        .btn.small {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h2>Log Nutrition</h2>
+
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <div class="alert">{{ message }}</div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="grid">
+                    <div class="item">
+                        <label>Date</label>
+                        <input type="date" name="date" required>
+                    </div>
+                    <div class="item">
+                        <label>Day Type</label>
+                        <select name="day_type" required>
+                            <option value="training">Training Day</option>
+                            <option value="competition">Competition Day</option>
+                            <option value="rest">Rest Day</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label>Meal Type</label>
+                        <select name="meal_type" required>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label>Timing</label>
+                        <select name="timing" required>
+                            <option value="pre_training">Pre-Training</option>
+                            <option value="post_training">Post-Training</option>
+                            <option value="general">General</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3>Food & Portions</h3>
+                <p style="color:#666; font-size:0.9rem; margin-top:-10px;">Select a food item to auto-calculate macros,
+                    OR leave blank and enter macros manually.</p>
+
+                <div class="grid">
+                    <div class="item">
+                        <label>Select Food</label>
+                        <!-- Hidden Input for Form Submission -->
+                        <input type="hidden" name="food_item" id="id_food_item" value="">
+
+                        <!-- Search Interface -->
+                        <div class="search-container" style="position: relative;">
+                            <input type="text" id="food_search_input" placeholder="Type to search foods..."
+                                autocomplete="off">
+                            <div id="food_search_results" class="search-results-dropdown"
+                                style="display:none; position: absolute; width: 100%; max-height: 200px; overflow-y: auto; background: white; border: 1px solid #ddd; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+
+                        <!-- Selected Item Display -->
+                        <div id="selected_food_display"
+                            style="display:none; margin-top: 10px; padding: 10px; background: #eef2f7; border-radius: 4px; font-size: 0.9rem;">
+                        </div>
+                        <button id="clear_food_selection" class="btn link small"
+                            style="display:none; margin-top: 5px; padding: 0; color: #d9534f;">Remove Selection</button>
+                    </div>
+                    <div class="item">
+                        <label>Quantity (g)</label>
+                        <input type="number" step="1" name="quantity_g" id="id_quantity_g" placeholder="e.g. 150">
+                    </div>
+                </div>
+
+                <h3>Macros & Hydration</h3>
+                <div class="grid">
+                    <div class="item">
+                        <label>Carbs (g)</label>
+                        <input type="number" step="0.1" name="carbohydrates_g" id="id_carbs">
+                    </div>
+                    <div class="item">
+                        <label>Protein (g)</label>
+                        <input type="number" step="0.1" name="protein_g" id="id_protein">
+                    </div>
+                    <div class="item">
+                        <label>Fats (g)</label>
+                        <input type="number" step="0.1" name="fats_g" id="id_fats">
+                    </div>
+                    <div class="item">
+                        <label>Hydration (L)</label>
+                        <input type="number" step="0.1" name="hydration_liters" required>
+                    </div>
+                </div>
+
+                <div class="item" style="margin-top: 1rem;">
+                    <label>Notes</label>
+                    <textarea name="notes" rows="3" style="width: 100%;"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Save Log</button>
+                    <a href="{% url 'nutrition_history' %}" class="btn link">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    function toggleManualInputs() {
+        // id_food_item is now a hidden input, but logic remains similar
+        const foodId = document.getElementById('id_food_item').value;
+        const qtyInput = document.getElementById('id_quantity_g');
+        const carbInput = document.getElementById('id_carbs');
+        const protInput = document.getElementById('id_protein');
+        const fatInput = document.getElementById('id_fats');
+
+        if (foodId) {
+            // Auto mode active
+            qtyInput.required = true;
+
+            // Visual feedback
+            carbInput.placeholder = "Auto-calculated";
+            protInput.placeholder = "Auto-calculated";
+            fatInput.placeholder = "Auto-calculated";
+
+            carbInput.disabled = true;
+            protInput.disabled = true;
+            fatInput.disabled = true;
+
+            carbInput.value = "";
+            protInput.value = "";
+            fatInput.value = "";
+        } else {
+            // Manual mode active
+            qtyInput.required = false;
+            // Don't clear qtyInput.value if switching modes, maybe user wants to keep it? 
+            // But original cleared it. Let's keep original behavior mostly but lenient.
+
+            carbInput.placeholder = "";
+            protInput.placeholder = "";
+            fatInput.placeholder = "";
+
+            carbInput.disabled = false;
+            protInput.disabled = false;
+            fatInput.disabled = false;
+
+            carbInput.required = true;
+            protInput.required = true;
+            fatInput.required = true;
+        }
+    }
+</script>
+
+<script src="{% static 'js/food_search.js' %}"></script>
+
+</html>

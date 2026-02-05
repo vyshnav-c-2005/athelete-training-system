@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training History</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #f8f9fa;
+        }
+
+        .badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .badge.training {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .badge.competition {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .metric {
+            font-family: monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" style="max-width: 800px;">
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>Training Log</h2>
+                <a href="{% url 'log_training' %}" class="btn primary">Log New Session</a>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Type</th>
+                        <th>Performance</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for session in sessions %}
+                    <tr>
+                        <td>{{ session.date }}</td>
+                        <td>{{ session.get_discipline_display }}</td>
+                        <td><span class="badge {{ session.session_type }}">{{ session.session_type|title }}</span></td>
+                        <td>
+                            {% if session.specific_session %}
+                            {% with s=session.specific_session %}
+                            {% if session.runnersession %}
+                            <div class="metric">{{ s.distance_m }}m in {{ s.time_seconds }}s</div>
+                            <small>{{ s.repetitions }} reps</small>
+                            {% elif session.jumpersession %}
+                            <div class="metric">{{ s.best_jump_m }}m Best</div>
+                            <small>{{ s.attempts }} attempts</small>
+                            {% elif session.throwersession %}
+                            <div class="metric">{{ s.best_throw_m }}m Best</div>
+                            <small>{{ s.implement_weight_kg }}kg Impl.</small>
+                            {% endif %}
+                            {% endwith %}
+                            {% else %}
+                            <span style="color: #999;">-</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ session.notes|truncatechars:30 }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" style="text-align: center; color: #666;">No training sessions logged yet.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="actions" style="margin-top: 2rem;">
+                <a href="{% url 'user_profile' %}" class="btn link">Back to Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

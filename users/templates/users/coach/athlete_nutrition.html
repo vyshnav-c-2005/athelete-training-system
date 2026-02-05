@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="dashboard-container">
+    <div class="back-link">
+        <a href="{% url 'coach_athlete_detail' athlete.pk %}">&larr; Back to Athlete</a>
+    </div>
+
+    <h1>Nutrition Log: {{ athlete.user.username }}</h1>
+
+    <div class="table-container">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Meal</th>
+                    <th>Carbs (g)</th>
+                    <th>Protein (g)</th>
+                    <th>Fats (g)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                    <td>{{ log.date }}</td>
+                    <td>{{ log.get_meal_type_display }}</td>
+                    <td>{{ log.carbohydrates_g }}</td>
+                    <td>{{ log.protein_g }}</td>
+                    <td>{{ log.fats_g }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5">No meals logged yet.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

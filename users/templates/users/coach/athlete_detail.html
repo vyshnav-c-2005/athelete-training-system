@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="wrapper" style="max-width: 1000px; margin: 30px auto;">
+    <div class="card">
+
+        <!-- BACK -->
+        <div style="margin-bottom: 15px;">
+            <a href="{% url 'coach_dashboard' %}" style="text-decoration:none; color:#0d47a1; font-weight:500;">
+                ← Back to Dashboard
+            </a>
+        </div>
+
+        <!-- HEADER -->
+        <div style="margin-bottom:20px;">
+            <h2 style="margin:0; color:#0d47a1;">
+                {{ athlete.user.username }} — Athlete Profile
+            </h2>
+            <p style="color:#555; margin-top:6px;">
+                Athlete Overview
+            </p>
+        </div>
+
+        <!-- GRID -->
+        <div style="
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap:20px;
+        ">
+
+            <!-- PHYSICAL STATS -->
+            <div style="
+                background:white;
+                border-radius:10px;
+                border:1px solid #e0e0e0;
+                padding:18px;
+            ">
+                <h3 style="margin-top:0;">Physical Stats</h3>
+                <ul style="padding:0; list-style:none; margin-top:10px;">
+                    <li style="margin-bottom:8px;"><strong>Height:</strong> {{ athlete.height_cm|default:"—" }} cm</li>
+                    <li style="margin-bottom:8px;"><strong>Weight:</strong> {{ athlete.weight_kg|default:"—" }} kg</li>
+                    <li style="margin-bottom:8px;"><strong>BMI:</strong> {{ athlete.bmi|default:"—" }}</li>
+                    <li style="margin-bottom:8px;"><strong>Age:</strong> {{ athlete.age|default:"—" }}</li>
+                    <li style="margin-bottom:8px;"><strong>Gender:</strong> {{ athlete.gender|default:"—" }}</li>
+                </ul>
+            </div>
+
+            <!-- SPORT INFO -->
+            <div style="
+                background:white;
+                border-radius:10px;
+                border:1px solid #e0e0e0;
+                padding:18px;
+            ">
+                <h3 style="margin-top:0;">Sport Information</h3>
+                <ul style="padding:0; list-style:none; margin-top:10px;">
+                    <li style="margin-bottom:8px;"><strong>Sport:</strong> {{ athlete.sport|default:"—" }}</li>
+                    <li style="margin-bottom:8px;"><strong>Role:</strong> {{ athlete.role }}</li>
+                </ul>
+            </div>
+
+            <!-- ACTIONS -->
+            <div style="
+                background:white;
+                border-radius:10px;
+                border:1px solid #e0e0e0;
+                padding:18px;
+            ">
+                <h3 style="margin-top:0;">Monitoring</h3>
+
+                <div style="display:flex; flex-direction:column; gap:10px; margin-top:10px;">
+
+                    <a href="{% url 'coach_athlete_workouts' athlete.pk %}" style="
+                           padding:10px;
+                           text-decoration:none;
+                           border-radius:8px;
+                           border:1px solid #ccc;
+                           text-align:center;
+                           color:#333;
+                       ">
+                        View Training Logs
+                    </a>
+
+                    <a href="{% url 'coach_athlete_nutrition' athlete.pk %}" style="
+                           padding:10px;
+                           text-decoration:none;
+                           border-radius:8px;
+                           border:1px solid #ccc;
+                           text-align:center;
+                           color:#333;
+                       ">
+                        View Nutrition Logs
+                    </a>
+
+                    <a href="{% url 'coach_give_suggestion' athlete.user.id %}" style="
+                           padding:10px;
+                           text-decoration:none;
+                           border-radius:8px;
+                           background:#0d47a1;
+                           color:white;
+                           text-align:center;
+                           font-weight:bold;
+                       ">
+                        Give Suggestion
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Your Workout Logs</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Date</th>
+        <th>Duration</th>
+        <th>Distance</th>
+        <th>Intensity</th>
+        <th>Heart Rate</th>
+        <th>Calories</th>
+    </tr>
+
+    {% for log in logs %}
+    <tr>
+        <td>{{ log.date }}</td>
+        <td>{{ log.duration_minutes }} min</td>
+        <td>{{ log.distance_km }} km</td>
+        <td>{{ log.intensity }}</td>
+        <td>{{ log.average_heart_rate }} bpm</td>
+        <td>{{ log.calories_burned }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="{% url 'add_workout' %}" class="btn btn-primary">Add Workout</a>
+
+{% endblock %}

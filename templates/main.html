@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Training And Nutrition System</title>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Athlete Nutrition And Training System</h1>
+            <nav>
+                <ul>
+                    {% if user.is_authenticated %}
+                    {% if user.userprofile.role == 'Coach' %}
+                    <li><a href="{% url 'coach_dashboard' %}">Coach Dashboard</a></li>
+                    {% else %}
+                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                    {% endif %}
+                    <li><a href="{% url 'user_profile' %}">👤 {{ user.username }}</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Optimise Your Performance With AI</h2>
+            <p>Get personalized diet and workout recommendations designed to help athletes reach peak potential.</p>
+            <a href="{% url 'dashboard' %}" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>System Features</h2>
+        <div class="features-list">
+            <div class="feature">
+                <h3>AI-Powered Diet Plans</h3>
+                <p>Personalised nutrition based on your physical data and goals.</p>
+            </div>
+
+            <div class="feature">
+                <h3>AI-Powered Workout Plans</h3>
+                <p>Smart workout plans tailored just for you.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Performance Tracking</h3>
+                <p>Monitor BMI and progress with dynamic reports.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Athlete Nutrition And Training System</p>
+    </footer>
+
+</body>
+
+</html>

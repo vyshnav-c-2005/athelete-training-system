@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+    <style>
+        .wrapper {
+            margin: 30px auto;
+        }
+
+        /* Avatar Wrapper */
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        /* Avatar when image exists */
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Avatar when fallback initials */
+        .avatar.initial {
+            background: #1976d2;
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0d47a1;
+            margin: 0.5rem 0;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .nav-btn {
+            display: block;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-btn.primary {
+            background: #0d47a1;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper" style="max-width: 1000px;">
+        <div class="card">
+
+            <!-- HEADER -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+
+                <div style="display: flex; align-items: center; gap: 1rem;">
+
+                    <!-- AVATAR -->
+                    {% if profile.photo %}
+                    <div class="avatar">
+                        <img src="{{ profile.photo.url }}" alt="Avatar">
+                    </div>
+                    {% else %}
+                    <div class="avatar initial">
+                        {{ user.username|make_list|first|upper }}
+                    </div>
+                    {% endif %}
+
+                    <div>
+                        <h1 style="margin: 0;">Hello, {{ user.username }}</h1>
+                        <p style="color: #666; margin: 0.5rem 0 0;">
+                            Welcome to your Athlete Dashboard
+                        </p>
+                    </div>
+                </div>
+
+                <a href="{% url 'logout' %}" class="btn danger">Logout</a>
+            </div>
+
+
+            <!-- STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <label>Training Sessions</label>
+                    <div class="stat-number">{{ training_count }}</div>
+
+                    {% if last_training_date %}
+                    <small>Last: {{ last_training_date }}</small>
+                    {% else %}
+                    <small>No training yet</small>
+                    {% endif %}
+                </div>
+
+                <div class="stat-card">
+                    <label>Nutrition Logs</label>
+                    <div class="stat-number">{{ nutrition_count }}</div>
+
+                    {% if last_nutrition_date %}
+                    <small>Last: {{ last_nutrition_date }}</small>
+                    {% else %}
+                    <small>No logs yet</small>
+                    {% endif %}
+                </div>
+
+            </div>
+
+
+            <!-- TRAINING -->
+            <h3 style="border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">Training</h3>
+
+            <div class="links-grid" style="margin-bottom: 2rem;">
+                <a href="{% url 'log_training' %}" class="nav-btn primary">Log Training</a>
+                <a href="{% url 'training_history' %}" class="nav-btn">View History</a>
+            </div>
+
+
+            <!-- NUTRITION -->
+            <h3 style="border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">Nutrition</h3>
+
+            <div class="links-grid" style="margin-bottom: 2rem;">
+                <a href="{% url 'log_nutrition' %}" class="nav-btn primary">Log Meal</a>
+                <a href="{% url 'nutrition_history' %}" class="nav-btn">View History</a>
+            </div>
+
+
+            <!-- ANALYSIS -->
+            <h3 style="border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">Analysis</h3>
+
+            <div class="links-grid" style="margin-bottom: 2rem;">
+                <a href="{% url 'insights' %}" class="nav-btn"
+                    style="background: #e1bee7; color: #4a148c; border: 1px solid #ce93d8;">
+                    ⚡ Performance Insights
+                </a>
+                <a href="{% url 'athlete_suggestions' %}" class="nav-btn"
+                    style="background: #fff9c4; color: #f57f17; border: 1px solid #fff59d;">
+                    💬 Coach Suggestions
+                </a>
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <h3 style="border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">Account</h3>
+
+            <div class="links-grid">
+                <a href="{% url 'user_profile' %}" class="nav-btn">My Profile</a>
+                <a href="{% url 'logout' %}" class="nav-btn" style="color: #d32f2f;">Logout</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

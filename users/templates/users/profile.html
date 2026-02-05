@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Athlete System</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <h1>Athlete System</h1>
+            <nav>
+                <ul>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                    <li><a href="{% url 'user_profile' %}" style="color: #0d47a1;">👤 {{ user.username }}</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="profile-wrapper">
+        <div class="profile-card">
+
+            <div class="profile-header">
+                <div class="avatar-circle">
+                    {{ user.username|make_list|first|upper }}
+                </div>
+                <h2>{{ user.get_full_name|default:user.username }}</h2>
+                <p class="profile-email">{{ user.email|default:"-" }}</p>
+            </div>
+
+            <div class="profile-details">
+                <div class="details-grid">
+
+                    <div class="detail-item">
+                        <span class="detail-label">Gender</span>
+                        <span class="detail-value">{{ profile.gender|default:"-" }}</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">Sport</span>
+                        <span class="detail-value">{{ profile.sport|default:"-" }}</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">Date of Birth</span>
+                        <span class="detail-value">{{ profile.date_of_birth|default:"-" }}</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">Height</span>
+                        <span class="detail-value">
+                            {% if profile.height_cm %}
+                            {{ profile.height_cm }} cm
+                            {% else %}
+                            -
+                            {% endif %}
+                        </span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">Weight</span>
+                        <span class="detail-value">
+                            {% if profile.weight_kg %}
+                            {{ profile.weight_kg }} kg
+                            {% else %}
+                            -
+                            {% endif %}
+                        </span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">BMI</span>
+                        <span class="detail-value">{{ profile.bmi|default:"-" }}</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="profile-actions">
+                <a href="{% url 'edit_profile' %}" class="btn btn-primary">Edit Profile</a>
+                <a href="/" class="btn btn-secondary">Back to Home</a>
+                <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

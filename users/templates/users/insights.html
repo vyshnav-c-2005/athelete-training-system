@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Insights</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+</head>
+
+<body>
+    <div class="wrapper" style="max-width: 800px;">
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2>Performance Insights</h2>
+                <a href="{% url 'dashboard' %}" class="btn">Back to Dashboard</a>
+            </div>
+
+            <div class="insights-list">
+                {% for insight in insights %}
+                <div class="insight-card"
+                    style="background: #e3f2fd; border-left: 5px solid #2196f3; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px;">
+                    <p style="margin: 0; color: #333; line-height: 1.5;">{{ insight|safe }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div style="margin-top: 2rem; color: #666; font-size: 0.9rem;">
+                <p><em>* Insights are generated based on your recent training history and nutrition logs. They are
+                        rule-based observations, not medical advice.</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

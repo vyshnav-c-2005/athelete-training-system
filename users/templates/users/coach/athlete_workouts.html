@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="dashboard-container">
+    <div class="back-link">
+        <a href="{% url 'coach_athlete_detail' athlete.pk %}">&larr; Back to Athlete</a>
+    </div>
+
+    <h1>Training Log: {{ athlete.user.username }}</h1>
+
+    <div class="table-container">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Discipline</th>
+                    <th>Type</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for session in sessions %}
+                <tr>
+                    <td>{{ session.date }}</td>
+                    <td>{{ session.discipline }}</td>
+                    <td>{{ session.get_session_type_display }}</td>
+                    <td>{{ session.notes|default:"-"|truncatechars:50 }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4">No training sessions logged yet.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

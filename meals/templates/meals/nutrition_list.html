@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition History</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        th,
+        td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" style="max-width: 900px;">
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>Nutrition History</h2>
+                <a href="{% url 'log_nutrition' %}" class="btn primary">Log Meal</a>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Day Type</th>
+                        <th>Meal</th>
+                        <th>Timing</th>
+                        <th>Macros (C/P/F)</th>
+                        <th>Hydration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for log in logs %}
+                    <tr>
+                        <td>{{ log.date }}</td>
+                        <td>{{ log.get_day_type_display }}</td>
+                        <td>{{ log.get_meal_type_display }}</td>
+                        <td>{{ log.get_timing_display }}</td>
+                        <td>
+                            <strong style="color: #2e7d32;">{{ log.carbohydrates_g }}</strong> /
+                            <strong style="color: #1976d2;">{{ log.protein_g }}</strong> /
+                            <strong style="color: #f57f17;">{{ log.fats_g }}</strong>
+                        </td>
+                        <td>{{ log.hydration_liters }} L</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" style="text-align: center; color: #666;">No nutrition logs found.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <div class="actions" style="margin-top: 2rem;">
+                <a href="{% url 'user_profile' %}" class="btn link">Back to Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

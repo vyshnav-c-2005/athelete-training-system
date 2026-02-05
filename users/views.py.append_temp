@@ -1,0 +1,76 @@
+
+# --- Coach Views ---
+
+from django.contrib.auth.decorators import user_passes_test
+
+def is_coach(user):
+    return user.is_authenticated and hasattr(user, 'userprofile') and user.userprofile.role == 'Coach'
+
+@user_passes_test(is_coach)
+def coach_dashboard_view(request):
+    """
+    Coach Dashboard: List all assigned athletes and their quick stats.
+    """
+    # Get the coach's profile
+    coach_profile = request.user.userprofile
+    
+    # 4. Fetch all athletes assigned to this coach
+    # Optimize query to avoid N+1 problems if we access user fields
+    athletes = coach_profile.athletes.select_related('user').all()
+
+    # Optional: Annotate with simple stats if needed (like last login or session count)
+    # For MVP, we can just pass the list and let the template check related sets (carefully)
+    # Or pre-fetch simple counts
+    
+    context = {
+        'athletes': athletes
+    }
+    return render(request, 'users/coach/dashboard.html', context)
+
+@user_passes_test(is_coach)
+def coach_athlete_detail_view(request, pk):
+    """
+    Detailed view of a specific athlete for the coach.
+    """
+    # 3. Secure Access Control: Ensure athlete belongs to THIS coach
+    athlete = get_object_or_404(UserProfile, pk=pk, coach=request.user.userprofile)
+    
+    context = {
+        'athlete': athlete,
+        'user': athlete.user # Pass user easily
+    }
+    return render(request, 'users/coach/athlete_detail.html', context)
+
+@user_passes_test(is_coach)
+def coach_athlete_workouts_view(request, pk):
+    """
+    Read-only view of athlete's training logs.
+    """
+    athlete_profile = get_object_or_404(UserProfile, pk=pk, coach=request.user.userprofile)
+    athlete_user = athlete_profile.user
+    
+    # query specific logs
+    sessions = TrainingSession.objects.filter(user=athlete_user).order_by('-date')
+    
+    context = {
+        'athlete': athlete_profile,
+        'sessions': sessions
+    }
+    return render(request, 'users/coach/athlete_workouts.html', context)
+
+@user_passes_test(is_coach)
+def coach_athlete_nutrition_view(request, pk):
+    """
+    Read-only view of athlete's nutrition logs.
+    """
+    athlete_profile = get_object_or_404(UserProfile, pk=pk, coach=request.user.userprofile)
+    athlete_user = athlete_profile.user
+    
+    # query specific logs
+    logs = NutritionLog.objects.filter(user=athlete_user).order_by('-date')
+    
+    context = {
+        'athlete': athlete_profile,
+        'logs': logs
+    }
+    return render(request, 'users/coach/athlete_nutrition.html', context)
