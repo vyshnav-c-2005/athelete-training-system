@@ -148,16 +148,41 @@ def signup_page(request):
     if request.user.is_authenticated:
         return redirect(get_role_redirect(request.user))
     if request.method == "POST":
+        import traceback
+        with open('c:/project02/signup_debug.log', 'a') as f:
+            f.write(f"\\n--- Signup Request {request.method} ---")
         form = SignupForm(request.POST)
         if form.is_valid():
             try:
+                with open('c:/project02/signup_debug.log', 'a') as f:
+                     f.write("\\nForm valid. Saving...")
                 user = form.save()
+                with open('c:/project02/signup_debug.log', 'a') as f:
+                     f.write(f"\\nUser saved: {user.username} (id: {user.id})")
+                
+                # Check profile
+                has_profile = hasattr(user, 'userprofile')
+                role = "N/A"
+                if has_profile:
+                    role = user.userprofile.role
+                with open('c:/project02/signup_debug.log', 'a') as f:
+                     f.write(f"\\nHas Profile: {has_profile}. Role: {role}")
+
                 login(request, user, backend='users.backends.EmailOrUsernameBackend')
                 messages.success(request, f"Account created! Welcome, {user.username}.")
-                return redirect(get_role_redirect(user))
+                
+                redir = get_role_redirect(user)
+                with open('c:/project02/signup_debug.log', 'a') as f:
+                     f.write(f"\\nRedirecting to: {redir}")
+                
+                return redirect(redir)
             except Exception as e:
+                with open('c:/project02/signup_debug.log', 'a') as f:
+                     f.write(f"\\nEXCEPTION: {e}\\n{traceback.format_exc()}")
                 messages.error(request, f"Error creating account: {e}")
         else:
+            with open('c:/project02/signup_debug.log', 'a') as f:
+                 f.write(f"\\nForm Invalid: {form.errors}")
             for field, errors in form.errors.items():
                 for error in errors:
                     messages.error(request, f"{field}: {error}")
@@ -201,14 +226,21 @@ def coach_dashboard_view(request):
     """
     # Get the coach's profile
     coach_profile = request.user.userprofile
-    # 4. Fetch all athletes assigned to this coach
-    # Optimize query to avoid N+1 problems if we access user fields
-    athletes = coach_profile.athletes.select_related('user').all()
-    # Optional: Annotate with simple stats if needed (like last login or session count)
-    # For MVP, we can just pass the list and let the template check related sets (carefully)
-    # Or pre-fetch simple counts
+    
+    # 1. Fetch assigned athletes
+    assigned_athletes = coach_profile.athletes.select_related('user').all()
+    
+    # 2. Fetch ALL athletes (regardless of coach)
+    all_athletes = UserProfile.objects.filter(role='Athlete').select_related('user').order_by('-id')
+    
+    # 3. Fetch unassigned athletes (for quick actions)
+    unassigned_athletes = UserProfile.objects.filter(role='Athlete', coach__isnull=True).select_related('user')
+
     context = {
-        'athletes': athletes
+        'athletes': assigned_athletes,  # Keep existing key for backward compatibility or rename in template
+        'assigned_athletes': assigned_athletes,
+        'all_athletes': all_athletes,
+        'unassigned_athletes': unassigned_athletes
     }
     return render(request, 'users/coach/dashboard.html', context)
 @coach_required
@@ -275,6 +307,7 @@ def coach_assign_athlete_view(request):
             athlete = get_object_or_404(UserProfile, id=athlete_id, role='Athlete')
             athlete.coach = request.user.userprofile
             athlete.save()
+            print(f"[ACTION] Coach {request.user.username} assigned athlete {athlete.user.username} (ID: {athlete.id}) to themselves.")
             messages.success(request, f"Athlete {athlete.user.username} assigned to you.")
             return redirect('coach_dashboard')
             

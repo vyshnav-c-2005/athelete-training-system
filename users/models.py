@@ -90,7 +90,14 @@ class Suggestion(models.Model):
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
-        UserProfile.objects.create(user=instance)
+        import traceback
+        try:
+            profile = UserProfile.objects.create(user=instance)
+            # Log successful creation
+            print(f"[SIGNAL] Created UserProfile for {instance.username} (ID: {instance.id})")
+        except Exception as e:
+            print(f"[SIGNAL] ERROR creating UserProfile for {instance.username}: {e}")
+            traceback.print_exc()
 
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):

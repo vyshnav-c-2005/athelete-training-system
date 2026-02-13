@@ -94,8 +94,10 @@
                 <div class="grid">
                     <div class="item">
                         <label>Select Food</label>
-                        <!-- Hidden Input for Form Submission -->
+                        <!-- Hidden Input for Food Search -->
                         <input type="hidden" name="food_item" id="id_food_item" value="">
+                        <!-- NEW: Hidden Input for JSON Items -->
+                        <input type="hidden" name="items_json" id="id_items_json" value="[]">
 
                         <!-- Search Interface -->
                         <div class="search-container" style="position: relative;">
@@ -115,27 +117,49 @@
                     </div>
                     <div class="item">
                         <label>Quantity (g)</label>
-                        <input type="number" step="1" name="quantity_g" id="id_quantity_g" placeholder="e.g. 150">
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" step="1" name="quantity_g" id="id_quantity_g" placeholder="e.g. 150"
+                                style="flex:1;">
+                            <button type="button" id="add_food_btn" class="btn primary small"
+                                style="white-space: nowrap;">Add Food</button>
+                        </div>
                     </div>
                 </div>
 
-                <h3>Macros & Hydration</h3>
+                <!-- NEW: Items Table -->
+                <h3 style="margin-top: 2rem;">Meal Items</h3>
+                <div style="overflow-x: auto;">
+                    <table id="food_items_table" style="width: 100%; border-collapse: collapse; margin-bottom: 1rem;">
+                        <thead>
+                            <tr style="text-align: left; border-bottom: 2px solid #eee;">
+                                <th style="padding: 8px;">Food</th>
+                                <th style="padding: 8px;">Qty</th>
+                                <th style="padding: 8px;">Carbs</th>
+                                <th style="padding: 8px;">Protein</th>
+                                <th style="padding: 8px;">Fats</th>
+                                <th style="padding: 8px;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- items added here by JS -->
+                        </tbody>
+                        <tfoot>
+                            <tr style="border-top: 2px solid #eee; font-weight: bold; background: #f9f9f9;">
+                                <td colspan="2" style="padding: 8px; text-align: right;">TOTALS:</td>
+                                <td style="padding: 8px;"><span id="total_carbs">0.0</span>g</td>
+                                <td style="padding: 8px;"><span id="total_protein">0.0</span>g</td>
+                                <td style="padding: 8px;"><span id="total_fats">0.0</span>g</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <h3>Hydration & Notes</h3>
                 <div class="grid">
                     <div class="item">
-                        <label>Carbs (g)</label>
-                        <input type="number" step="0.1" name="carbohydrates_g" id="id_carbs">
-                    </div>
-                    <div class="item">
-                        <label>Protein (g)</label>
-                        <input type="number" step="0.1" name="protein_g" id="id_protein">
-                    </div>
-                    <div class="item">
-                        <label>Fats (g)</label>
-                        <input type="number" step="0.1" name="fats_g" id="id_fats">
-                    </div>
-                    <div class="item">
                         <label>Hydration (L)</label>
-                        <input type="number" step="0.1" name="hydration_liters" required>
+                        <input type="number" step="0.1" name="hydration_liters" required value="0">
                     </div>
                 </div>
 
@@ -153,52 +177,8 @@
     </div>
 </body>
 
-<script>
-    function toggleManualInputs() {
-        // id_food_item is now a hidden input, but logic remains similar
-        const foodId = document.getElementById('id_food_item').value;
-        const qtyInput = document.getElementById('id_quantity_g');
-        const carbInput = document.getElementById('id_carbs');
-        const protInput = document.getElementById('id_protein');
-        const fatInput = document.getElementById('id_fats');
-
-        if (foodId) {
-            // Auto mode active
-            qtyInput.required = true;
-
-            // Visual feedback
-            carbInput.placeholder = "Auto-calculated";
-            protInput.placeholder = "Auto-calculated";
-            fatInput.placeholder = "Auto-calculated";
-
-            carbInput.disabled = true;
-            protInput.disabled = true;
-            fatInput.disabled = true;
-
-            carbInput.value = "";
-            protInput.value = "";
-            fatInput.value = "";
-        } else {
-            // Manual mode active
-            qtyInput.required = false;
-            // Don't clear qtyInput.value if switching modes, maybe user wants to keep it? 
-            // But original cleared it. Let's keep original behavior mostly but lenient.
-
-            carbInput.placeholder = "";
-            protInput.placeholder = "";
-            fatInput.placeholder = "";
-
-            carbInput.disabled = false;
-            protInput.disabled = false;
-            fatInput.disabled = false;
-
-            carbInput.required = true;
-            protInput.required = true;
-            fatInput.required = true;
-        }
-    }
-</script>
-
-<script src="{% static 'js/food_search.js' %}"></script>
+<!-- Replaced inline script with logic in external file -->
+<script src="{% static 'js/food_search.js' %}?v=1.1"></script>
+<script src="{% static 'js/nutrition_items.js' %}?v=1.1"></script>
 
 </html>

@@ -55,10 +55,10 @@
                                 style="width: 100%; margin-top: 5px;">
                                 <option value="" disabled {% if not profile.gender %}selected{% endif %}>Select Gender
                                 </option>
-                                <option value="Male" {% if profile.gender=="Male" %}selected{% endif %}>Male</option>
-                                <option value="Female" {% if profile.gender=="Female" %}selected{% endif %}>Female
+                                <option value="Male" {% if profile.gender == "Male" %}selected{% endif %}>Male</option>
+                                <option value="Female" {% if profile.gender == "Female" %}selected{% endif %}>Female
                                 </option>
-                                <option value="Other" {% if profile.gender=="Other" %}selected{% endif %}>Other</option>
+                                <option value="Other" {% if profile.gender == "Other" %}selected{% endif %}>Other</option>
                             </select>
                         </div>
 

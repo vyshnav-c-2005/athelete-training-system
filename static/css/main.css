@@ -1,6 +1,9 @@
 body {
   margin: 0;
   padding-top: 80px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f4f6fc;
+  color: #333;
 }
 
 
@@ -16,9 +19,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #333;
+  /* Dark text on white header */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #0d47a1;
+  /* Blue hover */
 }
 
 
@@ -26,10 +36,14 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
-  background-color: #2e7d32;
-  color: white;
+  z-index: 1000;
+  background-color: white;
+  /* White background */
+  color: #333;
   padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  /* Subtle shadow */
+  border-bottom: 1px solid #eee;
 }
 
 header .container {
@@ -37,80 +51,128 @@ header .container {
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Make the logo blue */
+header h1 a {
+  color: #0d47a1 !important;
+  font-weight: 800;
 }
 
 
 .hero {
   background-image: url('../img/pexels-nappy-936094.jpg');
-  height: 100vh;
+  height: 80vh;
+  /* Slightly shorter */
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  /* Dark overlay for text readability */
 }
 
 
-
 .hero-content {
+  position: relative;
   text-align: center;
-  background-color: rgba(67,160,71,0.9);
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  /* White card */
+  color: #333;
+  padding: 40px 60px;
+  border-radius: 12px;
   margin-top: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  color: #0d47a1;
+  margin-bottom: 10px;
 }
 
 
 .btn {
   display: inline-block;
-  background-color: #43a047;
+  background-color: #0d47a1;
+  /* Blue */
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   text-decoration: none;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
 }
 
 .btn:hover {
-  background-color: #2e7d32;
+  background-color: #1565c0;
+  /* Lighter blue */
 }
 
 
 .features {
-  padding: 40px 20px;
+  padding: 60px 20px;
   background-color: #f8f9fa;
 }
 
 .features h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  color: #0d47a1;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feature {
-  background: #2e7d32;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  /* Soft shadow */
   text-align: center;
-  color: white;
+  color: #555;
+  border: 1px solid #eee;
+  transition: transform 0.2s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  color: #0d47a1;
+  margin-top: 0;
 }
 
 
 footer {
-  background-color: #2e7d32;
-  color: white;
+  background-color: #fff;
+  color: #888;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
 }

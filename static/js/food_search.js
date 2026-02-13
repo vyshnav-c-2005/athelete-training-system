@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function selectFood(food) {
         // Update hidden input
         hiddenInput.value = food.id;
+        hiddenInput.dataset.currentFood = JSON.stringify(food);
 
         // Update display
         searchInput.value = ''; // Clear search

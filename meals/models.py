@@ -55,3 +55,16 @@ class NutritionLog(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.date} - {self.meal_type}"
+
+class NutritionItem(models.Model):
+    nutrition_log = models.ForeignKey(NutritionLog, related_name='items', on_delete=models.CASCADE)
+    food_item = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
+    quantity_g = models.FloatField(help_text="Quantity in grams")
+    
+    # Store calculated macros for this specific item at this time
+    carbohydrates_g = models.FloatField(help_text="Carbohydrates in grams")
+    protein_g = models.FloatField(help_text="Protein in grams")
+    fats_g = models.FloatField(help_text="Fats in grams")
+
+    def __str__(self):
+        return f"{self.food_item.name} ({self.quantity_g}g) for Log #{self.nutrition_log.id}"

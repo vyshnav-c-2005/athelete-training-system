@@ -1,0 +1,24 @@
+--- ALL PROFILES ---
+User: 123             Role: 'Athlete' Coach: None
+User: abc             Role: 'Athlete' Coach: None
+User: debug_user_1    Role: 'Athlete' Coach: None
+User: debug_user_final Role: 'Athlete' Coach: None
+User: rahul           Role: 'Athlete' Coach: test1234 Profile
+User: reswin          Role: 'Athlete' Coach: None
+User: reswin@gmail.com Role: 'Athlete' Coach: test1234 Profile
+User: reswinraj       Role: 'Athlete' Coach: test222 Profile
+User: reswinraj888@gmail.com Role: 'Athlete' Coach: test1234 Profile
+User: rffre           Role: 'Athlete' Coach: None
+User: test            Role: 'Athlete' Coach: None
+User: test1234        Role: 'Coach' Coach: None
+User: test222         Role: 'Coach' Coach: None
+
+--- UNASSIGNED ATHLETES (role='Athlete', coach=None) ---
+Count: 7
+ - debug_user_1
+ - debug_user_final
+ - 123
+ - abc
+ - reswin
+ - test
+ - rffre
