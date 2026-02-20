@@ -1,0 +1,2001 @@
+age,gender,height_cm,weight_kg,discipline,session_type,duration_minutes,intensity,distance_m,effort_count,target_calories
+33,Male,163.3,88.7,1500m Run,Training,75,High,6956,17,4335
+22,Female,179.4,96.8,Triple Jump,Recovery,51,Low,13641,16,2652
+21,Male,194.3,61.3,800m Run,Training,135,Medium,5239,8,3779
+30,Male,188.0,85.6,Javelin,Training,28,Medium,1607,10,3241
+33,Male,191.3,82.2,800m Run,Training,124,Low,14554,10,3242
+20,Female,184.6,99.1,1500m Run,Training,97,High,2953,18,4900
+34,Male,186.2,103.9,100m Sprint,Recovery,106,Low,12173,10,3254
+35,Male,193.2,45.8,100m Sprint,Training,40,Low,5933,9,2158
+25,Male,166.2,88.8,200m Sprint,Competition,74,Low,11386,19,3018
+19,Female,177.0,48.4,Triple Jump,Competition,95,High,12531,1,3047
+30,Male,165.0,80.7,High Jump,Competition,149,Low,4682,4,3127
+21,Male,199.4,63.7,Discus,Recovery,145,Low,14853,3,2929
+19,Male,197.5,64.9,Shot Put,Training,103,Medium,11284,10,3246
+25,Male,156.8,67.9,1500m Run,Recovery,134,Low,6333,12,2600
+29,Female,186.8,85.4,200m Sprint,Training,67,Medium,7392,18,3504
+17,Male,196.6,66.7,High Jump,Recovery,142,Medium,11154,20,3520
+40,Female,163.1,92.6,Triple Jump,Recovery,97,Medium,10854,6,3045
+19,Female,180.6,71.3,Hammer,Training,49,High,9047,2,3193
+37,Female,196.2,49.4,High Jump,Recovery,48,Medium,6609,10,2211
+35,Male,156.5,95.9,High Jump,Training,60,Low,10338,2,2794
+19,Female,186.4,63.6,Hammer,Competition,45,Low,14323,9,2298
+23,Male,168.4,73.1,1500m Run,Competition,69,Medium,4925,10,3272
+29,Female,196.6,89.6,200m Sprint,Competition,21,Medium,9578,2,3048
+17,Female,198.7,66.6,Long Jump,Recovery,74,Low,7250,8,2522
+20,Female,197.5,48.7,800m Run,Competition,123,Medium,9908,17,3073
+31,Female,176.3,69.3,Discus,Training,33,High,5783,17,2772
+40,Female,193.8,106.4,200m Sprint,Competition,147,Medium,12343,4,5026
+35,Female,193.0,86.7,Hammer,Competition,123,High,9917,18,4861
+22,Female,169.4,88.6,Shot Put,Recovery,114,High,10145,12,3846
+35,Female,192.3,86.1,High Jump,Training,100,High,13333,17,4310
+39,Male,156.7,57.9,Long Jump,Recovery,80,Medium,6723,9,2582
+25,Male,181.8,72.2,Hammer,Recovery,31,High,184,19,3124
+20,Female,165.4,93.8,1500m Run,Training,32,High,521,14,3534
+22,Female,160.4,51.6,400m Sprint,Recovery,108,Medium,13889,14,2405
+24,Female,158.5,63.1,Hammer,Training,114,High,10503,17,3433
+38,Male,186.3,63.0,Discus,Competition,78,Medium,1248,2,2956
+17,Female,170.3,73.1,Discus,Training,56,Low,9850,8,2362
+37,Male,187.6,108.7,800m Run,Training,44,High,13349,5,4185
+28,Male,157.9,49.4,400m Sprint,Training,35,Medium,1002,7,2318
+37,Male,169.2,78.7,Hammer,Recovery,106,Low,6266,16,2679
+28,Male,179.3,56.7,Javelin,Training,42,High,11419,16,3065
+24,Male,190.6,108.1,Triple Jump,Training,145,High,6444,17,6000
+26,Female,169.3,52.4,400m Sprint,Training,79,Medium,14305,7,2477
+20,Female,183.2,71.2,High Jump,Competition,119,Low,11330,20,2632
+26,Female,194.9,93.0,High Jump,Training,122,Medium,10120,8,4191
+37,Female,182.7,90.8,High Jump,Recovery,82,High,14980,8,3772
+28,Female,165.5,72.5,High Jump,Training,57,High,7017,11,3173
+16,Male,156.1,67.5,200m Sprint,Training,147,High,8585,15,4347
+23,Female,194.2,70.8,Discus,Competition,69,High,1617,18,3812
+24,Female,156.0,62.2,400m Sprint,Training,59,Low,11833,6,2019
+40,Male,194.4,58.3,Discus,Recovery,27,Low,660,12,2230
+31,Female,178.8,76.4,Shot Put,Training,27,Medium,5524,15,2508
+31,Male,197.3,62.5,400m Sprint,Recovery,123,Medium,7616,6,3331
+17,Female,190.9,63.7,200m Sprint,Competition,53,Medium,5250,18,3050
+33,Male,199.9,87.7,Shot Put,Training,76,High,12356,20,4352
+15,Female,170.8,108.0,Discus,Competition,41,Medium,7512,9,3469
+26,Female,189.5,84.2,Shot Put,Training,106,Low,6905,8,2976
+21,Male,173.1,50.0,800m Run,Recovery,59,Medium,319,14,2567
+18,Male,176.6,49.9,Hammer,Competition,105,Medium,10416,19,3029
+24,Male,183.2,106.8,Shot Put,Training,114,Low,8775,19,3719
+27,Male,194.3,64.3,400m Sprint,Recovery,32,Low,3600,8,2434
+16,Male,199.3,51.0,High Jump,Competition,47,High,5960,2,3153
+24,Male,189.6,83.9,High Jump,Training,103,Low,5279,4,3208
+35,Male,173.8,85.5,Javelin,Competition,81,Low,8773,6,2895
+36,Male,174.0,87.2,Triple Jump,Training,112,Medium,11888,3,3672
+39,Female,188.2,62.4,Discus,Recovery,106,Low,1767,3,2221
+18,Female,165.7,46.0,800m Run,Recovery,43,High,9748,19,2345
+32,Male,160.0,107.7,400m Sprint,Competition,117,Medium,1798,11,4617
+19,Female,171.0,61.3,400m Sprint,Competition,26,High,12398,10,2834
+33,Female,167.9,88.9,Hammer,Training,56,Low,9190,12,2578
+16,Female,168.3,90.9,1500m Run,Recovery,87,High,8949,14,4049
+26,Female,165.5,84.7,Javelin,Training,105,High,282,18,3968
+31,Male,156.9,65.3,100m Sprint,Recovery,106,Low,14030,9,2545
+24,Female,155.8,62.6,Discus,Competition,34,Low,6337,15,1948
+16,Male,199.4,83.8,400m Sprint,Training,142,Medium,5166,3,4450
+20,Female,174.2,101.3,Long Jump,Training,126,Medium,7121,11,4022
+22,Female,172.3,106.5,400m Sprint,Recovery,108,Medium,14677,10,3866
+33,Female,185.6,51.9,1500m Run,Recovery,144,Low,7409,18,2263
+25,Male,164.8,55.1,Shot Put,Recovery,132,High,14857,4,3136
+39,Female,197.7,106.4,200m Sprint,Competition,126,High,5489,13,5644
+26,Male,190.4,92.9,Javelin,Training,106,Medium,4896,6,4010
+23,Female,159.0,102.4,200m Sprint,Recovery,87,Medium,130,13,3398
+16,Male,173.8,58.2,Hammer,Competition,34,Low,1293,20,2255
+22,Female,194.6,83.2,Long Jump,Recovery,84,High,6059,5,3982
+40,Male,197.5,90.6,Long Jump,Training,73,Medium,6957,20,3526
+25,Male,176.0,89.2,Javelin,Recovery,112,Low,60,14,3014
+35,Female,182.6,71.5,Javelin,Training,39,Medium,2211,13,2674
+18,Male,162.5,46.0,Triple Jump,Competition,52,Low,9740,14,2040
+24,Female,199.6,82.9,Hammer,Competition,119,High,12559,8,4603
+35,Female,165.4,61.5,Javelin,Recovery,96,Low,9973,16,2053
+34,Female,197.4,74.3,200m Sprint,Training,126,Medium,6276,13,3712
+30,Female,184.2,107.2,Shot Put,Training,139,Medium,5363,15,4646
+22,Female,182.3,70.9,200m Sprint,Training,93,High,8152,19,3673
+18,Female,178.1,99.6,100m Sprint,Recovery,30,High,7973,1,3480
+24,Female,165.4,57.3,Discus,Training,50,Medium,13745,2,2278
+26,Female,162.9,88.7,200m Sprint,Training,31,Medium,37,18,2822
+28,Female,164.9,108.5,Hammer,Training,143,Medium,5990,19,4299
+30,Female,163.4,51.6,High Jump,Training,97,High,5438,8,2923
+36,Female,190.1,45.5,Triple Jump,Recovery,115,Medium,7677,3,2382
+32,Male,170.8,73.2,1500m Run,Recovery,69,High,11823,14,3376
+35,Male,157.6,51.0,Long Jump,Training,136,Medium,10856,9,2718
+36,Female,198.6,93.6,Hammer,Training,36,Low,473,8,2725
+35,Female,194.8,104.4,100m Sprint,Competition,148,Low,58,17,3890
+26,Female,196.7,73.2,Long Jump,Competition,83,Medium,2636,16,3286
+32,Female,199.8,61.8,Hammer,Training,106,Low,14251,10,2455
+21,Female,162.8,73.2,Triple Jump,Training,35,High,14834,10,2852
+34,Female,172.8,92.0,400m Sprint,Competition,82,Low,14206,6,2973
+38,Female,189.1,45.6,Javelin,Competition,95,Low,2614,17,1932
+37,Female,186.3,83.3,100m Sprint,Training,104,High,10806,16,4269
+21,Male,161.9,84.9,Javelin,Recovery,128,Low,7296,15,2947
+23,Female,191.7,86.4,800m Run,Recovery,36,Low,4999,14,2596
+15,Male,165.1,60.7,100m Sprint,Training,77,Medium,12670,4,2926
+40,Female,165.1,91.4,Triple Jump,Training,98,High,9603,4,4143
+20,Female,179.2,50.9,1500m Run,Competition,80,High,8276,2,3004
+20,Male,181.7,58.0,100m Sprint,Competition,132,Medium,9725,11,3312
+36,Female,181.1,102.0,Triple Jump,Recovery,140,Medium,3797,4,3973
+26,Male,159.1,93.0,Shot Put,Training,53,Low,2674,16,2671
+36,Female,194.5,45.9,Discus,Competition,89,Low,11065,4,2097
+26,Female,167.0,61.1,200m Sprint,Recovery,36,Low,6436,1,1978
+24,Male,160.8,58.9,Shot Put,Recovery,39,Medium,3120,19,2483
+37,Female,195.0,62.6,Triple Jump,Recovery,78,High,9282,2,3113
+40,Male,198.0,61.1,High Jump,Competition,88,Low,11026,9,2672
+20,Female,193.8,49.1,400m Sprint,Competition,121,Medium,12416,13,2933
+31,Male,191.4,74.8,200m Sprint,Training,139,High,2076,18,4941
+33,Male,184.5,92.6,High Jump,Training,76,Medium,13856,16,3578
+32,Female,179.8,84.4,1500m Run,Recovery,102,Low,3190,16,2790
+20,Female,158.9,88.7,Long Jump,Recovery,148,Medium,4787,10,3762
+38,Male,173.4,50.3,800m Run,Competition,32,Medium,6056,9,2387
+33,Female,171.8,106.8,200m Sprint,Competition,25,Medium,12420,11,3306
+24,Female,166.7,99.5,Shot Put,Training,116,Medium,7494,4,4078
+38,Female,187.6,97.3,400m Sprint,Training,113,High,9400,10,4881
+22,Male,177.3,98.5,Hammer,Training,129,Low,3577,3,3459
+35,Male,158.6,105.6,High Jump,Competition,70,High,4741,6,4349
+38,Male,164.9,80.4,Triple Jump,Recovery,70,Medium,6832,3,2933
+20,Male,185.7,58.0,200m Sprint,Training,106,Medium,2581,9,3291
+35,Male,158.4,85.1,Long Jump,Training,87,Low,13900,3,2607
+39,Male,193.3,93.3,Javelin,Competition,103,Low,3787,18,3364
+21,Male,177.3,93.0,Triple Jump,Training,61,High,8707,8,4215
+38,Male,176.6,78.9,High Jump,Recovery,76,High,14333,8,3694
+15,Male,181.7,49.4,Javelin,Competition,81,Low,14151,15,2381
+32,Female,192.1,69.1,400m Sprint,Training,26,High,7103,13,3069
+38,Male,170.7,104.8,100m Sprint,Training,131,Medium,10404,7,4627
+39,Female,185.5,83.0,Long Jump,Competition,45,Medium,11166,19,3008
+34,Female,180.5,80.0,Triple Jump,Competition,38,Low,932,8,2462
+26,Female,167.0,62.5,Long Jump,Training,28,High,1663,10,2539
+30,Male,194.5,68.9,1500m Run,Recovery,80,Medium,8748,17,3142
+24,Male,190.9,103.2,Javelin,Competition,39,Low,7914,1,3371
+24,Male,184.6,88.3,Hammer,Recovery,125,High,9863,13,4516
+28,Male,193.3,96.2,Triple Jump,Training,69,Medium,9184,13,3653
+39,Female,194.0,74.5,200m Sprint,Recovery,100,High,9820,16,3504
+34,Male,186.9,86.0,Hammer,Training,29,High,9883,9,3559
+24,Male,192.7,61.1,100m Sprint,Training,84,High,4852,10,3729
+24,Male,186.4,90.9,100m Sprint,Training,27,Low,1104,6,2788
+40,Male,185.6,72.8,800m Run,Training,41,Medium,1270,5,3132
+39,Male,182.8,73.8,Long Jump,Recovery,37,Low,11094,2,2420
+25,Female,188.9,87.2,Shot Put,Training,28,Medium,14828,11,3054
+37,Male,162.1,105.9,100m Sprint,Training,73,Medium,12936,9,3863
+16,Female,194.6,49.2,Hammer,Recovery,45,Low,9601,6,2093
+39,Male,194.2,98.6,100m Sprint,Competition,113,Low,3646,8,3458
+34,Female,156.3,64.0,1500m Run,Recovery,119,Medium,5087,9,2721
+22,Male,192.2,73.9,Discus,Recovery,45,Medium,9522,9,2875
+37,Male,160.8,46.4,1500m Run,Recovery,53,Medium,4723,8,2271
+21,Female,170.1,64.6,1500m Run,Training,27,High,14960,12,2793
+22,Female,188.5,77.7,Discus,Training,67,Medium,14878,8,3185
+15,Female,162.2,48.7,Long Jump,Training,126,Low,2054,3,2108
+35,Male,191.8,76.9,Triple Jump,Competition,73,Low,14237,13,2737
+16,Female,192.4,105.3,400m Sprint,Training,138,Low,9145,19,3784
+32,Male,177.8,51.9,Shot Put,Competition,100,Medium,6658,2,2925
+29,Male,155.3,94.7,100m Sprint,Training,115,Medium,1842,17,3968
+15,Female,167.9,71.6,800m Run,Recovery,121,High,2802,16,3795
+19,Female,182.8,87.6,Shot Put,Training,81,High,7735,4,4082
+16,Male,199.2,61.9,Triple Jump,Competition,65,Low,14408,18,2762
+34,Male,183.4,55.4,Discus,Competition,106,High,8201,14,3472
+17,Female,166.7,55.4,Shot Put,Training,118,High,13884,2,3380
+33,Female,183.5,49.6,100m Sprint,Recovery,58,Low,10801,13,1972
+32,Female,179.3,57.1,Shot Put,Training,72,Medium,8313,20,2595
+36,Male,190.1,88.2,400m Sprint,Training,99,High,12974,17,4669
+32,Male,159.8,102.3,Javelin,Training,35,Medium,6105,15,3344
+28,Male,189.2,97.9,Hammer,Recovery,123,Low,2560,20,3256
+38,Male,179.4,89.5,Discus,Competition,89,Low,3037,5,2934
+22,Male,198.3,52.2,Shot Put,Recovery,127,High,8632,7,3751
+26,Male,170.4,63.8,100m Sprint,Competition,66,Low,2749,18,2302
+35,Female,183.5,65.1,100m Sprint,Competition,28,Low,590,11,2336
+24,Male,196.9,61.2,Shot Put,Competition,53,Low,1368,18,2632
+37,Male,159.6,78.5,Javelin,Recovery,105,High,10181,5,3606
+34,Male,197.2,79.8,Long Jump,Training,134,High,1361,13,4869
+31,Female,186.0,68.2,800m Run,Training,83,High,8128,18,3656
+25,Male,158.1,68.0,High Jump,Training,53,Low,3773,2,2322
+16,Male,168.5,98.9,1500m Run,Training,31,Medium,13495,20,3615
+40,Female,186.9,96.3,Discus,Training,116,Low,14402,4,3203
+40,Male,158.0,65.0,High Jump,Recovery,140,High,2064,13,3799
+18,Male,181.2,104.4,Triple Jump,Recovery,106,Medium,13694,16,3963
+15,Male,170.6,106.9,Triple Jump,Recovery,121,Medium,2415,6,4247
+29,Male,182.9,66.2,100m Sprint,Recovery,115,High,2951,8,3665
+27,Male,157.1,68.0,Triple Jump,Recovery,133,Medium,13627,16,2986
+22,Female,194.2,77.9,Long Jump,Recovery,66,Medium,5616,13,3044
+39,Female,198.8,106.2,800m Run,Recovery,77,High,7975,4,4343
+18,Female,198.6,102.0,Hammer,Training,140,Medium,10960,2,4582
+24,Male,188.7,51.7,Triple Jump,Competition,137,Medium,11608,9,3258
+33,Male,160.9,70.5,400m Sprint,Recovery,24,High,7101,18,2956
+32,Male,189.1,81.0,800m Run,Competition,115,Medium,9768,17,4081
+19,Female,156.1,77.7,Long Jump,Recovery,40,Medium,5003,8,2691
+33,Male,156.0,57.6,Javelin,Recovery,147,Medium,14808,15,2855
+40,Male,169.6,100.8,High Jump,Training,143,Medium,8306,9,4260
+37,Female,177.0,89.0,800m Run,Competition,40,High,6243,17,3484
+36,Male,189.7,99.5,800m Run,Training,73,Low,6581,2,3234
+30,Female,185.7,100.8,High Jump,Training,123,Low,9560,6,3342
+15,Female,175.1,93.6,Long Jump,Competition,130,Medium,14684,5,4322
+26,Female,167.3,73.5,Javelin,Training,135,High,8330,17,4009
+38,Male,199.9,84.7,Triple Jump,Recovery,76,High,4923,2,4091
+16,Male,174.2,55.4,100m Sprint,Recovery,147,Medium,6467,18,3036
+35,Male,175.3,88.8,Discus,Recovery,139,Low,4941,10,2977
+39,Male,162.4,56.7,Javelin,Recovery,89,Medium,11565,10,2388
+22,Male,190.8,90.1,High Jump,Recovery,114,High,6437,6,4646
+32,Male,186.2,59.9,Hammer,Training,118,High,6076,12,3870
+39,Male,164.9,52.6,High Jump,Training,61,Low,5648,17,1990
+30,Female,158.7,55.7,Javelin,Recovery,89,High,8001,13,2675
+19,Male,185.6,45.1,High Jump,Recovery,21,High,1315,20,2722
+40,Female,184.5,91.7,High Jump,Training,128,High,73,16,4947
+36,Male,167.3,92.6,Discus,Competition,84,Low,12038,10,2876
+27,Male,197.8,78.5,Discus,Training,89,High,8675,2,4369
+33,Male,161.8,55.5,Triple Jump,Training,88,Medium,12303,2,2785
+17,Female,174.5,50.4,Shot Put,Training,140,Low,1549,7,2241
+40,Female,197.5,46.2,Shot Put,Training,128,Medium,1359,6,2680
+22,Female,173.9,55.8,200m Sprint,Training,79,Medium,1896,1,2729
+40,Female,183.7,102.9,High Jump,Competition,112,Low,6659,12,3150
+40,Male,172.9,60.7,High Jump,Recovery,31,Medium,5246,13,2430
+26,Female,167.3,68.0,800m Run,Recovery,122,Low,6967,12,2401
+16,Male,199.3,51.8,Shot Put,Competition,131,Medium,6661,19,3565
+25,Male,173.4,59.5,Triple Jump,Recovery,84,Low,12416,9,2340
+26,Female,195.2,78.7,Hammer,Recovery,67,High,510,10,3492
+32,Female,165.3,84.5,100m Sprint,Recovery,107,High,8614,17,3993
+27,Female,164.6,60.9,200m Sprint,Competition,81,Medium,2432,18,2767
+19,Female,156.4,48.8,200m Sprint,Competition,63,High,1906,8,2824
+36,Female,184.3,70.4,Hammer,Recovery,74,Low,12519,7,2380
+26,Female,171.6,60.2,Hammer,Recovery,127,Medium,9150,9,2701
+16,Female,193.9,59.3,Javelin,Recovery,66,High,9016,10,3087
+19,Female,176.3,107.4,Triple Jump,Training,21,High,64,12,3560
+21,Male,198.6,85.1,100m Sprint,Training,132,Medium,4928,15,4226
+40,Female,163.3,81.2,800m Run,Training,30,High,4710,15,2975
+40,Female,194.1,72.0,Discus,Competition,131,High,11540,4,4260
+38,Male,189.9,72.9,Hammer,Recovery,109,Medium,6124,4,3347
+26,Female,189.7,80.2,1500m Run,Competition,74,High,7837,1,4000
+30,Male,193.0,90.3,Shot Put,Competition,36,High,800,12,4120
+37,Male,189.2,90.6,High Jump,Competition,87,High,6063,2,4406
+22,Female,183.2,56.2,Triple Jump,Recovery,71,High,8469,15,2797
+23,Male,160.9,77.5,Javelin,Training,116,Medium,6109,17,3395
+29,Male,156.5,71.8,Shot Put,Recovery,67,Low,9909,7,2345
+19,Male,196.4,101.6,High Jump,Recovery,48,Low,10605,6,3076
+27,Male,182.7,86.0,1500m Run,Competition,46,High,6659,12,4114
+19,Female,190.8,79.6,1500m Run,Competition,123,High,1238,19,4677
+25,Male,176.7,52.5,Discus,Competition,79,Low,6582,1,2270
+24,Female,160.3,84.4,Javelin,Training,125,High,4523,14,4327
+34,Male,160.6,52.6,Long Jump,Training,88,Low,14731,4,2168
+27,Male,185.9,66.9,1500m Run,Training,133,Medium,5620,5,3761
+23,Male,174.4,54.3,Hammer,Recovery,40,Medium,1486,1,2519
+35,Male,164.0,90.0,Javelin,Competition,121,Medium,4681,1,3940
+28,Female,177.1,58.4,Shot Put,Recovery,150,Medium,11490,6,2685
+32,Female,157.9,70.5,400m Sprint,Training,114,Medium,4470,5,3049
+29,Male,181.2,103.2,400m Sprint,Competition,124,Medium,5619,2,4630
+24,Male,167.1,58.3,High Jump,Training,144,Low,11187,5,2735
+38,Female,190.9,78.0,High Jump,Competition,21,High,8284,9,3187
+21,Male,169.0,72.3,Long Jump,Competition,85,Low,11723,19,2661
+22,Male,175.5,46.2,400m Sprint,Recovery,132,Medium,13888,15,2770
+17,Male,155.5,96.5,High Jump,Recovery,61,High,14656,13,3847
+29,Female,158.3,49.5,1500m Run,Training,39,High,7177,12,2507
+30,Female,172.7,75.8,High Jump,Recovery,116,Medium,13201,5,3095
+18,Female,176.6,81.4,200m Sprint,Recovery,87,Medium,5441,2,3162
+35,Male,182.0,85.8,Long Jump,Recovery,94,Medium,1840,4,3480
+20,Male,168.1,89.8,Triple Jump,Competition,144,Medium,11719,18,4165
+15,Female,186.3,61.5,100m Sprint,Recovery,66,Medium,5397,10,2741
+18,Female,193.7,45.6,800m Run,Training,24,Medium,1621,13,2247
+25,Female,190.1,92.0,Javelin,Competition,68,High,1561,12,3890
+26,Female,156.8,79.8,100m Sprint,Competition,143,Medium,5849,2,3994
+40,Male,176.6,99.3,100m Sprint,Recovery,56,Medium,1416,15,3432
+19,Female,159.7,98.4,Discus,Competition,38,High,11156,14,3478
+37,Male,165.9,99.8,Hammer,Training,59,Low,4190,10,2737
+35,Female,199.4,76.5,Javelin,Training,36,Medium,14067,8,2851
+30,Male,161.4,66.7,Triple Jump,Competition,118,High,5054,15,3922
+27,Female,177.4,96.5,High Jump,Recovery,112,High,1130,13,4381
+27,Female,182.8,74.3,Hammer,Recovery,61,Low,9605,8,2310
+31,Female,186.6,56.9,Discus,Competition,142,Medium,14071,14,3032
+21,Female,180.2,100.6,100m Sprint,Training,126,Medium,3597,1,4250
+22,Male,155.4,102.4,Javelin,Competition,91,Medium,11936,13,3921
+27,Female,169.7,75.3,200m Sprint,Recovery,84,High,2118,8,3205
+37,Male,178.3,49.9,800m Run,Recovery,128,Medium,663,18,2714
+30,Male,159.0,70.2,100m Sprint,Competition,72,Medium,13256,9,3110
+18,Male,170.8,97.2,400m Sprint,Training,43,Medium,2634,13,3388
+22,Male,156.5,103.6,Triple Jump,Competition,47,Medium,2774,3,3627
+30,Female,158.5,58.2,Triple Jump,Training,81,Low,14703,18,2070
+35,Male,172.9,49.4,Triple Jump,Training,36,Low,6194,10,2097
+24,Male,161.0,102.0,Long Jump,Competition,39,Low,3969,5,2890
+39,Male,180.5,70.3,Long Jump,Competition,22,Medium,13454,6,2715
+26,Female,186.0,80.2,1500m Run,Training,70,Medium,3490,8,3280
+26,Female,191.0,107.9,Shot Put,Training,22,High,9763,7,3904
+40,Female,164.0,49.3,800m Run,Training,92,High,1523,18,2853
+19,Female,162.5,87.1,Discus,Training,124,High,8053,14,4126
+30,Male,159.7,49.8,Hammer,Recovery,137,Medium,987,15,2533
+15,Male,183.6,69.4,Hammer,Competition,53,Low,11430,10,2581
+23,Female,186.8,97.2,Hammer,Training,81,Low,7915,12,3074
+26,Male,156.4,73.2,High Jump,Competition,139,Low,6403,7,2792
+19,Male,197.1,109.8,100m Sprint,Training,134,Medium,5321,7,5157
+36,Male,157.3,81.3,Shot Put,Competition,32,Low,3845,11,2514
+34,Female,179.4,65.9,High Jump,Competition,88,High,13496,13,3573
+36,Female,186.9,59.3,Discus,Training,96,High,6301,15,3391
+38,Male,194.2,67.8,Hammer,Training,20,Low,11885,18,2371
+17,Female,187.1,69.2,Shot Put,Competition,108,High,98,7,3623
+19,Female,191.1,49.5,High Jump,Competition,66,Low,2288,6,2161
+16,Female,170.3,69.0,200m Sprint,Competition,23,Low,9706,11,2102
+28,Female,191.7,75.2,Long Jump,Recovery,29,High,4297,8,2910
+16,Female,158.6,92.0,Discus,Training,47,High,8825,20,3612
+27,Male,195.3,87.7,Hammer,Recovery,140,High,7796,1,4573
+21,Female,179.6,91.1,Javelin,Recovery,145,High,7263,8,4345
+24,Male,191.8,45.5,800m Run,Training,81,Low,13033,8,2336
+27,Male,175.4,59.1,400m Sprint,Training,86,High,12777,19,3708
+30,Female,184.0,88.0,200m Sprint,Recovery,93,High,8770,3,3969
+40,Male,178.7,76.5,Long Jump,Training,114,Medium,3959,5,3631
+28,Male,187.9,45.3,Triple Jump,Competition,55,High,7385,3,2957
+25,Male,158.7,97.3,Long Jump,Competition,131,High,14862,15,5035
+24,Female,157.7,95.2,Shot Put,Recovery,150,Low,8464,14,2782
+20,Female,166.1,80.6,1500m Run,Recovery,132,Low,5338,15,2708
+18,Male,162.2,49.3,200m Sprint,Training,129,Medium,4881,17,2955
+35,Female,194.2,94.8,Triple Jump,Training,133,High,3954,18,5123
+15,Female,164.9,82.9,Shot Put,Recovery,86,High,3927,2,3616
+21,Female,198.9,95.8,Discus,Recovery,145,High,8644,12,4944
+38,Female,170.2,93.9,800m Run,Competition,105,High,9367,16,4549
+23,Male,163.2,97.2,Long Jump,Competition,38,High,14682,4,4067
+22,Male,190.5,78.7,Javelin,Training,88,High,4911,2,4454
+19,Female,184.6,54.1,Discus,Competition,29,Medium,413,14,2364
+33,Female,177.4,88.6,Triple Jump,Training,147,High,1550,11,4717
+24,Male,180.0,85.3,Shot Put,Training,118,High,4526,13,4391
+25,Male,187.4,93.2,Hammer,Training,51,High,14714,7,4115
+39,Female,165.3,56.0,1500m Run,Competition,131,Medium,7141,10,2898
+29,Male,199.8,57.7,Hammer,Recovery,43,High,13182,1,3116
+20,Female,198.9,102.9,Long Jump,Recovery,54,Medium,6571,4,3585
+29,Female,184.3,93.7,Javelin,Competition,102,Low,1946,18,2920
+19,Male,164.0,104.0,800m Run,Recovery,89,High,5203,6,4696
+33,Male,185.6,94.3,1500m Run,Training,128,Medium,191,2,4349
+36,Female,158.2,83.8,High Jump,Recovery,118,Low,40,3,2509
+33,Female,156.4,87.5,Shot Put,Competition,52,Medium,14175,14,2880
+24,Male,166.6,102.8,Discus,Recovery,75,Medium,10051,8,3391
+26,Female,175.8,82.6,Javelin,Training,31,Low,5892,16,2451
+36,Male,194.1,86.1,Long Jump,Training,30,High,9524,19,3577
+18,Female,187.7,55.2,Long Jump,Competition,89,High,3449,18,3374
+32,Male,188.4,75.8,Triple Jump,Competition,60,Medium,8327,6,3146
+30,Male,174.1,91.6,Javelin,Competition,125,Low,5909,14,3223
+22,Male,170.6,62.6,800m Run,Training,22,High,12393,3,3000
+18,Female,171.7,58.1,400m Sprint,Recovery,22,Medium,12806,16,2213
+39,Female,199.4,65.4,High Jump,Recovery,103,Low,1941,1,2352
+37,Male,156.8,60.7,1500m Run,Competition,126,Medium,9757,12,3174
+26,Female,194.0,59.0,200m Sprint,Recovery,39,Low,4221,14,2182
+16,Male,181.0,72.6,200m Sprint,Recovery,115,High,7524,19,4161
+18,Male,174.7,104.0,Javelin,Competition,143,High,6543,19,5784
+19,Female,187.6,78.0,Long Jump,Competition,40,Medium,6222,9,3047
+17,Female,176.9,57.2,Triple Jump,Training,133,High,8580,7,3549
+23,Male,194.3,50.0,100m Sprint,Training,32,High,1558,14,3089
+35,Female,195.5,90.3,Javelin,Training,105,Low,14012,5,2915
+32,Female,174.0,69.9,Long Jump,Training,54,High,2121,18,3037
+25,Male,167.5,98.4,Hammer,Recovery,66,Low,1028,9,2967
+17,Male,181.7,87.9,200m Sprint,Recovery,144,Low,14230,7,3242
+39,Female,196.1,96.8,200m Sprint,Training,129,Medium,11726,9,4154
+37,Male,164.5,62.7,High Jump,Training,56,Low,8273,4,2355
+16,Male,183.0,90.0,Discus,Competition,40,High,5656,17,3953
+23,Female,183.4,62.2,100m Sprint,Recovery,33,Low,8967,12,2185
+28,Male,188.0,106.0,Long Jump,Recovery,110,Low,3038,6,3181
+18,Male,160.9,86.4,High Jump,Training,79,Medium,12565,18,3622
+23,Female,187.2,66.1,Triple Jump,Recovery,143,High,11079,8,4043
+27,Female,195.9,62.5,High Jump,Competition,42,High,1878,15,3229
+32,Male,163.1,57.4,Long Jump,Competition,130,High,2271,3,3867
+29,Male,165.7,90.2,Shot Put,Recovery,143,Low,1607,2,2983
+24,Female,198.7,59.2,400m Sprint,Training,49,High,3139,9,3186
+30,Female,163.1,83.7,Javelin,Recovery,134,High,605,8,3914
+26,Female,193.4,62.2,Long Jump,Competition,109,Low,14354,4,2511
+34,Female,177.2,88.0,800m Run,Training,57,Medium,4735,2,3141
+19,Male,166.1,98.0,200m Sprint,Recovery,102,Medium,11606,14,3747
+16,Female,194.2,95.6,100m Sprint,Training,46,Low,3665,2,2910
+24,Female,175.0,94.5,Hammer,Training,123,Medium,14077,2,3975
+15,Male,178.2,57.2,Hammer,Competition,135,Medium,5852,7,3169
+21,Female,171.2,50.7,100m Sprint,Training,34,Medium,5462,12,2297
+40,Male,181.7,90.4,Javelin,Recovery,22,High,2144,6,3233
+31,Female,162.4,68.9,Discus,Training,29,Medium,4270,18,2353
+30,Female,172.6,73.1,400m Sprint,Training,139,High,11957,4,4297
+38,Female,198.6,47.0,800m Run,Recovery,147,Medium,8107,19,2760
+17,Male,166.6,61.9,200m Sprint,Competition,30,High,1376,13,3050
+28,Male,184.6,47.2,Hammer,Competition,88,Low,3462,20,2236
+24,Female,169.6,102.1,Javelin,Recovery,83,Low,347,2,2851
+36,Male,189.8,60.8,Javelin,Recovery,33,Medium,0,8,2832
+21,Male,160.9,81.2,Javelin,Competition,69,High,62,19,3834
+40,Male,198.6,47.5,100m Sprint,Training,91,Low,1783,9,2317
+31,Male,175.4,88.3,800m Run,Recovery,88,Low,12006,4,2863
+20,Male,165.6,66.0,High Jump,Training,146,Low,8417,16,2791
+37,Male,158.3,103.4,Discus,Recovery,35,Low,6566,19,2667
+36,Female,162.6,102.7,Javelin,Competition,97,Medium,1042,10,3680
+18,Female,178.4,66.1,Long Jump,Training,120,High,14366,6,3973
+31,Male,170.2,103.6,Long Jump,Training,75,Low,9036,16,3196
+23,Female,192.3,109.8,Javelin,Recovery,124,Medium,10872,10,4135
+18,Female,174.4,98.7,Shot Put,Training,67,Low,12311,13,2876
+21,Female,166.2,99.9,200m Sprint,Recovery,36,Low,1234,9,2630
+37,Female,182.8,61.2,800m Run,Competition,130,Low,1984,7,2562
+16,Male,186.8,82.5,1500m Run,Training,89,Low,12448,4,3246
+31,Female,162.5,49.4,100m Sprint,Recovery,99,Medium,9470,19,2250
+38,Female,162.5,51.2,Triple Jump,Training,112,High,1594,4,2804
+22,Male,156.7,109.9,Triple Jump,Recovery,57,Medium,6257,19,3493
+37,Male,188.1,66.2,Long Jump,Recovery,120,Medium,10743,19,3111
+29,Female,184.9,93.6,Hammer,Recovery,81,Medium,1952,12,3179
+29,Female,176.4,97.4,1500m Run,Competition,140,Low,1695,13,3580
+22,Female,193.0,100.8,Triple Jump,Training,67,High,954,4,4477
+30,Female,191.3,109.8,400m Sprint,Competition,29,Low,3291,10,2757
+33,Female,181.3,60.7,400m Sprint,Recovery,55,Medium,8548,7,2500
+25,Female,194.1,47.6,200m Sprint,Recovery,23,Low,14504,5,1962
+16,Male,164.3,71.7,1500m Run,Competition,63,High,11787,17,3652
+37,Female,160.0,53.5,400m Sprint,Competition,75,High,968,18,2579
+38,Female,167.1,46.5,400m Sprint,Training,61,Low,241,11,1781
+31,Male,157.6,68.4,Long Jump,Recovery,133,Medium,11638,15,3078
+40,Male,178.9,95.9,Triple Jump,Competition,40,Low,4234,7,2741
+30,Male,197.1,81.8,200m Sprint,Recovery,98,Medium,10336,18,3832
+39,Male,156.8,65.3,800m Run,Recovery,88,High,8338,6,3284
+29,Female,160.5,87.5,Javelin,Training,89,Low,7349,18,2520
+27,Female,175.3,60.1,High Jump,Training,86,High,13368,16,3289
+29,Female,197.0,45.9,100m Sprint,Training,67,Medium,5161,2,2469
+18,Female,169.2,94.7,100m Sprint,Competition,55,Medium,8734,19,3494
+30,Female,177.8,85.5,Hammer,Recovery,46,Low,8883,1,2337
+26,Female,156.9,94.5,Discus,Competition,91,Low,1025,11,2798
+18,Male,161.7,47.5,High Jump,Competition,120,Low,12242,20,2218
+17,Female,199.4,99.4,High Jump,Training,115,High,12197,5,5025
+36,Male,198.4,85.3,100m Sprint,Recovery,147,Medium,3359,16,3834
+31,Male,155.2,81.6,100m Sprint,Recovery,45,Medium,5257,1,2751
+36,Female,197.8,85.6,800m Run,Training,85,High,5736,19,4076
+32,Male,183.8,101.2,1500m Run,Recovery,41,Low,7679,14,2844
+39,Female,194.1,83.2,1500m Run,Training,36,Low,2951,3,2536
+32,Male,175.5,82.8,800m Run,Competition,26,High,8921,2,3265
+37,Female,178.2,109.4,Triple Jump,Competition,126,Medium,7389,5,4518
+31,Male,177.0,94.2,High Jump,Training,87,Medium,14666,17,3918
+26,Female,185.0,73.7,Shot Put,Competition,147,Medium,14952,18,3568
+37,Female,161.3,91.0,High Jump,Competition,56,Medium,12691,1,3018
+35,Female,156.3,70.3,Discus,Training,57,High,2555,15,2857
+38,Female,168.9,59.9,100m Sprint,Competition,115,Medium,14227,9,2869
+18,Female,186.7,83.8,High Jump,Recovery,20,High,1150,5,2968
+26,Male,164.1,105.3,100m Sprint,Competition,61,Low,1735,13,3051
+40,Male,185.3,105.4,High Jump,Training,82,High,7931,19,4985
+37,Male,198.6,67.2,Discus,Recovery,100,Medium,1038,10,3217
+36,Female,159.2,79.3,Triple Jump,Recovery,27,Low,6369,20,2071
+35,Male,185.3,58.8,Javelin,Competition,46,High,7127,14,2950
+34,Female,175.0,109.7,Shot Put,Recovery,71,High,2912,12,4107
+29,Female,194.1,108.8,Hammer,Training,110,High,4840,11,4997
+37,Male,163.0,87.2,400m Sprint,Recovery,105,Low,10732,7,2706
+30,Male,186.2,97.3,800m Run,Competition,35,High,12606,17,3922
+19,Female,192.7,91.5,800m Run,Competition,85,Medium,1242,18,3946
+35,Male,197.5,83.6,Hammer,Recovery,24,Low,8964,7,2693
+29,Female,185.7,48.5,Shot Put,Training,101,Low,10108,20,2175
+31,Female,177.4,74.6,High Jump,Training,150,High,8098,6,4479
+32,Female,182.8,88.9,400m Sprint,Competition,137,Medium,3412,11,4121
+19,Female,194.1,89.0,Discus,Competition,100,Low,2499,12,3091
+27,Female,180.7,69.3,1500m Run,Training,89,High,11632,16,3628
+33,Male,156.4,106.2,High Jump,Recovery,134,Medium,13231,19,3869
+27,Male,196.9,55.9,Triple Jump,Recovery,26,High,7160,19,2916
+32,Female,186.0,77.5,100m Sprint,Recovery,69,High,6110,11,3440
+28,Female,185.4,89.9,Hammer,Recovery,130,Low,3545,16,2907
+18,Male,164.7,90.3,200m Sprint,Training,66,Low,1213,12,2933
+18,Male,184.6,87.2,High Jump,Competition,131,High,11123,8,5224
+34,Female,172.7,62.9,Javelin,Competition,62,Low,418,3,2085
+34,Male,184.3,55.2,200m Sprint,Recovery,110,Low,11973,2,2574
+33,Female,159.8,86.3,High Jump,Training,48,Medium,4960,6,2835
+27,Male,184.6,84.0,Shot Put,Training,147,Medium,788,16,4042
+26,Female,200.0,56.7,Javelin,Recovery,115,High,1871,20,3365
+21,Male,157.2,90.8,200m Sprint,Recovery,136,High,12782,15,4514
+39,Female,199.0,74.6,High Jump,Recovery,89,High,13350,14,3568
+26,Male,173.3,88.4,800m Run,Competition,149,High,14497,2,5660
+35,Male,194.2,99.4,Javelin,Recovery,89,Medium,2025,20,3880
+18,Female,190.2,56.0,200m Sprint,Competition,129,Low,6264,18,2492
+16,Male,180.5,46.2,High Jump,Training,75,Medium,2446,14,2959
+16,Female,188.2,95.6,1500m Run,Training,108,High,7429,18,5160
+19,Male,194.5,84.6,100m Sprint,Competition,150,High,14273,2,6000
+37,Female,173.2,90.5,1500m Run,Competition,119,Medium,4823,1,3896
+24,Male,169.7,99.5,Hammer,Competition,148,Medium,8752,20,4648
+24,Female,185.0,97.2,Hammer,Competition,76,High,2651,2,4342
+23,Male,191.4,107.5,400m Sprint,Recovery,70,Low,13440,9,3293
+27,Female,189.3,79.8,High Jump,Training,131,High,12096,9,4577
+21,Male,190.9,76.8,Long Jump,Recovery,123,Medium,539,16,3532
+19,Female,174.6,71.1,Triple Jump,Competition,146,High,6499,11,4472
+40,Female,191.8,55.0,1500m Run,Recovery,74,High,4755,6,2859
+24,Female,160.4,82.2,200m Sprint,Recovery,20,Low,14767,12,2231
+24,Male,179.5,63.0,Shot Put,Training,109,High,5959,3,3963
+20,Female,155.3,104.9,Javelin,Recovery,72,High,11328,12,3821
+33,Male,169.6,82.9,Triple Jump,Training,92,High,3289,1,4223
+35,Female,171.5,83.5,Long Jump,Competition,127,Medium,10802,9,3604
+22,Male,172.8,68.1,Discus,Recovery,27,Medium,5546,20,2608
+15,Female,186.3,48.4,High Jump,Competition,61,Low,13104,6,2243
+31,Male,172.5,47.1,Shot Put,Training,44,High,10136,11,2768
+21,Male,175.2,72.5,High Jump,Competition,57,Medium,11337,3,3131
+28,Female,165.7,50.5,400m Sprint,Competition,104,Low,2758,4,2133
+35,Male,171.8,84.4,Long Jump,Training,43,High,5311,10,3451
+35,Male,165.2,102.3,Javelin,Competition,79,Low,11452,19,3137
+31,Female,158.3,102.4,Javelin,Competition,130,Low,4107,6,3184
+23,Male,182.2,87.8,High Jump,Competition,85,Low,14574,1,3175
+31,Male,185.1,58.7,200m Sprint,Recovery,72,Low,1895,8,2521
+19,Male,182.9,101.1,400m Sprint,Competition,125,Low,2500,8,3928
+40,Female,175.9,102.6,800m Run,Training,115,Low,14718,6,3079
+39,Male,172.1,57.8,Discus,Recovery,58,Low,2829,17,2026
+34,Female,193.9,92.9,Long Jump,Recovery,61,High,12065,19,3787
+22,Male,178.4,63.6,100m Sprint,Training,130,High,47,1,4239
+20,Male,176.6,97.2,Shot Put,Competition,123,Low,2364,15,3351
+25,Male,156.2,109.8,1500m Run,Recovery,96,High,10448,13,4554
+33,Female,170.4,47.0,Hammer,Recovery,27,Low,5666,3,1677
+18,Male,172.1,103.3,High Jump,Recovery,45,High,12864,2,4174
+32,Male,172.9,85.5,Shot Put,Competition,62,Medium,6458,3,3291
+15,Female,181.1,108.3,Shot Put,Recovery,129,Low,8945,9,3165
+27,Male,179.0,75.2,100m Sprint,Training,119,Medium,8177,16,3735
+28,Female,182.4,100.1,100m Sprint,Competition,82,Low,13347,13,3132
+38,Female,189.4,49.1,400m Sprint,Training,68,Low,7630,19,1979
+15,Male,191.6,66.8,Long Jump,Training,134,Medium,7931,18,3789
+25,Female,187.3,49.4,200m Sprint,Recovery,84,Medium,7058,12,2585
+31,Male,198.0,108.4,Discus,Recovery,90,Medium,2802,12,4048
+18,Female,155.8,98.1,Hammer,Recovery,26,Low,12841,1,2340
+40,Female,163.8,100.4,Javelin,Training,99,Medium,11844,20,3540
+26,Male,155.3,106.0,100m Sprint,Competition,86,Medium,8594,8,4161
+24,Female,184.1,50.5,100m Sprint,Recovery,120,High,13418,17,2926
+20,Female,195.4,70.1,1500m Run,Recovery,114,High,2086,20,3920
+39,Female,166.0,49.6,800m Run,Training,106,Medium,6724,7,2411
+15,Female,196.7,58.7,100m Sprint,Competition,110,Medium,10419,9,3283
+21,Female,157.7,59.9,800m Run,Training,122,Medium,6155,17,2871
+40,Male,197.0,75.5,400m Sprint,Recovery,145,Medium,11602,10,3650
+35,Female,170.8,62.5,200m Sprint,Training,132,High,11182,4,3703
+30,Male,159.6,51.6,Shot Put,Recovery,23,Low,12835,7,1903
+38,Female,176.9,55.9,Javelin,Competition,107,Medium,1149,7,2660
+28,Male,166.6,54.6,100m Sprint,Training,22,Medium,62,8,2328
+37,Male,167.8,108.2,High Jump,Recovery,110,High,13131,8,4780
+34,Female,168.8,94.4,800m Run,Recovery,22,Medium,3153,16,2870
+34,Female,191.1,107.9,1500m Run,Recovery,100,Medium,9200,12,3851
+20,Female,179.3,73.6,Discus,Recovery,113,High,5938,15,3623
+36,Male,169.0,63.1,1500m Run,Training,145,Medium,10223,8,3299
+39,Female,182.5,96.9,100m Sprint,Recovery,132,Medium,9514,9,3882
+19,Male,187.2,66.2,Long Jump,Training,119,High,10273,3,4215
+38,Male,167.3,64.5,Shot Put,Recovery,72,Low,751,16,2228
+35,Male,173.6,60.1,200m Sprint,Training,106,Medium,7776,15,3085
+32,Female,160.5,53.4,High Jump,Training,108,Medium,12336,4,2555
+29,Female,163.2,61.7,Long Jump,Recovery,73,Low,8849,20,1935
+20,Male,185.7,68.1,1500m Run,Recovery,39,High,9852,16,3215
+39,Male,163.2,88.8,800m Run,Recovery,132,Low,700,10,3000
+33,Female,178.6,49.1,800m Run,Recovery,68,Medium,9272,11,2282
+15,Male,186.9,58.7,Long Jump,Competition,48,Low,10348,5,2498
+15,Female,159.8,97.6,800m Run,Recovery,67,High,1540,11,3925
+27,Male,180.5,54.5,1500m Run,Recovery,32,Medium,3032,13,2598
+17,Female,166.5,67.3,Long Jump,Recovery,22,High,6167,15,2837
+24,Male,198.3,101.2,1500m Run,Training,21,High,6364,6,4148
+35,Female,176.8,55.1,High Jump,Recovery,35,Low,1983,16,1932
+17,Male,191.3,50.4,Shot Put,Training,113,Low,8506,15,2546
+23,Female,179.8,76.5,Discus,Training,121,High,14629,11,4076
+22,Female,157.0,64.7,High Jump,Training,64,High,11273,20,2962
+17,Male,183.5,81.6,High Jump,Training,90,Medium,5796,2,3714
+39,Male,197.8,97.2,800m Run,Competition,75,High,7648,2,4644
+27,Female,182.1,53.9,100m Sprint,Recovery,146,High,7894,12,3393
+20,Male,191.9,82.7,Triple Jump,Training,51,Low,13305,16,2887
+27,Female,194.8,77.9,800m Run,Recovery,68,High,12925,19,3634
+37,Male,165.3,54.4,100m Sprint,Training,32,High,2314,2,2653
+34,Female,164.5,85.6,1500m Run,Competition,44,Low,7959,17,2364
+34,Female,182.5,62.8,Triple Jump,Training,79,Medium,10327,14,2768
+26,Female,173.5,76.7,800m Run,Recovery,78,Low,14790,16,2480
+27,Female,192.8,50.3,Hammer,Recovery,77,Low,1649,5,2068
+16,Female,195.5,74.9,Triple Jump,Competition,39,High,7700,10,3603
+35,Female,170.9,64.9,Triple Jump,Recovery,76,High,11411,17,3053
+38,Male,165.7,98.5,400m Sprint,Recovery,73,Medium,6900,13,3309
+37,Male,190.1,48.7,Shot Put,Training,131,High,3800,16,3402
+30,Male,167.4,72.2,400m Sprint,Recovery,105,Medium,2478,9,3190
+37,Female,192.0,74.8,100m Sprint,Training,56,Medium,12259,4,3005
+20,Female,174.1,92.1,200m Sprint,Competition,103,Medium,9967,16,4178
+33,Female,185.0,82.3,Long Jump,Recovery,67,Medium,10158,11,3009
+35,Female,159.3,88.4,Hammer,Training,137,High,7054,7,4363
+27,Male,183.1,95.5,Discus,Recovery,67,Low,6059,17,2878
+31,Male,175.3,101.0,200m Sprint,Training,131,Low,9959,13,3401
+37,Female,181.4,65.4,Long Jump,Competition,129,High,12007,4,3864
+23,Male,162.6,80.0,100m Sprint,Training,25,High,8433,14,3479
+31,Male,188.2,99.6,Javelin,Recovery,97,Medium,12989,10,3829
+16,Female,193.8,109.3,100m Sprint,Training,42,High,11141,10,4224
+33,Male,164.8,102.8,1500m Run,Recovery,145,Low,13028,10,3401
+33,Female,159.3,69.1,Discus,Competition,103,High,6209,12,3248
+38,Male,156.1,57.7,Javelin,Training,32,High,7115,2,2627
+21,Female,183.9,76.8,Shot Put,Recovery,66,Medium,14713,9,3009
+36,Female,182.3,93.2,Triple Jump,Recovery,63,Medium,14723,5,3055
+24,Female,179.6,77.0,400m Sprint,Recovery,124,Medium,14102,8,3470
+24,Female,165.4,76.4,400m Sprint,Training,33,Medium,13068,14,2697
+34,Male,172.6,99.5,100m Sprint,Training,140,Low,2256,7,3700
+23,Female,181.8,68.5,400m Sprint,Training,55,High,12303,7,3157
+31,Female,177.4,100.9,Hammer,Competition,27,High,3368,9,3513
+29,Female,199.5,71.4,Hammer,Recovery,35,Medium,13273,3,2827
+16,Male,161.1,66.3,Hammer,Recovery,110,Low,7387,14,2390
+18,Female,186.3,74.5,Javelin,Competition,139,Low,8558,17,3009
+33,Male,173.2,94.6,100m Sprint,Competition,79,High,2827,18,4569
+31,Female,174.3,53.2,Triple Jump,Training,29,Medium,9444,12,2247
+19,Male,187.3,57.8,100m Sprint,Training,50,High,2487,14,3365
+21,Male,186.2,106.8,1500m Run,Training,40,High,12977,13,4575
+32,Female,199.6,56.4,Shot Put,Training,100,Low,3603,14,2277
+35,Male,160.8,81.9,High Jump,Training,52,Low,3521,9,2555
+36,Female,159.7,82.7,800m Run,Training,50,High,13347,19,3102
+21,Female,187.6,76.8,Javelin,Competition,55,Medium,13134,2,3095
+31,Female,181.0,86.9,Shot Put,Competition,87,Medium,4517,11,3469
+21,Male,167.3,59.9,Shot Put,Competition,109,High,1643,17,3650
+18,Male,158.6,80.9,200m Sprint,Recovery,28,High,1212,2,3166
+22,Female,158.9,69.2,Discus,Recovery,49,Medium,7345,19,2420
+27,Female,195.2,88.0,Discus,Training,134,Medium,4703,7,3977
+18,Male,163.6,54.2,Javelin,Competition,64,Medium,5434,18,2694
+20,Female,169.6,82.1,Hammer,Recovery,23,High,19,13,3169
+39,Female,165.2,57.0,Long Jump,Recovery,88,Low,675,5,1990
+19,Female,171.0,63.1,800m Run,Competition,42,Medium,4477,18,2533
+26,Male,158.1,59.2,Triple Jump,Recovery,35,Medium,608,16,2461
+18,Male,178.4,56.9,Hammer,Recovery,41,Medium,6286,15,2722
+38,Male,158.0,98.7,Javelin,Competition,91,High,61,8,4398
+23,Female,191.0,63.6,High Jump,Recovery,67,Low,9457,15,2377
+18,Female,165.5,105.3,High Jump,Competition,126,Low,10477,1,3249
+33,Female,179.3,108.0,Javelin,Recovery,26,Medium,1154,17,3050
+38,Male,194.6,82.1,Discus,Competition,70,High,9820,15,3916
+28,Female,184.3,54.3,Shot Put,Recovery,84,Low,9818,14,2097
+19,Female,179.0,69.3,1500m Run,Recovery,28,High,3716,14,2885
+32,Female,169.6,96.9,Long Jump,Competition,101,Low,5242,10,2959
+24,Female,170.0,68.9,100m Sprint,Recovery,64,Medium,5559,2,2730
+39,Male,185.1,50.7,Long Jump,Competition,141,High,5022,6,3732
+33,Male,199.7,81.2,200m Sprint,Competition,29,Medium,6485,17,3325
+26,Female,184.8,99.9,Long Jump,Recovery,92,Low,1442,5,3120
+32,Male,180.1,96.7,Shot Put,Training,67,Low,1653,5,3222
+31,Male,187.9,56.4,Triple Jump,Recovery,106,Medium,2502,15,2920
+38,Female,175.9,88.7,Shot Put,Training,130,Low,3269,15,2949
+25,Female,157.7,59.3,Discus,Training,35,Medium,281,20,2199
+17,Male,180.3,59.2,Triple Jump,Recovery,72,Medium,13173,11,2963
+37,Female,198.1,101.8,400m Sprint,Training,59,Medium,9216,5,3751
+31,Male,162.9,61.2,Triple Jump,Competition,119,Low,13010,1,2466
+15,Female,186.1,62.1,Long Jump,Competition,39,High,14086,11,3023
+29,Male,164.0,45.0,Long Jump,Training,88,Medium,3403,11,2588
+23,Female,179.1,101.6,Long Jump,Competition,64,High,1235,6,4210
+29,Male,159.4,96.5,400m Sprint,Recovery,25,Low,12374,8,2616
+38,Male,175.3,85.8,Discus,Competition,58,Low,4760,2,2798
+17,Male,189.0,93.8,100m Sprint,Training,121,High,13149,15,5382
+36,Female,170.6,54.9,Hammer,Recovery,149,Medium,14010,9,2702
+33,Male,184.9,74.8,800m Run,Competition,126,Low,14396,15,3184
+27,Male,190.8,67.8,Discus,Recovery,58,Medium,6940,8,2911
+26,Female,196.7,51.1,Hammer,Training,137,Medium,14430,16,2889
+34,Female,165.6,76.6,Long Jump,Competition,101,High,785,14,3879
+15,Male,173.0,104.8,Javelin,Recovery,73,Low,13864,15,3152
+35,Male,161.9,47.6,Hammer,Recovery,129,High,11509,20,2755
+31,Female,199.7,63.9,Discus,Competition,31,Low,9859,13,2217
+27,Female,196.7,58.5,200m Sprint,Recovery,129,High,11200,9,3588
+15,Female,179.3,60.5,High Jump,Recovery,57,Low,14632,1,2262
+24,Female,192.9,104.0,High Jump,Training,26,Low,3194,6,2941
+29,Female,178.4,75.4,Javelin,Training,97,Low,4789,8,2715
+21,Male,183.1,75.3,800m Run,Training,84,Medium,3775,20,3451
+36,Female,159.0,94.4,800m Run,Training,121,Medium,10638,18,3734
+32,Male,189.0,55.0,100m Sprint,Training,120,High,11982,18,3816
+30,Male,160.7,76.7,200m Sprint,Training,63,High,5350,17,3429
+28,Male,192.2,72.9,Shot Put,Competition,50,Low,533,16,2695
+32,Female,190.2,83.8,Discus,Training,96,Low,8593,13,2785
+21,Male,186.9,110.0,Triple Jump,Recovery,67,Medium,3663,4,4035
+31,Male,156.6,95.0,Triple Jump,Competition,101,Medium,129,4,3977
+32,Female,168.6,70.9,Shot Put,Recovery,146,Medium,10531,14,3037
+26,Male,166.8,98.8,High Jump,Training,103,High,12563,5,4814
+22,Male,171.2,56.1,Shot Put,Training,29,Medium,2959,16,2554
+36,Female,158.9,47.0,Discus,Recovery,48,High,1858,14,2124
+16,Male,197.2,58.3,Hammer,Recovery,67,Medium,11165,14,2981
+21,Male,179.9,67.1,200m Sprint,Recovery,135,Medium,12342,14,3422
+18,Male,168.7,78.2,Long Jump,Competition,32,Low,3649,14,2568
+32,Female,172.9,85.0,400m Sprint,Training,66,High,10978,19,3693
+20,Female,175.1,104.2,Javelin,Recovery,122,Medium,3097,3,3781
+23,Female,182.0,78.1,Long Jump,Training,110,Low,3512,17,2689
+23,Male,178.2,77.6,400m Sprint,Recovery,72,High,4860,14,3745
+28,Male,196.4,48.3,Triple Jump,Training,111,High,9412,10,3585
+22,Female,177.4,47.3,Javelin,Competition,96,Medium,8833,13,2395
+33,Male,199.6,80.8,800m Run,Training,63,High,11506,4,4057
+17,Male,193.3,73.5,Hammer,Recovery,21,Low,14135,11,2790
+32,Female,164.4,99.5,Discus,Training,120,Low,723,15,2999
+19,Female,196.9,55.4,Long Jump,Competition,76,High,13501,15,3347
+28,Male,160.2,46.6,Shot Put,Competition,76,Low,13089,2,2166
+18,Male,191.8,74.2,200m Sprint,Training,53,High,737,11,3894
+21,Male,172.1,60.4,200m Sprint,Recovery,77,Low,13045,2,2429
+34,Female,194.5,48.2,High Jump,Competition,54,High,13879,5,2711
+39,Female,194.1,92.1,200m Sprint,Competition,94,High,14902,13,4698
+26,Female,191.3,52.3,200m Sprint,Training,52,High,1299,1,2915
+16,Female,190.6,84.5,800m Run,Competition,134,Low,14129,7,3390
+25,Male,168.7,63.3,Shot Put,Competition,94,High,3480,7,3770
+28,Female,158.6,56.3,Triple Jump,Recovery,92,High,339,10,2747
+36,Female,173.1,69.7,200m Sprint,Recovery,97,Medium,152,6,2853
+37,Female,162.8,97.1,Triple Jump,Recovery,28,Medium,5684,20,2604
+30,Female,186.3,70.5,800m Run,Training,67,High,9613,12,3242
+34,Female,170.6,93.8,200m Sprint,Competition,86,Medium,13755,13,3748
+20,Male,198.9,53.2,Javelin,Training,138,High,3051,11,3644
+37,Male,183.8,95.2,Discus,Competition,138,Medium,426,18,4454
+18,Female,192.0,60.4,High Jump,Competition,105,Low,7146,2,2541
+29,Male,161.0,89.0,Long Jump,Competition,125,Low,8125,16,3265
+38,Female,193.8,81.8,Discus,Recovery,95,High,11750,2,3717
+39,Female,196.5,105.4,1500m Run,Training,59,High,6347,19,4595
+15,Male,176.9,70.2,Javelin,Training,38,Low,9327,6,2525
+21,Male,182.3,49.3,100m Sprint,Competition,66,Low,2372,1,2426
+39,Female,189.4,46.2,200m Sprint,Training,84,Medium,8126,11,2342
+26,Female,162.9,98.7,Triple Jump,Recovery,49,High,11521,18,3259
+24,Female,177.6,79.1,100m Sprint,Training,145,Low,949,10,2990
+19,Male,172.9,95.4,400m Sprint,Competition,85,Low,7695,18,3131
+26,Female,161.6,60.2,200m Sprint,Recovery,24,High,1373,1,2455
+32,Female,171.5,67.4,1500m Run,Recovery,112,Medium,14318,19,2834
+24,Female,158.1,47.0,800m Run,Competition,116,Medium,7082,16,2570
+20,Male,156.2,107.5,High Jump,Training,113,Medium,9148,7,4170
+26,Female,161.1,88.4,1500m Run,Competition,125,Medium,9893,15,3948
+21,Female,198.3,105.7,Triple Jump,Training,104,Low,11133,1,3541
+32,Male,179.7,62.3,800m Run,Training,77,High,2482,9,3522
+16,Female,198.5,84.7,Hammer,Recovery,98,High,7593,2,4126
+24,Female,174.5,89.1,Long Jump,Competition,27,Low,9495,17,2424
+29,Male,169.0,65.6,800m Run,Recovery,31,Low,370,10,2238
+26,Female,177.8,100.1,200m Sprint,Competition,113,Low,7837,6,3199
+40,Male,174.8,106.6,100m Sprint,Competition,110,High,11172,5,5925
+31,Male,159.8,102.5,100m Sprint,Recovery,52,High,2296,8,4042
+18,Female,183.8,93.0,Triple Jump,Competition,119,High,7034,8,5227
+21,Female,164.7,63.0,800m Run,Competition,34,Medium,6324,5,2523
+23,Female,182.9,63.3,1500m Run,Training,133,Low,12990,12,2572
+33,Female,184.3,107.6,Javelin,Competition,148,Low,7142,7,3442
+37,Male,161.8,45.7,Triple Jump,Competition,30,Low,13962,13,1838
+21,Female,157.8,91.5,Hammer,Recovery,74,High,10317,13,3591
+37,Male,190.1,90.9,High Jump,Recovery,21,Low,11158,17,2698
+16,Female,175.7,85.5,Triple Jump,Competition,84,Low,7028,4,2639
+20,Female,157.6,109.4,Triple Jump,Training,35,Medium,6479,18,3292
+32,Female,199.8,65.3,Long Jump,Training,125,High,4145,10,3762
+20,Male,157.6,67.1,Discus,Recovery,49,Low,14420,3,2257
+27,Female,186.3,50.1,200m Sprint,Competition,29,High,10934,12,2766
+40,Female,199.3,73.8,Long Jump,Competition,81,High,14339,1,3791
+33,Female,165.8,62.0,100m Sprint,Training,104,High,13280,11,3478
+16,Female,161.4,67.3,100m Sprint,Training,86,Medium,4021,18,2939
+26,Male,160.5,99.2,Javelin,Training,60,High,2364,13,3946
+29,Female,168.6,105.8,400m Sprint,Recovery,37,High,5230,17,3683
+28,Male,159.5,57.1,400m Sprint,Competition,77,High,13645,8,3272
+20,Male,186.1,69.2,Javelin,Recovery,79,Low,5970,20,2534
+32,Male,157.8,105.4,1500m Run,Competition,107,Medium,8954,19,4153
+19,Male,177.9,49.0,100m Sprint,Recovery,46,Low,7300,17,2217
+32,Male,199.9,51.0,Discus,Competition,87,Medium,6755,2,3162
+17,Male,191.6,55.6,Long Jump,Training,41,Medium,12254,3,2742
+17,Female,182.7,83.7,High Jump,Training,59,High,1004,3,3623
+36,Male,168.8,54.8,Discus,Training,128,High,7057,6,3498
+36,Male,183.1,107.9,Hammer,Recovery,93,Low,3755,10,3115
+24,Male,178.7,74.0,Javelin,Training,85,Medium,2846,18,3558
+33,Female,174.2,77.6,400m Sprint,Competition,25,High,6262,18,2932
+17,Female,160.9,61.0,800m Run,Recovery,131,High,8541,14,3311
+26,Male,194.9,75.6,Discus,Competition,37,High,2964,16,3538
+30,Female,175.2,88.0,Javelin,Recovery,100,High,8878,7,3912
+31,Male,163.8,93.8,Discus,Competition,121,Low,4637,1,3406
+21,Male,171.5,94.0,Hammer,Competition,129,Low,11318,17,3313
+27,Female,173.6,82.6,Discus,Recovery,49,High,12648,5,3300
+38,Male,192.2,103.8,Discus,Recovery,141,High,2755,1,4899
+16,Female,188.0,98.1,Discus,Training,81,High,11716,17,4557
+18,Female,189.6,94.2,400m Sprint,Training,139,High,3624,10,5704
+24,Male,155.5,48.6,100m Sprint,Competition,126,High,2732,12,3589
+21,Male,173.7,45.4,Triple Jump,Competition,95,Medium,6473,20,2740
+38,Female,176.7,58.8,Discus,Competition,28,Medium,14554,2,2189
+31,Male,155.9,88.1,Discus,Recovery,58,Medium,6351,16,3023
+34,Male,166.7,71.7,200m Sprint,Recovery,43,Medium,1693,15,2715
+20,Male,189.2,71.2,100m Sprint,Training,144,High,11084,13,4748
+33,Female,161.2,102.5,Triple Jump,Competition,137,Medium,12003,18,4293
+19,Female,179.1,103.2,High Jump,Training,53,Medium,12372,20,3505
+24,Male,164.7,104.1,High Jump,Recovery,80,Low,684,14,3128
+23,Female,155.5,65.4,800m Run,Recovery,98,Medium,12532,18,2710
+27,Female,165.9,89.9,Javelin,Recovery,69,Medium,2919,2,2998
+33,Female,198.9,62.7,Shot Put,Training,70,High,7166,2,3328
+35,Female,191.1,57.4,Long Jump,Recovery,71,Medium,3756,3,2642
+38,Female,198.2,57.0,200m Sprint,Competition,141,Medium,5454,5,3238
+20,Male,177.0,67.2,100m Sprint,Training,27,High,3283,16,3208
+18,Male,159.9,72.9,100m Sprint,Recovery,132,Medium,4691,15,3285
+38,Male,179.7,99.0,Shot Put,Training,64,High,6828,12,4284
+17,Female,175.4,52.8,800m Run,Training,107,Medium,7350,9,2812
+17,Female,193.0,92.8,1500m Run,Recovery,47,Low,12218,14,2853
+18,Male,159.4,79.5,400m Sprint,Recovery,138,Low,1156,16,2809
+39,Female,177.0,63.7,800m Run,Training,126,Medium,3061,11,3158
+19,Male,161.8,77.0,Hammer,Training,46,Low,7157,6,2534
+22,Male,169.6,64.5,Triple Jump,Recovery,100,High,5919,10,3593
+30,Male,188.2,83.7,800m Run,Competition,120,Medium,5893,8,4130
+36,Female,176.4,73.2,Shot Put,Training,81,High,4445,16,3486
+17,Female,171.9,55.7,Shot Put,Training,81,Low,10521,3,2189
+38,Male,172.8,52.6,Long Jump,Competition,45,High,6436,2,2972
+26,Male,175.7,80.5,200m Sprint,Recovery,140,Low,1292,16,2998
+39,Male,190.3,103.7,Hammer,Recovery,43,Low,10076,19,2940
+22,Male,195.1,67.4,Discus,Competition,58,Low,9752,9,2663
+27,Female,198.0,92.6,Javelin,Recovery,143,High,9175,16,4474
+18,Female,190.4,87.8,High Jump,Recovery,40,Low,7902,4,2616
+28,Male,169.2,105.6,Shot Put,Training,113,Medium,2067,10,3952
+28,Male,186.0,98.4,Long Jump,Training,134,Low,10055,19,3703
+27,Female,174.7,81.8,400m Sprint,Training,140,Medium,1979,13,4060
+20,Female,166.5,87.7,High Jump,Competition,32,Medium,1736,18,2879
+31,Male,192.8,103.4,1500m Run,Recovery,150,Medium,10644,15,4655
+18,Male,156.7,71.0,100m Sprint,Recovery,38,Medium,13426,4,2736
+22,Male,195.6,66.2,400m Sprint,Training,100,High,1918,9,4009
+31,Female,175.8,45.7,1500m Run,Training,142,Medium,700,4,2761
+17,Female,183.7,98.7,High Jump,Competition,87,Low,4046,16,3276
+31,Female,184.7,97.1,400m Sprint,Recovery,38,Medium,2073,15,3030
+23,Male,195.3,51.8,Long Jump,Competition,83,Low,4661,2,2548
+16,Male,183.7,82.5,1500m Run,Recovery,120,High,11945,14,4476
+39,Female,182.6,75.2,100m Sprint,Competition,85,Medium,394,3,3317
+27,Female,158.0,52.7,Discus,Training,85,Low,10148,4,1924
+34,Male,178.3,108.7,Long Jump,Competition,94,High,3048,1,5190
+16,Female,161.8,59.0,Triple Jump,Competition,64,High,3452,9,3132
+34,Female,188.2,49.4,100m Sprint,Training,106,Low,522,17,2106
+25,Male,178.0,83.7,200m Sprint,Recovery,86,Medium,9754,14,3491
+40,Female,185.6,93.0,800m Run,Recovery,22,High,11101,17,3247
+36,Male,156.9,47.1,Hammer,Training,43,Low,13394,1,1836
+29,Male,158.8,87.8,200m Sprint,Competition,107,Medium,11041,10,4126
+25,Male,187.2,79.6,Javelin,Competition,36,High,8741,16,3668
+37,Male,158.2,51.7,Shot Put,Competition,59,Low,1468,19,2054
+17,Male,158.2,56.2,Discus,Recovery,25,High,6230,3,2752
+17,Male,155.5,81.9,Triple Jump,Competition,138,High,8116,12,4770
+40,Male,198.0,64.3,Triple Jump,Recovery,139,Low,9024,3,2821
+26,Female,188.2,106.0,800m Run,Competition,54,High,12674,15,4542
+38,Male,170.9,98.2,1500m Run,Training,132,Low,13250,17,3416
+19,Male,168.3,108.9,800m Run,Training,48,Medium,6811,18,3895
+34,Female,170.7,61.9,Shot Put,Recovery,26,Low,1421,7,2003
+21,Female,189.9,108.0,200m Sprint,Recovery,72,Medium,7987,19,3872
+21,Female,184.8,73.0,Javelin,Training,42,High,285,7,3146
+27,Male,163.3,67.6,Triple Jump,Training,116,Low,2745,5,2617
+23,Female,162.8,48.3,200m Sprint,Competition,95,Low,11957,8,2049
+39,Male,159.4,48.4,100m Sprint,Training,29,Low,7108,16,1882
+35,Male,184.7,90.0,Discus,Recovery,136,Low,4464,16,3042
+27,Male,189.4,74.8,400m Sprint,Training,43,Medium,14990,19,3141
+26,Male,166.9,59.7,Shot Put,Recovery,58,Medium,1445,15,2633
+27,Female,155.9,84.9,Hammer,Recovery,85,High,5837,7,3247
+38,Female,158.7,61.4,400m Sprint,Competition,25,High,14989,5,2447
+24,Male,198.6,82.5,Shot Put,Competition,40,High,1466,11,3961
+15,Male,168.3,68.3,High Jump,Competition,92,High,9968,10,3942
+39,Male,189.6,98.5,Discus,Competition,93,Low,13831,9,3209
+22,Female,183.1,98.3,100m Sprint,Training,55,Medium,7167,1,3436
+36,Male,172.2,76.0,Discus,Competition,150,Medium,11847,20,3989
+30,Male,164.3,67.8,1500m Run,Training,63,Medium,9106,1,2834
+27,Female,160.5,68.6,Shot Put,Competition,110,Medium,8479,8,3089
+17,Female,182.7,97.4,Hammer,Competition,79,High,12382,3,4342
+17,Male,189.9,66.3,400m Sprint,Recovery,112,Low,10280,2,2900
+38,Female,184.0,58.6,Shot Put,Training,102,Medium,4426,4,2784
+19,Female,178.9,50.5,1500m Run,Recovery,102,Low,5932,19,2115
+40,Male,156.9,75.3,Shot Put,Competition,96,Low,9996,11,2430
+25,Female,198.6,76.3,Discus,Training,45,Low,1178,5,2588
+21,Male,190.9,99.7,Long Jump,Competition,40,Low,2551,10,3154
+35,Female,168.2,59.4,Shot Put,Recovery,139,Medium,4370,8,2676
+38,Male,199.1,69.8,High Jump,Training,149,Medium,9780,13,3878
+24,Male,182.1,97.5,High Jump,Recovery,127,Medium,6322,5,3912
+24,Male,181.2,98.5,Triple Jump,Competition,46,High,10148,12,4252
+34,Female,188.7,70.0,High Jump,Competition,90,Medium,9967,13,3197
+16,Male,191.5,74.8,Hammer,Competition,69,High,14472,8,4118
+17,Female,184.5,64.7,Shot Put,Training,114,High,4862,15,3586
+22,Male,160.8,105.6,Javelin,Recovery,42,High,9179,13,3979
+25,Male,170.2,52.7,Shot Put,Recovery,100,Medium,5855,1,2706
+27,Female,196.8,105.7,Long Jump,Competition,39,Medium,1203,6,3622
+21,Male,165.1,89.5,High Jump,Recovery,143,Medium,7349,11,3736
+27,Male,171.7,79.6,200m Sprint,Training,32,High,11522,13,3502
+16,Female,174.4,47.1,Shot Put,Competition,22,High,6386,20,2312
+20,Male,174.8,75.9,Hammer,Competition,150,Low,1119,1,3045
+23,Male,182.6,71.5,100m Sprint,Competition,148,High,8388,11,5140
+34,Male,197.4,55.5,100m Sprint,Training,109,High,3975,11,3890
+39,Male,165.8,87.7,400m Sprint,Competition,54,Medium,8717,8,3307
+16,Female,160.5,108.1,Hammer,Competition,33,Low,12919,3,2835
+32,Female,163.9,81.5,Long Jump,Competition,69,Low,9602,19,2534
+30,Male,194.9,91.5,1500m Run,Competition,97,Low,12695,12,3461
+39,Female,184.1,49.4,200m Sprint,Recovery,22,Medium,1292,6,2079
+26,Male,167.9,72.1,Shot Put,Competition,59,Low,9386,8,2461
+21,Female,191.7,52.6,Discus,Training,70,Low,10140,5,2170
+21,Male,193.8,84.8,800m Run,Competition,20,Medium,3655,10,3392
+31,Male,193.1,106.0,800m Run,Competition,123,Low,4786,16,3719
+27,Male,196.4,88.0,1500m Run,Recovery,136,High,2217,12,4979
+25,Male,166.4,50.0,Triple Jump,Competition,135,High,12446,17,3616
+20,Male,189.0,68.1,Discus,Recovery,71,High,11772,6,3719
+37,Male,175.7,80.8,800m Run,Training,139,High,6590,9,4921
+28,Female,192.9,71.2,1500m Run,Recovery,105,High,13977,10,3676
+20,Male,187.8,99.2,Hammer,Competition,65,High,14225,20,4521
+20,Female,189.9,98.0,800m Run,Training,95,High,1017,14,4838
+16,Male,184.5,84.8,Long Jump,Competition,29,High,11345,14,3855
+36,Female,163.0,69.3,Hammer,Recovery,80,High,5176,17,3025
+34,Female,179.5,61.6,400m Sprint,Training,37,Medium,3590,16,2367
+39,Female,199.3,51.9,Triple Jump,Training,105,Medium,12399,4,2779
+29,Male,197.2,68.1,Long Jump,Recovery,147,High,12261,2,4289
+31,Male,156.9,71.9,Discus,Recovery,123,Medium,8239,16,3038
+22,Female,162.4,88.9,1500m Run,Training,120,Medium,11855,1,3531
+19,Male,160.9,87.8,200m Sprint,Training,25,High,14198,3,3439
+31,Female,187.7,49.6,Discus,Recovery,104,High,12663,11,2754
+34,Male,191.8,70.7,Discus,Competition,70,Medium,9019,16,3078
+15,Female,164.6,56.8,High Jump,Training,55,High,6176,18,2906
+36,Female,177.8,55.2,200m Sprint,Recovery,90,High,6647,15,3121
+32,Male,192.8,98.8,100m Sprint,Competition,119,High,4722,9,5903
+29,Female,188.0,47.7,High Jump,Training,44,High,6015,12,2430
+19,Male,179.4,72.2,1500m Run,Training,63,Medium,5122,18,3231
+21,Female,181.6,55.9,100m Sprint,Recovery,33,Low,7683,5,2019
+32,Female,177.9,102.2,800m Run,Competition,48,Medium,14179,8,3288
+20,Male,168.4,81.2,Hammer,Training,93,Low,2089,3,2901
+36,Male,180.4,60.0,800m Run,Competition,69,Low,2056,2,2425
+35,Male,186.0,77.7,Discus,Competition,24,Low,9010,19,2460
+19,Female,194.3,92.5,High Jump,Training,129,Medium,12944,8,3915
+33,Male,183.6,107.3,Shot Put,Competition,141,Medium,12176,2,4756
+24,Female,189.3,59.3,200m Sprint,Training,107,Medium,3680,19,3058
+29,Female,162.2,102.6,Hammer,Competition,76,Medium,10003,1,3525
+24,Male,175.8,105.7,100m Sprint,Training,45,Medium,4885,13,3837
+30,Male,155.4,104.6,200m Sprint,Recovery,25,Low,13747,20,2733
+26,Female,166.1,86.3,High Jump,Training,79,Medium,3114,17,3178
+32,Female,187.7,85.9,Discus,Training,119,Low,13442,3,2860
+37,Male,199.6,71.2,Long Jump,Training,31,Medium,7383,9,2831
+15,Male,159.5,93.9,800m Run,Competition,94,Medium,1629,5,3893
+30,Male,173.1,79.5,100m Sprint,Recovery,22,High,1543,6,3337
+36,Male,191.0,89.0,100m Sprint,Competition,82,Low,14933,4,3242
+20,Male,164.2,72.8,1500m Run,Competition,38,Medium,7512,17,2952
+17,Female,180.0,92.5,100m Sprint,Training,37,Medium,11771,16,3148
+16,Female,188.0,98.6,Hammer,Competition,99,Medium,5769,16,4191
+16,Female,182.7,54.5,High Jump,Training,92,High,1904,11,3148
+27,Female,163.5,99.1,Javelin,Recovery,150,Low,1436,2,2903
+23,Male,171.0,80.1,100m Sprint,Competition,145,Medium,5031,17,4206
+30,Male,190.3,99.9,100m Sprint,Competition,91,Medium,3317,15,4050
+19,Male,179.9,73.0,200m Sprint,Competition,57,Medium,11712,18,3167
+37,Female,155.2,69.6,Javelin,Training,87,High,11251,10,3113
+35,Female,189.2,104.5,Hammer,Training,99,Medium,4116,6,3903
+21,Male,156.6,61.3,Discus,Competition,61,Low,9190,16,2217
+27,Male,188.6,99.9,400m Sprint,Competition,83,Low,9623,5,3633
+34,Female,164.1,76.5,Javelin,Recovery,97,Low,4552,12,2417
+38,Female,198.1,78.4,100m Sprint,Recovery,146,Low,5563,6,3018
+40,Male,171.6,65.1,Shot Put,Recovery,124,Medium,6123,14,2961
+27,Male,169.7,82.2,Discus,Recovery,95,High,3061,16,3797
+40,Female,161.7,66.1,Triple Jump,Recovery,149,High,8089,7,3531
+21,Male,168.8,47.6,1500m Run,Training,141,High,8456,2,3596
+24,Male,194.4,62.7,Javelin,Recovery,63,Medium,3731,6,2876
+29,Male,199.8,45.4,200m Sprint,Recovery,121,High,6327,9,3282
+35,Female,171.6,108.6,1500m Run,Competition,81,Low,10466,7,3120
+20,Female,175.2,107.8,Long Jump,Training,20,Medium,12067,2,3188
+19,Female,187.5,70.7,100m Sprint,Recovery,36,High,3317,19,3125
+37,Female,194.9,92.3,Javelin,Recovery,35,Low,2046,8,2591
+16,Female,181.7,67.5,800m Run,Recovery,28,Low,3144,11,2411
+35,Female,172.6,88.6,Shot Put,Competition,78,Medium,3221,4,3145
+29,Female,173.6,97.4,200m Sprint,Competition,138,Medium,11332,16,4532
+40,Male,186.3,106.5,1500m Run,Competition,138,High,5064,18,6000
+30,Male,155.1,71.0,100m Sprint,Recovery,60,High,13092,13,3176
+33,Male,182.9,95.9,800m Run,Competition,85,High,9445,5,4981
+23,Male,171.0,62.3,800m Run,Recovery,94,Medium,722,2,2806
+36,Male,190.7,109.4,Long Jump,Training,30,High,13383,11,4016
+40,Male,159.2,46.7,Discus,Recovery,27,High,13289,1,2310
+33,Male,181.5,84.2,Shot Put,Competition,118,Low,7775,13,3255
+21,Female,176.6,87.9,400m Sprint,Training,91,Low,7564,5,3021
+18,Female,183.9,89.7,Shot Put,Recovery,132,Low,8275,18,3086
+17,Male,157.9,52.8,Long Jump,Training,126,High,4835,14,3245
+38,Male,181.1,106.0,High Jump,Training,53,Medium,11562,13,3584
+34,Female,180.3,56.8,Hammer,Training,76,Low,3819,7,2056
+25,Male,180.2,85.5,Discus,Recovery,136,Medium,3364,8,3744
+15,Male,182.2,59.5,200m Sprint,Competition,139,High,9949,18,4142
+20,Female,185.4,65.0,Javelin,Recovery,90,High,6089,7,3400
+40,Male,191.2,80.5,Discus,Competition,59,Low,4318,20,2612
+25,Female,167.1,72.1,Long Jump,Recovery,122,Medium,6936,17,3078
+15,Male,192.1,55.4,Long Jump,Recovery,143,Low,2780,16,2743
+35,Female,177.4,56.1,200m Sprint,Recovery,142,High,11479,11,3188
+21,Female,158.5,72.2,200m Sprint,Competition,119,Medium,7398,19,3472
+20,Female,157.6,94.2,200m Sprint,Recovery,77,Low,2452,1,2627
+28,Male,170.0,103.4,Discus,Training,128,High,5288,8,5165
+16,Female,190.3,50.5,Hammer,Recovery,140,Low,8520,1,2270
+18,Male,186.8,70.6,100m Sprint,Training,111,Medium,425,9,3649
+25,Male,190.5,51.5,1500m Run,Competition,69,Medium,13865,19,2892
+29,Male,178.3,46.1,Triple Jump,Competition,124,Medium,8961,9,2866
+32,Male,174.8,88.0,200m Sprint,Recovery,136,Medium,13507,10,3761
+15,Female,161.6,84.2,1500m Run,Recovery,46,Medium,3975,11,2788
+17,Female,169.8,55.6,Hammer,Recovery,51,Low,8799,1,1972
+17,Male,174.5,60.2,Triple Jump,Training,20,Low,10044,20,2404
+21,Male,159.0,46.5,Discus,Competition,36,Low,6669,8,1939
+15,Female,164.9,99.3,1500m Run,Training,103,Low,10864,20,3080
+39,Male,181.9,108.4,200m Sprint,Training,64,High,2124,12,4871
+25,Female,188.1,53.8,400m Sprint,Recovery,85,High,14334,1,3005
+20,Male,199.9,60.0,Long Jump,Recovery,51,Low,1300,10,2482
+34,Male,197.0,101.4,Javelin,Training,64,High,5015,4,4358
+17,Female,183.9,105.2,Javelin,Training,28,High,8657,15,3629
+33,Male,174.0,72.3,1500m Run,Recovery,49,Medium,1964,19,2915
+16,Female,183.6,48.3,Javelin,Recovery,103,Low,5567,6,2007
+32,Male,190.4,47.6,800m Run,Training,79,High,10137,5,3364
+26,Male,160.3,82.3,800m Run,Recovery,20,High,5279,5,3129
+24,Male,173.4,70.5,1500m Run,Recovery,24,Low,10731,18,2355
+19,Female,192.8,46.9,200m Sprint,Training,82,Medium,2360,3,2628
+23,Male,172.3,82.9,Shot Put,Training,84,Low,13942,2,2904
+16,Male,180.7,45.7,200m Sprint,Competition,97,Medium,2039,4,2870
+16,Male,181.4,96.2,Discus,Training,133,High,1184,18,5268
+20,Male,163.3,64.9,200m Sprint,Recovery,44,Medium,14643,9,2776
+24,Female,171.3,47.6,Discus,Training,62,Medium,3934,19,2278
+32,Female,170.1,83.2,Shot Put,Training,76,Low,11409,10,2428
+26,Male,156.2,70.8,400m Sprint,Training,91,High,5794,15,3684
+18,Female,156.1,108.3,Discus,Competition,46,Low,14424,1,2647
+36,Male,192.4,80.4,High Jump,Competition,147,Low,8172,11,3359
+35,Male,167.3,62.9,800m Run,Recovery,125,High,10974,14,3656
+31,Male,178.3,91.1,Long Jump,Competition,90,Low,777,10,3032
+29,Female,168.4,62.6,800m Run,Training,86,Low,3379,19,2401
+20,Female,197.3,103.8,Discus,Competition,109,Medium,2418,16,4668
+30,Female,166.7,69.4,High Jump,Training,23,Low,14786,8,2056
+31,Female,174.3,80.7,100m Sprint,Competition,125,High,4077,2,4466
+17,Female,194.3,48.3,400m Sprint,Competition,98,Low,12454,7,2362
+24,Female,192.9,72.7,400m Sprint,Competition,115,Medium,2439,19,3543
+19,Female,163.4,99.1,100m Sprint,Training,112,Low,7804,7,3245
+28,Female,191.1,97.4,Long Jump,Competition,93,Low,13023,15,3181
+40,Female,175.6,59.6,Javelin,Training,145,Low,14826,8,2338
+35,Male,176.7,59.7,Shot Put,Training,35,Medium,13212,14,2717
+27,Female,161.0,98.1,Triple Jump,Recovery,135,High,5269,1,4325
+40,Female,158.6,105.5,Javelin,Competition,37,High,5587,13,3454
+20,Female,187.8,51.2,High Jump,Recovery,35,Medium,1989,3,2410
+26,Female,177.3,74.3,Discus,Recovery,149,Medium,7868,6,3201
+40,Female,174.7,66.9,Triple Jump,Training,75,Low,9258,19,2333
+22,Female,187.8,101.6,Long Jump,Competition,98,High,944,15,5101
+19,Female,189.4,50.4,Shot Put,Training,122,Medium,8220,4,2797
+29,Female,162.2,58.7,400m Sprint,Training,47,High,1897,3,2547
+30,Female,182.5,93.9,Discus,Competition,24,Low,5751,4,2460
+15,Female,161.1,48.3,Discus,Training,125,Medium,14160,5,2505
+30,Female,188.8,77.0,Shot Put,Competition,41,High,5150,18,3360
+19,Male,184.6,73.7,800m Run,Competition,136,High,1697,10,5107
+17,Male,198.0,66.7,High Jump,Training,119,Low,14463,8,2965
+34,Female,158.1,70.6,Shot Put,Training,32,Medium,11006,12,2275
+29,Female,157.6,79.4,200m Sprint,Recovery,84,High,11557,3,3360
+27,Male,167.7,55.5,200m Sprint,Training,105,Low,10680,18,2416
+38,Female,166.8,82.2,Shot Put,Competition,83,High,13699,8,3818
+30,Male,166.1,97.4,Hammer,Recovery,51,Low,5885,1,2883
+37,Male,195.8,94.4,400m Sprint,Competition,99,High,1665,14,4988
+25,Male,166.2,55.0,Shot Put,Recovery,70,High,12811,13,2983
+35,Male,167.2,54.7,1500m Run,Training,98,Low,9762,12,2253
+16,Male,189.2,62.4,Long Jump,Training,125,Medium,9925,3,3416
+36,Female,175.2,68.5,200m Sprint,Training,82,Low,8951,18,2426
+20,Male,190.0,71.5,Triple Jump,Competition,95,Medium,10349,13,3565
+40,Female,157.9,89.2,Javelin,Recovery,79,High,9543,15,3432
+40,Female,176.9,48.7,Shot Put,Competition,84,High,11668,10,2806
+20,Male,156.5,47.3,200m Sprint,Recovery,136,Low,9460,1,2181
+28,Male,157.8,70.5,Long Jump,Training,100,Low,1785,6,2588
+39,Female,195.8,90.3,Long Jump,Competition,124,Medium,12141,9,4063
+25,Male,161.3,57.6,Triple Jump,Training,147,Medium,5948,10,3049
+22,Male,179.0,86.7,Discus,Competition,90,Medium,14498,15,3821
+22,Female,173.5,61.9,Hammer,Training,105,Low,2607,9,2288
+15,Female,170.6,102.6,1500m Run,Competition,90,High,8590,14,4738
+35,Male,195.5,103.2,Shot Put,Competition,65,Low,2630,11,3368
+21,Female,156.0,64.3,100m Sprint,Recovery,66,High,10638,7,2812
+20,Male,184.9,59.9,Shot Put,Training,98,Low,7660,2,2702
+35,Male,198.4,71.7,Discus,Recovery,149,Low,9861,14,3007
+22,Male,180.2,60.6,High Jump,Recovery,146,Medium,238,6,3173
+33,Female,197.2,88.7,800m Run,Training,128,High,3536,5,5146
+36,Female,157.4,98.7,400m Sprint,Competition,138,Low,13891,5,3202
+35,Female,173.8,88.8,Discus,Recovery,120,Low,3861,19,2700
+38,Female,166.7,98.6,Javelin,Training,25,High,11295,19,3290
+34,Female,187.9,70.8,Long Jump,Competition,145,Low,9338,6,2983
+22,Male,199.2,55.2,Hammer,Recovery,122,High,9749,10,3737
+40,Male,166.5,93.0,100m Sprint,Recovery,56,Medium,11930,14,3202
+28,Male,184.4,68.4,400m Sprint,Recovery,56,Medium,10349,17,2982
+32,Male,163.9,88.6,200m Sprint,Competition,27,High,13582,3,3302
+39,Female,180.4,62.6,Javelin,Recovery,96,Medium,11643,1,2692
+30,Male,175.9,50.3,Shot Put,Competition,59,High,8491,10,3057
+23,Female,198.7,109.5,400m Sprint,Recovery,126,Low,11890,3,3554
+29,Male,182.4,55.2,200m Sprint,Training,111,Low,12245,5,2597
+40,Female,170.7,109.2,800m Run,Recovery,37,High,7899,19,3387
+24,Female,160.1,108.5,200m Sprint,Training,76,Low,7145,10,2933
+36,Male,161.8,96.6,100m Sprint,Training,102,Medium,5861,16,4156
+30,Male,165.1,87.9,Long Jump,Training,51,Low,13051,1,2676
+18,Male,166.3,82.6,Discus,Competition,44,Low,248,6,2735
+34,Male,193.3,101.3,Triple Jump,Training,52,High,10760,9,4240
+27,Female,180.3,63.8,Discus,Recovery,107,Medium,12321,5,2748
+36,Male,178.6,75.4,Discus,Competition,123,Low,4323,14,3071
+19,Male,160.2,85.3,200m Sprint,Training,53,Low,12872,10,2714
+36,Female,193.7,71.7,Shot Put,Competition,121,High,7101,2,4153
+21,Male,187.5,72.8,400m Sprint,Competition,146,High,2860,5,5073
+37,Male,158.0,66.5,Triple Jump,Competition,88,Medium,723,1,2980
+23,Male,186.9,81.7,Hammer,Recovery,59,Low,14919,10,2801
+22,Male,179.5,100.3,Triple Jump,Training,99,High,569,9,4679
+30,Male,158.7,58.1,400m Sprint,Competition,50,High,8411,3,3039
+20,Female,175.6,105.7,400m Sprint,Competition,135,High,9586,15,5787
+30,Male,176.8,89.8,Hammer,Competition,82,Medium,2834,4,3880
+20,Male,162.5,98.5,Long Jump,Training,67,High,7928,13,4178
+28,Male,197.6,81.2,100m Sprint,Competition,106,Medium,6671,6,4011
+35,Male,193.2,95.7,800m Run,Competition,67,Medium,2122,20,4202
+15,Male,185.1,46.1,100m Sprint,Recovery,80,Low,13929,17,2363
+39,Female,175.8,98.2,400m Sprint,Training,97,Low,12423,5,2918
+23,Male,173.5,47.6,Shot Put,Recovery,37,Medium,4000,15,2392
+39,Female,184.3,102.8,1500m Run,Training,47,Low,14409,8,2726
+38,Female,179.5,109.5,Hammer,Training,99,Low,12541,5,3204
+27,Male,157.8,64.1,1500m Run,Training,35,High,3089,13,2885
+40,Male,178.1,58.7,Javelin,Recovery,96,Low,14242,1,2438
+33,Male,191.3,94.7,800m Run,Recovery,45,Medium,7165,1,3489
+31,Male,175.7,61.4,400m Sprint,Recovery,47,Low,7210,7,2328
+25,Female,157.3,101.3,1500m Run,Recovery,124,High,49,5,4649
+22,Male,190.4,51.7,Javelin,Competition,96,Medium,514,14,3121
+37,Male,164.1,53.2,800m Run,Competition,28,Low,10983,15,1962
+19,Male,166.6,108.6,Triple Jump,Competition,70,Medium,10970,17,4047
+24,Male,162.4,88.8,800m Run,Training,95,Low,10810,18,2981
+21,Male,169.9,100.0,Javelin,Competition,141,High,10029,7,5932
+24,Male,189.1,66.1,Hammer,Training,51,Low,4671,18,2391
+18,Female,178.4,89.0,Triple Jump,Recovery,76,Medium,7749,19,3195
+23,Female,164.2,83.6,Long Jump,Training,73,Medium,1165,20,3092
+40,Male,194.5,84.2,Hammer,Training,135,Medium,13190,7,4031
+28,Male,194.6,89.4,Javelin,Competition,81,Low,10441,8,3178
+16,Male,194.2,82.4,1500m Run,Recovery,103,Low,14542,13,3119
+39,Female,165.7,72.9,800m Run,Recovery,75,Low,414,18,2199
+23,Male,175.3,62.9,800m Run,Competition,42,High,10460,11,3293
+35,Female,199.3,95.0,Hammer,Recovery,36,High,1104,9,3621
+15,Male,189.7,59.7,800m Run,Recovery,97,High,4858,1,3876
+37,Male,156.2,90.0,Javelin,Recovery,41,Medium,12850,8,3059
+24,Male,157.9,60.2,Shot Put,Competition,127,Medium,3356,12,3147
+24,Male,175.9,85.6,800m Run,Recovery,36,Medium,2416,2,3076
+34,Female,195.9,93.6,Hammer,Training,34,Medium,5611,15,3111
+39,Female,179.2,59.2,Shot Put,Training,133,Medium,10126,18,2769
+36,Male,177.4,48.9,Discus,Recovery,67,Low,5465,17,2155
+17,Male,159.7,53.5,Long Jump,Competition,132,Medium,8395,15,3064
+20,Female,184.6,84.4,Discus,Competition,116,Low,7192,20,3038
+40,Female,192.0,100.2,High Jump,Competition,110,High,5672,20,5044
+20,Female,172.1,47.9,Hammer,Recovery,35,High,8260,9,2359
+35,Female,189.9,92.7,Discus,Recovery,117,High,8707,3,4115
+16,Male,198.4,67.2,400m Sprint,Training,130,High,3563,20,4562
+40,Female,164.2,76.1,Triple Jump,Competition,20,High,6383,19,2751
+40,Male,178.5,105.4,400m Sprint,Training,60,Medium,12648,18,3789
+32,Female,167.9,66.6,100m Sprint,Training,67,Medium,9656,20,2540
+37,Female,190.7,75.2,Discus,Competition,127,Medium,13342,8,3410
+16,Female,181.0,45.9,Hammer,Recovery,122,High,14210,1,2899
+26,Female,183.6,50.3,1500m Run,Recovery,147,High,9844,15,3266
+36,Female,190.9,61.8,200m Sprint,Training,49,Low,8898,19,2258
+19,Male,172.8,46.8,Discus,Training,64,Medium,9817,10,2560
+34,Male,196.2,86.0,Long Jump,Training,99,High,6833,12,4541
+21,Female,179.0,72.7,Discus,Training,58,High,4752,6,3283
+38,Female,162.1,80.6,Shot Put,Competition,64,High,8123,13,3357
+30,Male,186.3,56.4,100m Sprint,Training,97,Low,3785,4,2574
+34,Female,190.7,64.2,800m Run,Training,100,High,9537,13,3626
+15,Female,169.3,88.1,100m Sprint,Recovery,112,Low,8535,17,2743
+15,Male,193.6,107.7,100m Sprint,Recovery,51,Low,11978,1,3313
+31,Female,195.8,48.3,Triple Jump,Recovery,43,Medium,8727,5,2274
+15,Female,167.5,102.9,Javelin,Competition,135,High,8546,17,5385
+35,Male,199.3,82.5,200m Sprint,Competition,32,Low,11734,18,2932
+34,Male,161.3,81.7,100m Sprint,Recovery,98,High,5023,7,3708
+27,Male,164.1,77.5,Javelin,Recovery,75,Medium,982,16,3126
+23,Female,163.3,49.5,Triple Jump,Training,72,Medium,14305,8,2328
+29,Male,195.2,50.8,800m Run,Training,87,Low,14440,12,2560
+17,Male,184.4,84.1,400m Sprint,Competition,53,Medium,1345,14,3492
+28,Male,161.8,67.2,Hammer,Competition,47,Medium,5691,19,2625
+37,Male,174.8,104.6,800m Run,Training,69,Medium,6002,11,3899
+25,Male,182.7,71.4,Javelin,Recovery,149,High,11201,12,4298
+38,Male,158.8,54.3,1500m Run,Training,130,High,526,13,3395
+36,Female,194.7,91.5,100m Sprint,Competition,113,Low,6647,8,3133
+26,Female,191.2,64.1,Javelin,Competition,66,Low,7252,1,2430
+27,Male,177.7,79.2,100m Sprint,Training,45,Medium,930,9,3115
+40,Male,198.5,90.4,400m Sprint,Training,103,Medium,10948,2,4314
+27,Male,173.8,103.5,Long Jump,Training,125,Low,2282,14,3583
+15,Female,199.3,96.5,100m Sprint,Competition,111,Medium,1946,13,4340
+38,Female,185.1,89.0,Javelin,Recovery,139,Low,12119,16,2809
+24,Female,183.6,89.2,Hammer,Training,94,High,13574,2,4155
+17,Female,162.5,106.5,200m Sprint,Competition,141,Medium,10733,4,4765
+38,Female,194.7,64.2,Hammer,Competition,60,Medium,10108,12,2783
+18,Female,174.2,45.1,High Jump,Competition,71,Medium,3360,16,2384
+30,Female,162.3,62.7,100m Sprint,Training,101,High,9785,10,3237
+22,Female,155.6,59.2,High Jump,Training,93,High,8112,3,3140
+30,Female,180.2,88.0,800m Run,Recovery,85,Medium,2925,4,3254
+31,Male,178.7,86.2,Discus,Competition,43,Low,3625,6,2669
+33,Male,187.4,83.6,Long Jump,Training,47,High,5469,5,3723
+36,Male,195.1,46.1,Triple Jump,Competition,136,Medium,1223,18,3151
+29,Male,158.6,92.4,Shot Put,Competition,133,Medium,10151,3,4116
+30,Female,187.9,66.0,Long Jump,Recovery,80,High,7110,10,3249
+29,Female,163.4,88.2,Hammer,Training,88,Low,9157,11,2544
+39,Male,193.6,81.2,Javelin,Training,133,Medium,13251,19,3926
+16,Female,191.9,67.3,Shot Put,Competition,94,Low,4992,14,2716
+25,Male,179.3,53.7,800m Run,Competition,78,Low,13646,11,2290
+15,Female,187.0,51.1,Long Jump,Recovery,149,High,11870,4,3308
+29,Male,169.1,99.0,Triple Jump,Recovery,34,Medium,12504,6,3281
+40,Female,176.2,104.7,Shot Put,Recovery,124,Medium,8814,17,3754
+33,Female,192.0,87.2,400m Sprint,Recovery,117,Low,12640,19,2822
+18,Male,175.7,51.7,200m Sprint,Recovery,54,High,4787,13,3024
+25,Female,171.1,71.1,Long Jump,Recovery,50,High,6818,10,2873
+19,Male,177.2,92.4,800m Run,Competition,146,High,4726,11,5671
+17,Male,192.3,95.7,100m Sprint,Recovery,38,Low,2372,6,2971
+27,Male,170.1,52.7,Triple Jump,Competition,43,Low,11140,2,2257
+24,Male,162.8,45.0,Shot Put,Competition,103,Medium,3299,1,2472
+25,Female,187.0,91.3,Shot Put,Training,111,High,9360,11,4316
+32,Female,192.2,68.2,200m Sprint,Competition,137,Low,6451,16,2857
+16,Female,159.5,61.5,Shot Put,Competition,66,High,12941,3,3007
+21,Male,165.8,45.8,High Jump,Recovery,122,Low,14620,5,2138
+23,Female,161.4,80.1,1500m Run,Competition,140,Medium,8583,15,3818
+24,Male,170.7,100.3,High Jump,Recovery,113,High,3809,15,4499
+32,Female,175.3,107.2,Shot Put,Recovery,61,Low,2407,4,2825
+37,Female,188.7,81.8,Triple Jump,Recovery,130,High,4864,4,4070
+21,Female,184.3,78.4,Long Jump,Training,48,Low,13084,8,2614
+21,Male,182.9,50.5,800m Run,Recovery,143,Low,5027,7,2632
+17,Female,170.9,80.7,100m Sprint,Competition,36,Low,14258,17,2433
+26,Female,192.9,69.7,Long Jump,Recovery,33,High,4260,15,2923
+21,Male,176.2,84.5,400m Sprint,Recovery,69,Low,4828,5,2863
+31,Female,199.1,70.3,Long Jump,Recovery,76,Medium,8772,13,2938
+40,Male,183.5,60.6,Long Jump,Training,123,High,9012,4,3785
+15,Female,160.7,51.2,800m Run,Competition,58,Medium,9439,17,2251
+19,Male,185.4,65.5,200m Sprint,Training,115,Medium,8315,17,3561
+30,Male,169.6,51.3,Shot Put,Competition,55,High,14259,14,2940
+29,Female,185.9,56.5,200m Sprint,Training,133,Low,12631,14,2528
+16,Male,158.1,109.2,400m Sprint,Competition,56,Medium,1874,17,3834
+23,Male,162.9,73.9,Discus,Training,33,High,8715,8,3108
+21,Male,193.5,79.6,100m Sprint,Recovery,142,Low,3123,2,3136
+18,Male,165.2,101.8,High Jump,Training,102,High,4224,13,5087
+34,Male,192.7,109.7,100m Sprint,Training,92,High,5254,16,5591
+32,Male,167.6,82.9,Javelin,Recovery,121,High,14992,16,4171
+35,Female,183.9,97.8,Shot Put,Recovery,100,Low,3198,6,2935
+18,Male,186.2,66.3,Javelin,Competition,102,Medium,10977,4,3434
+27,Male,178.1,64.9,Javelin,Competition,63,Medium,7082,3,2987
+15,Female,168.7,71.2,100m Sprint,Competition,87,High,10310,6,3806
+38,Female,164.6,88.7,1500m Run,Training,67,High,14608,4,3662
+17,Female,156.5,89.3,High Jump,Competition,76,Low,1210,18,2754
+30,Female,168.7,65.5,400m Sprint,Training,94,High,9218,6,3268
+36,Female,184.4,53.7,Shot Put,Training,41,High,5404,5,2522
+18,Female,197.2,86.1,Triple Jump,Competition,65,High,4117,9,3898
+39,Female,194.2,53.3,400m Sprint,Competition,30,Medium,12453,11,2304
+37,Male,189.5,82.6,1500m Run,Training,50,High,5429,6,4001
+39,Male,190.5,90.1,High Jump,Recovery,139,Medium,13788,16,3793
+30,Female,184.9,90.5,Hammer,Recovery,75,Low,8689,19,2601
+40,Male,166.7,94.0,800m Run,Training,57,Low,12721,11,2744
+33,Male,195.8,101.7,1500m Run,Competition,40,Medium,10997,15,3872
+15,Male,185.2,77.5,400m Sprint,Training,129,Medium,14569,9,4228
+19,Female,180.2,92.5,Shot Put,Training,113,Medium,13124,19,3935
+33,Female,160.0,85.2,Discus,Competition,27,Medium,9885,19,2701
+36,Male,175.1,57.1,Shot Put,Recovery,91,High,4758,9,3278
+38,Female,175.7,46.7,High Jump,Training,138,Medium,8182,4,2421
+25,Male,193.9,63.5,Discus,Recovery,53,Medium,8916,10,2819
+27,Male,179.6,73.8,200m Sprint,Recovery,124,Medium,375,9,3410
+34,Male,172.1,85.1,High Jump,Competition,106,High,7413,19,4541
+19,Male,199.0,100.2,High Jump,Training,83,High,4398,15,4981
+35,Female,160.0,57.8,Javelin,Training,21,High,10644,19,2322
+18,Female,174.0,53.2,1500m Run,Recovery,128,Low,3859,2,2278
+18,Female,156.9,107.6,Shot Put,Recovery,45,High,1686,10,3420
+18,Male,188.3,52.0,Hammer,Competition,102,Medium,12995,19,3064
+18,Female,196.3,76.1,Javelin,Recovery,126,High,5012,17,4047
+34,Male,167.6,83.1,400m Sprint,Competition,88,High,14356,20,4255
+35,Female,193.6,80.2,800m Run,Training,116,Medium,256,2,3704
+32,Male,168.1,50.6,100m Sprint,Competition,49,High,12686,19,2960
+32,Male,196.0,48.7,Long Jump,Recovery,27,Low,3600,17,2204
+30,Male,188.9,51.9,800m Run,Training,57,High,50,18,3378
+23,Female,191.2,83.1,100m Sprint,Competition,100,Low,6590,17,3102
+32,Female,155.8,80.4,200m Sprint,Training,127,Low,7437,2,2705
+36,Female,198.3,60.2,400m Sprint,Competition,84,Low,594,19,2471
+16,Female,187.7,86.5,Shot Put,Recovery,86,Medium,13105,1,3413
+35,Male,168.7,98.3,Triple Jump,Recovery,109,High,4731,11,4650
+18,Female,192.3,47.7,High Jump,Training,114,Low,3873,10,2370
+26,Female,167.7,77.4,Javelin,Training,91,Low,11628,5,2543
+21,Male,194.3,89.8,Hammer,Training,62,High,9264,16,4167
+29,Male,160.1,61.4,800m Run,Competition,65,Medium,5748,5,2833
+21,Male,186.7,65.0,100m Sprint,Recovery,144,Medium,5237,12,3541
+36,Female,179.3,84.9,Triple Jump,Training,58,Low,1476,4,2594
+40,Male,159.3,103.4,800m Run,Training,70,Medium,4870,6,3607
+35,Male,165.9,97.6,400m Sprint,Training,23,High,8032,19,3632
+31,Male,155.6,82.9,Shot Put,Competition,140,Medium,3020,9,3918
+30,Female,176.1,92.5,Discus,Training,99,High,6066,12,4101
+33,Male,168.6,68.7,800m Run,Training,96,Low,8053,15,2519
+23,Female,181.9,86.7,800m Run,Competition,74,High,9856,16,4296
+28,Female,168.4,75.3,Shot Put,Competition,39,Low,12684,13,2194
+31,Male,168.5,57.3,Hammer,Training,53,High,10922,7,3114
+19,Male,188.4,90.6,Javelin,Training,141,High,9587,20,5205
+16,Female,157.2,81.2,Hammer,Competition,128,Medium,8066,4,3583
+34,Male,195.6,68.3,200m Sprint,Recovery,145,High,12089,11,4283
+30,Male,193.4,104.2,Hammer,Competition,73,Low,13408,8,3297
+28,Female,185.1,46.4,1500m Run,Recovery,108,High,8167,6,3024
+28,Female,181.7,65.5,800m Run,Training,72,Low,12816,10,2343
+15,Male,195.2,48.7,Shot Put,Training,69,Low,4780,7,2446
+17,Female,163.3,94.8,Hammer,Recovery,91,High,4045,7,3657
+40,Male,158.6,90.6,1500m Run,Competition,35,Medium,10852,4,2923
+21,Male,165.8,66.5,Shot Put,Training,32,High,2233,3,3167
+40,Male,190.8,88.9,Javelin,Recovery,39,High,8117,7,3622
+29,Female,156.6,70.7,Shot Put,Competition,85,Medium,14550,4,2745
+33,Male,181.2,94.2,200m Sprint,Recovery,66,Low,11514,13,2893
+34,Male,199.8,74.5,Shot Put,Competition,141,High,6359,20,4870
+16,Male,193.5,71.8,400m Sprint,Competition,73,Medium,14364,17,3678
+33,Female,178.5,105.8,800m Run,Competition,25,Medium,4197,7,3149
+23,Female,157.9,61.3,100m Sprint,Competition,33,Low,12410,17,2033
+33,Female,192.4,52.8,100m Sprint,Recovery,105,Medium,10293,4,2649
+19,Female,182.0,83.0,100m Sprint,Recovery,46,Low,9498,11,2582
+32,Female,160.2,108.0,Shot Put,Recovery,26,High,9829,3,3157
+30,Male,159.2,69.6,Javelin,Recovery,150,Medium,9332,11,3020
+18,Female,195.9,49.0,Triple Jump,Recovery,21,High,615,3,2705
+26,Female,185.1,67.1,1500m Run,Competition,99,Medium,12844,12,3261
+21,Female,192.3,77.9,1500m Run,Training,79,Medium,12401,1,3417
+28,Male,194.6,55.5,Shot Put,Training,43,High,1566,4,3058
+37,Female,180.7,87.8,400m Sprint,Recovery,34,Medium,9168,14,2800
+26,Female,178.3,109.9,400m Sprint,Recovery,114,High,12988,1,4637
+17,Male,174.4,74.4,High Jump,Training,100,High,9508,14,4036
+19,Female,169.3,68.1,Shot Put,Competition,37,Low,2339,13,2195
+31,Male,174.6,71.0,Long Jump,Recovery,39,High,12548,13,3191
+40,Male,189.8,52.5,200m Sprint,Competition,134,Low,8109,15,2545
+24,Male,182.1,102.4,100m Sprint,Training,59,High,7374,17,4613
+24,Male,195.2,72.0,200m Sprint,Training,58,Medium,6707,12,3312
+25,Male,175.0,70.2,100m Sprint,Recovery,51,High,10288,14,3316
+31,Female,182.3,87.9,Discus,Competition,143,Medium,13317,12,4020
+19,Male,183.4,73.7,Discus,Recovery,127,Low,378,18,3044
+27,Male,181.6,87.1,Shot Put,Training,46,Medium,3465,4,3289
+24,Female,186.6,49.0,Discus,Competition,129,High,6005,14,3453
+23,Male,165.7,97.9,Hammer,Recovery,116,Medium,2271,19,3859
+31,Female,178.1,106.1,Triple Jump,Recovery,93,Low,9238,13,2977
+15,Female,159.7,87.2,High Jump,Recovery,36,Medium,1007,18,2651
+18,Female,172.3,107.0,400m Sprint,Training,68,Medium,6800,11,3716
+18,Male,176.9,54.8,Triple Jump,Recovery,100,High,109,6,3330
+32,Male,184.4,76.0,200m Sprint,Competition,135,High,2771,9,4897
+23,Male,197.8,84.1,200m Sprint,Recovery,42,Medium,3883,12,3489
+39,Female,182.0,82.8,Javelin,Training,117,Low,2600,19,2701
+32,Male,188.5,71.1,Discus,Recovery,91,Medium,5518,14,3155
+28,Male,177.8,67.0,400m Sprint,Training,76,Low,3243,15,2645
+39,Male,183.5,53.2,High Jump,Training,105,Low,1005,11,2362
+29,Female,158.2,70.5,100m Sprint,Competition,42,Low,12985,6,2187
+20,Female,166.4,55.6,Triple Jump,Competition,124,Medium,305,14,2772
+38,Male,171.3,92.7,Hammer,Recovery,86,Low,5701,3,2702
+24,Male,176.3,58.6,High Jump,Training,53,Medium,14019,19,2740
+29,Male,157.1,48.8,800m Run,Training,52,Low,958,20,1993
+18,Male,161.3,80.9,1500m Run,Competition,65,Low,9145,11,2785
+32,Female,167.5,83.7,Discus,Competition,100,Medium,5270,17,3349
+32,Female,198.7,101.7,100m Sprint,Recovery,106,High,7595,17,4633
+39,Female,169.9,82.5,800m Run,Training,34,High,10860,3,2968
+31,Female,176.7,67.5,100m Sprint,Competition,142,Medium,3538,14,3486
+26,Male,163.8,97.2,100m Sprint,Recovery,140,Medium,10869,7,3963
+21,Male,182.5,80.1,Discus,Training,97,High,7020,19,4287
+30,Male,167.6,50.2,100m Sprint,Training,85,High,1630,3,3030
+25,Female,164.3,81.8,High Jump,Competition,58,High,9983,2,3511
+28,Male,178.2,104.0,High Jump,Recovery,37,Medium,2603,17,3604
+17,Female,155.2,70.8,800m Run,Competition,40,Low,10163,9,2129
+33,Female,155.3,64.3,Hammer,Recovery,46,Medium,8258,6,2132
+32,Male,164.9,54.3,200m Sprint,Training,21,High,13467,9,2728
+24,Male,156.7,54.8,Hammer,Recovery,116,Low,9026,5,2329
+20,Male,159.9,73.1,400m Sprint,Recovery,58,Medium,205,2,2797
+27,Female,170.2,83.7,Triple Jump,Recovery,75,High,11025,15,3465
+24,Male,191.1,50.2,Triple Jump,Recovery,126,Medium,12442,9,2992
+32,Female,180.7,106.1,Javelin,Recovery,146,Low,9906,19,3204
+40,Male,178.1,94.1,Javelin,Competition,32,High,9724,10,3483
+34,Female,168.2,83.1,Long Jump,Recovery,145,Medium,5691,4,3215
+40,Female,196.9,98.8,Discus,Recovery,75,Low,6141,10,2760
+30,Male,172.9,50.2,Shot Put,Training,47,Low,3145,8,2045
+39,Female,158.9,76.0,Javelin,Recovery,83,Medium,3120,13,2642
+39,Female,182.8,86.0,Hammer,Training,90,Low,13778,7,2792
+20,Male,160.1,98.9,Shot Put,Competition,138,High,6728,7,5175
+27,Female,170.5,95.9,800m Run,Competition,119,Low,8899,4,3138
+18,Male,177.8,63.0,Hammer,Recovery,60,Medium,6030,15,2753
+37,Female,194.3,106.2,100m Sprint,Competition,23,High,178,12,3810
+28,Male,177.2,53.1,100m Sprint,Recovery,107,Low,5167,16,2293
+15,Male,186.6,101.9,Hammer,Competition,103,Low,13383,6,3455
+34,Female,199.7,108.1,Discus,Recovery,65,High,112,9,3992
+19,Female,160.9,56.5,1500m Run,Recovery,107,High,8948,3,3147
+22,Female,167.4,91.9,200m Sprint,Training,26,Low,9088,8,2652
+26,Female,172.8,47.6,Long Jump,Training,96,High,14214,7,2875
+16,Female,174.0,71.4,High Jump,Training,112,Medium,11060,4,3404
+26,Male,173.5,78.6,100m Sprint,Training,39,Low,8350,13,2560
+19,Female,195.8,82.7,Long Jump,Recovery,97,Medium,8977,19,3413
+36,Male,187.1,105.8,Triple Jump,Competition,46,Low,1803,7,3205
+19,Male,182.4,88.7,Hammer,Recovery,139,Medium,10031,10,3831
+27,Female,168.9,76.3,1500m Run,Training,44,Medium,11360,12,2739
+23,Male,192.1,97.6,Hammer,Training,71,High,2298,3,4508
+24,Male,198.0,106.8,High Jump,Competition,40,Low,12270,12,3337
+15,Male,192.0,46.4,Discus,Training,37,High,1542,19,2998
+17,Male,155.1,108.9,Long Jump,Recovery,58,High,7259,15,4033
+32,Female,183.6,50.6,800m Run,Recovery,34,Low,12400,8,1901
+26,Male,157.3,97.9,High Jump,Recovery,72,Medium,12546,12,3516
+17,Female,166.6,63.2,Discus,Recovery,57,Low,2154,20,2150
+40,Female,157.7,53.6,Shot Put,Recovery,71,Low,8766,6,1782
+39,Male,182.2,73.6,Discus,Competition,91,Low,11230,10,2919
+23,Female,185.9,86.9,Discus,Recovery,47,High,1381,2,3344
+40,Female,160.2,69.8,High Jump,Training,137,Low,5902,13,2465
+16,Female,172.3,48.5,Hammer,Training,54,Low,1222,7,1968
+17,Male,175.5,84.0,1500m Run,Training,118,Low,10666,8,3247
+28,Female,171.6,103.7,High Jump,Training,71,Medium,1501,16,3596
+18,Female,160.4,69.9,400m Sprint,Competition,102,Medium,9050,11,3097
+39,Female,173.9,59.1,200m Sprint,Training,67,Medium,3574,4,2433
+33,Male,188.8,73.8,Javelin,Competition,41,Medium,3729,17,3055
+27,Female,158.2,48.1,1500m Run,Training,142,High,11157,16,3089
+21,Male,158.6,98.3,800m Run,Competition,146,High,7740,19,5799
+26,Male,171.0,98.7,1500m Run,Competition,71,Low,3191,11,3245
+17,Male,197.4,83.2,Triple Jump,Competition,98,High,9788,7,4595
+37,Male,185.1,68.0,Hammer,Training,148,Medium,7476,13,3546
+37,Male,185.5,97.0,800m Run,Competition,85,Low,1561,19,3389
+23,Male,171.3,81.1,Shot Put,Recovery,83,Low,14962,17,2681
+16,Female,181.7,98.7,High Jump,Recovery,27,Medium,2522,13,3264
+36,Male,155.5,86.0,Discus,Training,44,Medium,10791,12,2806
+23,Female,183.6,96.0,Hammer,Recovery,113,Medium,2391,7,3845
+26,Female,196.1,83.9,High Jump,Recovery,34,High,2675,1,3382
+26,Male,182.6,71.9,Triple Jump,Recovery,141,Low,2183,1,2729
+29,Female,194.3,107.3,Hammer,Training,94,Medium,8468,20,4173
+16,Female,187.6,80.2,Long Jump,Training,123,Low,14300,14,3014
+32,Female,160.4,84.3,Triple Jump,Recovery,57,Low,12074,15,2408
+27,Female,195.6,59.3,400m Sprint,Training,134,High,11796,11,3764
+28,Male,158.0,85.7,Discus,Competition,58,Low,8066,9,2573
+19,Female,179.0,82.2,Discus,Recovery,127,Medium,2078,17,3466
+40,Male,161.4,57.0,100m Sprint,Training,36,Medium,4342,4,2567
+24,Female,155.5,48.9,Long Jump,Training,137,Low,12698,20,2059
+26,Female,174.0,84.3,100m Sprint,Recovery,58,Low,12269,19,2554
+24,Male,168.3,94.6,Shot Put,Training,54,High,14362,7,3881
+38,Female,176.9,79.0,200m Sprint,Recovery,70,Medium,12360,1,2862
+25,Female,181.0,59.7,Javelin,Training,66,Medium,1120,9,2577
+39,Female,157.0,88.3,200m Sprint,Competition,55,Low,12960,13,2467
+16,Male,160.5,50.2,High Jump,Recovery,83,Low,13657,2,2214
+19,Female,180.1,73.7,200m Sprint,Competition,114,Low,10715,2,2841
+21,Male,170.4,55.6,Discus,Recovery,124,Medium,5419,15,2939
+20,Female,187.8,57.0,Triple Jump,Training,32,Low,3370,17,2146
+36,Male,184.4,58.1,Long Jump,Competition,131,High,12574,13,4101
+37,Male,193.1,70.1,High Jump,Training,84,High,1908,7,3764
+17,Female,186.2,48.3,High Jump,Recovery,27,Low,3520,9,2069
+27,Female,174.3,70.9,Long Jump,Recovery,67,High,4307,12,3059
+17,Male,185.3,78.3,Discus,Recovery,104,High,4496,3,4078
+40,Male,167.4,76.4,Javelin,Recovery,62,High,4750,15,3172
+39,Female,168.8,69.9,Shot Put,Recovery,104,High,11297,7,3232
+38,Male,190.5,99.5,Shot Put,Competition,38,High,497,1,4056
+35,Female,175.1,54.4,High Jump,Recovery,42,Medium,6991,14,2247
+20,Female,190.9,77.9,Shot Put,Training,134,Low,3587,19,2791
+25,Female,192.0,49.0,Discus,Competition,69,High,13639,16,2961
+40,Female,193.6,49.6,400m Sprint,Training,62,Low,12385,10,2079
+31,Male,196.2,82.3,400m Sprint,Recovery,118,High,2413,1,4357
+24,Female,174.4,81.8,100m Sprint,Training,123,Medium,3800,5,3755
+26,Male,169.3,102.1,1500m Run,Competition,135,Medium,8654,3,4467
+31,Female,181.2,81.3,800m Run,Competition,70,High,6171,17,3839
+18,Male,171.7,107.4,200m Sprint,Competition,125,High,10952,18,6000
+16,Female,182.0,48.2,Shot Put,Training,131,High,3457,19,3259
+25,Male,186.8,51.4,400m Sprint,Competition,91,Medium,8464,18,2955
+21,Male,186.0,47.9,Triple Jump,Training,99,Medium,6969,16,2882
+16,Female,171.9,57.0,Long Jump,Recovery,68,Low,1150,2,2110
+40,Female,162.5,80.2,1500m Run,Recovery,66,Medium,14537,15,2794
+32,Female,174.4,87.0,100m Sprint,Training,91,High,7454,13,4163
+35,Female,161.4,48.0,800m Run,Competition,26,Low,14785,13,1715
+18,Male,195.1,106.5,400m Sprint,Training,85,Medium,5207,16,4477
+22,Female,170.6,99.7,100m Sprint,Training,96,Medium,11581,8,3807
+34,Male,162.0,64.3,Hammer,Training,81,High,18,11,3170
+28,Male,156.1,50.0,1500m Run,Recovery,57,Low,9808,8,2008
+26,Female,184.1,56.0,Long Jump,Training,144,Medium,3178,10,2821
+36,Male,183.7,53.3,200m Sprint,Recovery,103,Medium,5577,1,2666
+35,Male,170.3,53.0,400m Sprint,Training,48,High,4081,12,2760
+32,Male,158.2,78.7,Javelin,Recovery,133,Low,6454,9,2731
+25,Male,173.4,61.0,Long Jump,Training,98,Low,8603,5,2410
+22,Female,169.0,68.3,800m Run,Training,42,Low,8933,9,2241
+16,Female,185.5,109.3,Shot Put,Competition,125,Low,2671,16,3505
+39,Female,182.3,89.5,1500m Run,Competition,150,High,10971,18,5333
+29,Female,171.4,106.7,800m Run,Training,120,Medium,14970,8,4326
+23,Male,164.8,54.3,200m Sprint,Training,27,Medium,14833,11,2427
+33,Male,199.5,69.8,Long Jump,Training,105,Low,6387,20,2838
+34,Female,175.4,81.1,Discus,Training,136,Low,6833,19,2661
+22,Female,186.0,50.0,200m Sprint,Competition,48,Low,2624,4,2091
+39,Female,161.3,45.3,Hammer,Recovery,21,Medium,5499,20,1814
+33,Male,176.9,88.6,High Jump,Training,132,Medium,514,10,4150
+19,Female,156.2,86.7,400m Sprint,Competition,84,Low,206,13,2723
+25,Female,177.7,71.7,Shot Put,Training,127,High,947,20,3980
+29,Female,198.4,76.8,Javelin,Training,39,Medium,10633,14,2867
+22,Male,172.3,72.0,1500m Run,Recovery,56,Medium,1828,2,3015
+33,Male,156.8,46.6,Triple Jump,Training,91,Low,11790,4,2048
+37,Male,156.4,66.8,Javelin,Training,46,High,6861,7,2937
+22,Male,172.5,56.5,Long Jump,Recovery,142,Low,6094,19,2480
+40,Male,162.2,51.4,Hammer,Recovery,64,Low,6345,17,1971
+33,Male,156.1,107.2,Discus,Recovery,102,High,2167,16,4478
+32,Male,189.0,84.0,Triple Jump,Recovery,139,High,13960,13,4323
+24,Male,175.6,92.4,Javelin,Competition,84,High,7979,18,4287
+21,Female,168.0,65.5,Hammer,Competition,44,Medium,5926,12,2429
+23,Female,195.5,70.6,400m Sprint,Competition,46,Low,6532,1,2476
+15,Male,160.2,60.4,400m Sprint,Training,125,Medium,5656,15,3305
+33,Male,198.0,51.3,1500m Run,Recovery,63,High,5943,3,2936
+19,Female,169.1,56.6,Javelin,Recovery,126,Medium,14569,6,2657
+33,Male,195.0,96.8,Discus,Competition,55,High,9848,14,4481
+15,Male,182.1,89.0,400m Sprint,Training,25,High,8793,6,3779
+29,Male,192.2,80.6,Triple Jump,Training,28,Low,5439,1,2539
+30,Female,199.3,75.9,Discus,Training,32,Low,8903,20,2505
+37,Female,168.0,105.0,Hammer,Competition,60,Low,13269,6,2825
+21,Female,198.3,49.7,Triple Jump,Training,147,Medium,1203,8,3015
+40,Female,172.5,63.2,200m Sprint,Training,85,Low,7000,15,2225
+26,Female,172.3,67.7,Hammer,Training,104,High,9583,14,3373
+22,Male,170.3,95.9,800m Run,Recovery,43,Low,14411,16,2848
+19,Female,179.4,109.5,Discus,Competition,63,Medium,10888,20,3845
+24,Male,161.9,60.6,100m Sprint,Recovery,125,Low,14985,16,2394
+35,Male,179.9,101.8,800m Run,Recovery,117,Low,6639,19,3261
+19,Female,179.4,99.0,Hammer,Competition,79,Low,7689,1,2987
+31,Female,189.3,59.6,Javelin,Recovery,28,Medium,11464,4,2358
+40,Male,192.5,71.0,800m Run,Training,149,High,13117,10,4609
+19,Male,174.8,71.6,Discus,Training,75,High,7513,20,3639
+36,Male,168.6,108.6,Shot Put,Training,41,High,6626,18,4082
+29,Female,166.7,56.8,400m Sprint,Training,100,Low,7386,2,2058
+27,Female,163.8,96.9,200m Sprint,Competition,119,Low,3131,4,3196
+15,Female,157.6,66.7,Shot Put,Recovery,32,Medium,7134,15,2390
+25,Female,170.4,92.5,Shot Put,Recovery,90,High,3730,4,3669
+37,Female,167.2,72.3,100m Sprint,Training,35,Low,2666,16,2119
+15,Male,198.5,82.6,Long Jump,Training,64,Low,549,15,2978
+25,Female,180.1,99.1,Discus,Recovery,84,Low,4741,18,2969
+32,Male,170.6,97.3,Triple Jump,Competition,89,Medium,12174,7,3897
+32,Male,181.1,101.3,400m Sprint,Recovery,118,High,1244,15,5144
+35,Male,161.3,48.9,Javelin,Training,120,Medium,12078,11,2744
+40,Female,175.0,90.0,Shot Put,Training,124,High,4012,19,4438
+30,Female,183.2,54.1,200m Sprint,Competition,113,High,10741,8,3717
+27,Female,177.0,72.0,Long Jump,Recovery,61,Low,11396,1,2193
+21,Male,173.1,80.7,100m Sprint,Competition,102,Low,9037,3,3196
+15,Male,199.7,71.2,High Jump,Competition,124,Low,6196,5,3156
+40,Male,194.6,78.8,400m Sprint,Training,47,Low,4545,18,2724
+30,Male,183.1,109.8,High Jump,Recovery,45,Low,6205,12,3063
+15,Male,180.6,53.8,800m Run,Training,135,High,7190,12,3792
+31,Male,182.9,88.9,Shot Put,Recovery,68,Low,8235,19,2893
+20,Female,164.1,70.7,1500m Run,Training,20,Low,13869,9,2039
+16,Female,172.8,53.6,400m Sprint,Training,111,Medium,658,11,2775
+31,Female,156.8,55.3,Triple Jump,Recovery,77,Medium,13015,17,2185
+20,Female,176.4,106.7,Long Jump,Recovery,98,High,6995,16,4602
+28,Male,179.4,102.2,200m Sprint,Training,100,High,14382,4,5156
+32,Male,165.2,104.0,400m Sprint,Recovery,45,Medium,12122,10,3134
+20,Female,198.4,109.4,Triple Jump,Training,96,Medium,11059,15,4199
+24,Male,195.9,58.5,Discus,Recovery,91,Low,13335,19,2436
+38,Female,187.5,68.1,High Jump,Training,88,Low,5776,3,2461
+32,Female,179.0,88.5,Discus,Training,25,High,14424,5,3102
+23,Female,194.1,76.4,Long Jump,Training,42,Medium,5293,11,2920
+22,Male,160.9,72.2,100m Sprint,Competition,73,High,11839,5,3963
+24,Female,190.6,68.3,Shot Put,Recovery,106,Low,13430,7,2546
+31,Female,160.6,83.6,400m Sprint,Training,30,High,10974,6,2940
+37,Female,190.7,82.4,1500m Run,Competition,30,High,1691,13,3416
+40,Male,167.4,55.5,High Jump,Training,96,High,10417,2,3156
+20,Male,194.5,75.7,High Jump,Competition,31,Low,11258,19,2804
+28,Female,197.5,81.0,400m Sprint,Training,72,High,14143,11,3930
+36,Male,161.7,82.1,800m Run,Training,118,Low,10139,20,2840
+36,Male,175.8,58.7,Discus,Competition,55,Medium,9557,5,2609
+20,Male,199.1,93.2,High Jump,Competition,47,High,7735,9,4350
+40,Male,176.8,46.6,Triple Jump,Recovery,121,High,3130,6,3090
+21,Male,193.9,68.1,200m Sprint,Recovery,26,Low,7044,17,2582
+26,Male,181.5,95.7,Shot Put,Competition,34,High,4533,19,3848
+17,Male,171.9,81.7,High Jump,Recovery,43,Low,5547,8,2506
+28,Male,167.9,62.0,Triple Jump,Competition,49,High,12713,7,3088
+36,Male,164.1,90.2,Long Jump,Recovery,85,Medium,967,5,3196
+33,Male,189.3,81.9,Long Jump,Training,80,Medium,1404,15,3689
+37,Female,172.4,96.8,Shot Put,Recovery,97,Medium,8677,10,3293
+30,Female,178.0,92.8,800m Run,Training,60,High,9947,16,3947
+21,Male,177.2,84.7,Javelin,Training,101,High,3630,9,4365
+22,Female,181.0,76.7,Javelin,Recovery,70,Medium,14795,7,2959
+32,Female,194.0,53.7,1500m Run,Competition,114,Medium,2968,11,3064
+39,Male,199.1,62.0,Shot Put,Training,32,Low,7269,9,2583
+27,Male,173.3,72.2,100m Sprint,Training,109,Low,1579,17,2789
+35,Male,192.2,84.0,800m Run,Recovery,101,Medium,10987,9,3757
+23,Female,189.4,78.4,High Jump,Competition,28,Medium,5992,3,2900
+24,Female,180.8,63.7,Javelin,Competition,67,High,50,8,3172
+35,Male,198.0,45.4,Shot Put,Recovery,68,Medium,6452,19,2549
+37,Male,164.0,77.3,Javelin,Competition,72,Low,5153,20,2608
+23,Male,159.9,63.6,Hammer,Recovery,59,Low,9851,16,2237
+29,Female,193.4,92.7,Discus,Recovery,126,Low,13900,7,3022
+34,Female,174.8,46.6,Long Jump,Recovery,43,Low,6023,7,1813
+16,Female,193.1,83.0,Hammer,Training,127,Low,14970,20,3296
+39,Female,195.2,106.2,Triple Jump,Training,52,Low,4300,13,2982
+27,Male,157.8,56.3,Shot Put,Training,42,Medium,2787,3,2352
+16,Male,194.8,75.7,Discus,Recovery,96,Low,13381,12,2956
+33,Male,175.2,50.9,800m Run,Training,73,Low,12820,8,2201
+40,Male,178.0,85.7,100m Sprint,Training,72,Low,2155,13,3013
+16,Female,183.2,80.8,Triple Jump,Training,68,Low,7019,20,2644
+17,Female,196.7,71.5,200m Sprint,Recovery,97,Medium,5360,16,3241
+20,Male,155.9,78.9,Javelin,Recovery,99,High,12538,7,3777
+17,Male,176.5,103.3,100m Sprint,Recovery,121,High,4230,4,5185
+24,Female,185.9,57.8,High Jump,Training,141,High,11353,12,3895
+38,Male,187.5,46.5,Hammer,Competition,122,High,9806,17,3456
+20,Female,186.2,101.0,Discus,Training,109,Low,7607,1,3483
+37,Male,161.0,82.5,Shot Put,Training,109,High,10928,17,4178
+30,Male,168.5,102.9,Javelin,Recovery,140,High,8598,2,5062
+31,Male,171.1,83.8,Hammer,Recovery,79,Medium,11571,6,3171
+33,Male,191.2,97.7,Hammer,Training,141,Medium,4197,12,4750
+17,Male,167.5,72.9,Shot Put,Training,49,Medium,9576,11,2952
+32,Male,164.5,93.7,400m Sprint,Competition,149,Low,11887,11,3669
+21,Male,198.1,104.3,Long Jump,Competition,102,Low,13839,18,3800
+23,Female,155.4,82.2,High Jump,Recovery,130,Low,13919,8,2572
+34,Female,199.9,56.8,Discus,Competition,127,Medium,5412,7,3229
+26,Female,185.5,62.5,Shot Put,Competition,130,High,4499,14,3841
+19,Female,192.3,57.9,200m Sprint,Recovery,44,Medium,4909,16,2693
+17,Female,168.3,61.0,Triple Jump,Competition,69,Low,7169,12,2250
+25,Male,155.6,64.9,High Jump,Training,33,Medium,11094,9,2523
+39,Male,188.2,81.1,800m Run,Competition,95,High,9821,20,4556
+18,Female,192.5,83.2,200m Sprint,Recovery,103,Low,3262,16,2885
+19,Male,188.3,72.7,Triple Jump,Training,106,High,9218,19,4228
+15,Female,161.4,85.0,Javelin,Competition,49,High,2989,16,3472
+32,Female,188.9,50.3,1500m Run,Training,77,Low,13308,9,2158
+26,Male,189.6,50.7,Long Jump,Training,113,High,7654,13,3300
+27,Male,184.6,56.2,Javelin,Competition,60,Medium,2224,5,2868
+23,Male,189.5,78.7,High Jump,Competition,113,High,5376,19,4782
+16,Female,193.1,58.9,Discus,Recovery,76,High,2920,10,3295
+19,Male,182.6,63.4,100m Sprint,Recovery,83,High,7701,7,3433
+27,Female,159.0,71.0,Triple Jump,Training,117,Medium,14812,9,2961
+30,Female,176.9,97.8,800m Run,Recovery,35,High,6541,14,3508
+30,Female,158.5,45.9,Shot Put,Training,107,High,5615,15,2603
+38,Male,173.3,87.2,100m Sprint,Training,97,Medium,4315,13,3597
+17,Male,173.3,88.5,Javelin,Recovery,109,Low,6100,10,2969
+36,Female,158.0,96.9,200m Sprint,Recovery,91,Low,12460,14,2633
+18,Male,170.7,105.6,Long Jump,Recovery,33,Low,2783,12,2869
+25,Male,160.0,46.3,Javelin,Competition,50,High,9605,19,2595
+37,Male,191.4,55.0,Discus,Training,85,Low,12789,6,2410
+40,Female,197.6,102.6,Javelin,Training,131,Medium,11840,12,4092
+28,Female,158.3,74.8,100m Sprint,Training,87,High,14100,13,3406
+17,Male,198.0,81.7,800m Run,Recovery,74,High,2808,8,4171
+30,Female,178.5,88.1,Triple Jump,Recovery,142,High,3331,16,4510
+36,Male,168.5,89.1,Discus,Recovery,44,Low,2178,2,2656
+29,Male,158.5,105.6,1500m Run,Recovery,150,Low,797,7,3539
+24,Male,177.5,109.8,Shot Put,Recovery,88,Low,2846,12,3110
+23,Male,190.8,91.8,Javelin,Competition,121,High,929,7,4963
+25,Female,186.8,63.7,Javelin,Recovery,137,Medium,4818,19,3004
+30,Female,157.3,102.2,Long Jump,Training,45,High,3091,14,3703
+24,Female,158.3,48.2,100m Sprint,Recovery,59,Medium,2262,9,2134
+31,Male,173.1,60.0,Long Jump,Training,57,High,9525,18,3028
+33,Male,168.3,103.3,Long Jump,Recovery,26,Medium,9466,11,3304
+16,Male,165.5,61.7,Long Jump,Recovery,139,High,12775,16,3675
+38,Female,167.6,59.3,Triple Jump,Training,54,High,7549,19,2768
+37,Male,191.2,54.0,Long Jump,Training,97,Medium,3480,11,2907
+16,Female,196.8,100.8,1500m Run,Training,57,Medium,3342,18,3591
+20,Female,173.2,77.5,Javelin,Training,47,Medium,6053,11,2908
+33,Female,195.8,88.9,200m Sprint,Competition,119,Medium,7574,4,4185
+22,Female,169.5,60.5,800m Run,Training,57,Medium,7859,18,2466
+40,Female,176.4,94.3,Discus,Recovery,143,Medium,9409,19,3541
+17,Female,165.2,94.4,1500m Run,Recovery,111,Medium,9656,13,3673
+40,Male,183.8,65.3,Discus,Competition,116,Medium,12600,4,3337
+28,Male,199.1,71.7,800m Run,Training,25,High,4174,10,3501
+39,Female,182.2,58.6,200m Sprint,Recovery,146,Medium,14515,5,2825
+30,Female,171.1,108.5,High Jump,Competition,34,Medium,7147,3,3423
+15,Male,184.2,87.0,Discus,Recovery,127,High,4770,16,4525
+35,Female,160.5,105.7,Discus,Competition,150,High,5833,8,5058
+17,Female,195.0,64.7,200m Sprint,Competition,62,Low,8205,7,2529
+36,Male,177.6,95.8,100m Sprint,Training,66,Low,7002,19,3079
+40,Female,175.2,94.8,1500m Run,Competition,118,Medium,2293,14,4079
+32,Female,181.4,90.0,Hammer,Recovery,33,Medium,2045,15,2839
+23,Female,183.1,107.8,100m Sprint,Recovery,134,Low,1037,17,3199
+20,Male,158.2,70.6,100m Sprint,Training,21,Low,6242,1,2254
+37,Male,185.7,53.5,100m Sprint,Training,54,Medium,12320,6,2641
+35,Male,165.9,88.7,Long Jump,Competition,29,Low,9651,15,2530
+39,Female,187.1,92.4,Shot Put,Training,131,Medium,8448,12,3965
+15,Female,192.0,82.4,Discus,Recovery,40,High,12321,20,3400
+35,Male,191.2,58.4,Javelin,Recovery,34,High,6162,2,3110
+24,Female,179.9,77.8,Hammer,Training,131,Low,4073,5,2788
+20,Female,178.4,65.3,100m Sprint,Training,145,High,1283,9,4330
+37,Female,161.4,72.8,1500m Run,Training,104,High,6732,20,3684
+26,Female,189.9,86.9,Shot Put,Competition,104,High,5945,14,4488
+18,Female,167.2,93.4,Shot Put,Competition,24,High,3487,18,3262
+27,Male,177.4,60.1,100m Sprint,Recovery,136,Medium,2184,8,3036
+31,Female,167.8,71.3,Triple Jump,Competition,91,Medium,8550,2,2984
+22,Male,161.0,62.5,100m Sprint,Competition,93,Low,11983,9,2653
+40,Female,183.3,57.9,Triple Jump,Competition,70,High,13041,7,2979
+34,Male,157.4,95.9,100m Sprint,Competition,43,High,13890,18,3752
+17,Female,188.7,104.1,Hammer,Recovery,57,High,3187,16,4015
+26,Male,169.3,69.1,1500m Run,Training,63,Low,12691,5,2657
+21,Female,155.0,93.8,Triple Jump,Recovery,94,Medium,9417,15,3314
+26,Male,178.0,103.3,Long Jump,Competition,114,High,5495,5,5626
+16,Female,157.1,100.0,Shot Put,Training,42,Medium,2297,11,2930
+38,Male,167.4,56.9,100m Sprint,Training,143,Low,14781,14,2447
+28,Female,186.8,107.2,Shot Put,Training,105,Medium,7097,19,4023
+36,Male,157.8,69.5,100m Sprint,Recovery,62,High,8469,3,3244
+37,Male,192.8,67.1,Discus,Training,59,Medium,12399,10,3081
+19,Female,155.2,49.1,Discus,Recovery,66,Medium,10178,6,2176
+23,Female,166.1,76.6,400m Sprint,Recovery,39,Low,3544,3,2124
+35,Male,188.3,52.1,100m Sprint,Competition,128,Low,10985,2,2676
+25,Female,169.2,61.2,400m Sprint,Competition,87,Low,6831,13,2338
+19,Male,159.6,65.6,Hammer,Training,43,Low,391,18,2246
+17,Male,171.2,97.6,Javelin,Training,55,Medium,968,2,3558
+31,Male,167.2,101.9,200m Sprint,Competition,64,Medium,10382,15,3702
+16,Female,192.9,64.7,200m Sprint,Recovery,149,Low,5151,5,2690
+38,Male,169.1,100.8,Shot Put,Recovery,47,Low,10420,15,2824
+15,Male,190.5,100.7,Triple Jump,Competition,42,High,10818,17,4552
+21,Female,195.1,94.7,100m Sprint,Recovery,110,High,11037,2,4451
+28,Female,174.5,54.5,Hammer,Competition,122,Low,4364,18,2218
+19,Female,195.9,89.9,800m Run,Competition,57,Medium,3307,15,3435
+33,Female,172.0,106.4,100m Sprint,Training,113,Low,10792,20,3370
+25,Male,198.4,89.4,100m Sprint,Training,72,Medium,10872,3,3690
+37,Male,159.0,66.6,Hammer,Competition,57,Medium,6125,5,2722
+39,Male,185.9,77.5,Hammer,Training,62,High,4370,11,3558
+16,Male,177.2,87.0,800m Run,Competition,122,Low,4838,9,3399
+22,Female,172.4,78.2,200m Sprint,Recovery,133,Low,8277,5,2798
+23,Male,183.5,52.8,400m Sprint,Recovery,23,Medium,3134,1,2493
+17,Male,186.7,65.3,Javelin,Recovery,24,Low,12691,14,2475
+16,Female,155.2,97.2,Shot Put,Recovery,87,High,10431,5,3730
+21,Male,162.5,101.0,200m Sprint,Competition,142,High,11556,8,5931
+19,Male,187.1,53.9,800m Run,Recovery,99,Low,10237,14,2376
+35,Male,185.0,106.9,100m Sprint,Recovery,30,Low,1054,16,3050
+40,Male,198.5,66.4,200m Sprint,Recovery,139,High,11593,6,4052
+19,Male,189.2,88.1,1500m Run,Recovery,45,Low,3729,8,2894
+34,Male,197.8,93.9,Discus,Competition,55,Medium,14442,2,3687
+27,Female,186.6,97.8,100m Sprint,Recovery,141,Low,14182,19,3040
+35,Female,168.4,106.5,Javelin,Training,78,Medium,2669,9,3511
+34,Male,159.7,65.3,High Jump,Training,115,Low,275,5,2504
+20,Male,190.2,100.8,800m Run,Training,25,Low,12938,5,3043
+34,Female,184.0,53.6,Long Jump,Training,117,High,5717,19,3492
+32,Male,157.2,90.8,Triple Jump,Training,75,Medium,12282,4,3534
+39,Male,171.2,93.2,Long Jump,Training,113,High,14891,16,4725
+16,Male,198.1,89.1,200m Sprint,Competition,46,Low,9297,16,3029
+39,Female,177.5,61.4,100m Sprint,Training,139,High,14201,16,3725
+40,Male,174.5,101.7,Triple Jump,Recovery,44,Low,8022,7,2887
+20,Female,175.6,56.0,Triple Jump,Training,105,Low,8000,18,2278
+23,Male,164.4,48.5,Shot Put,Competition,31,Low,14902,1,2100
+39,Female,171.6,91.6,Long Jump,Training,106,Medium,12873,3,3557
+17,Female,171.6,75.9,Hammer,Recovery,128,Medium,11124,8,3191
+15,Male,157.4,100.2,100m Sprint,Recovery,108,Medium,128,1,4107
+15,Female,189.5,69.9,Shot Put,Competition,29,High,12543,7,3054
+33,Male,173.7,55.9,Hammer,Competition,93,Low,7077,7,2488
+19,Female,192.0,99.4,400m Sprint,Competition,96,High,4326,8,5210
+27,Male,193.3,80.7,Javelin,Competition,73,High,3568,19,4575
+33,Male,164.5,57.3,Long Jump,Training,121,Low,13448,17,2347
+26,Female,184.6,91.8,Discus,Training,120,High,7622,11,4859
+30,Male,176.3,78.2,Discus,Recovery,92,Low,8080,15,2708
+39,Male,194.6,84.3,Javelin,Competition,91,Low,2402,9,3031
+39,Female,164.7,75.0,Hammer,Competition,73,Low,1647,17,2319
+33,Male,185.5,98.9,Shot Put,Training,22,Low,3556,11,2868
+17,Male,182.3,98.9,Javelin,Competition,130,High,12083,6,5408
+26,Female,168.3,91.1,400m Sprint,Recovery,115,High,2193,9,4177
+19,Female,161.1,51.9,1500m Run,Recovery,90,High,10239,18,2800
+16,Male,184.3,99.5,1500m Run,Competition,38,Medium,3104,20,3649
+36,Male,188.2,88.6,Discus,Recovery,53,High,4355,2,3815
+21,Female,169.2,90.3,High Jump,Recovery,69,High,2134,4,3592
+27,Female,184.0,68.6,800m Run,Training,65,Medium,9034,18,2947
+39,Male,172.8,102.2,Javelin,Recovery,102,Low,10163,1,3103
+29,Female,187.1,92.1,800m Run,Competition,70,Low,12552,11,2966
+36,Male,164.0,52.3,High Jump,Competition,73,Low,3903,3,2053
+17,Male,195.1,71.5,Shot Put,Recovery,109,Medium,3613,8,3568
+35,Male,167.9,102.6,Javelin,Competition,100,High,8583,5,4759
+34,Male,171.6,48.1,800m Run,Training,137,High,2279,20,3474
+19,Male,157.6,107.5,800m Run,Recovery,38,High,9092,5,3833
+38,Female,160.0,89.1,Long Jump,Recovery,46,High,12875,11,3124
+22,Female,178.2,86.0,Long Jump,Recovery,26,Medium,10686,12,2806
+36,Female,167.0,62.6,High Jump,Competition,88,High,1152,9,3264
+15,Female,192.6,61.2,100m Sprint,Competition,113,Low,1294,13,2683
+22,Male,155.7,106.2,Javelin,Recovery,132,Medium,8657,20,3987
+38,Male,172.1,64.4,400m Sprint,Competition,126,Medium,5289,3,3236
+32,Male,170.2,95.4,Shot Put,Competition,139,Low,10367,13,3478
+34,Male,155.9,70.6,Long Jump,Recovery,61,Low,3245,11,2313
+30,Female,160.6,54.1,Long Jump,Recovery,32,High,6068,11,2387
+32,Male,173.6,45.7,1500m Run,Competition,37,Low,13337,20,2020
+34,Male,177.2,80.4,Javelin,Recovery,61,Medium,6716,7,3105
+26,Female,173.2,108.4,400m Sprint,Recovery,70,Medium,6654,17,3501
+27,Female,178.9,69.0,Javelin,Recovery,132,Medium,8679,16,2954
+27,Female,181.8,68.2,1500m Run,Recovery,120,High,2938,14,3618
+24,Female,155.4,67.4,100m Sprint,Competition,22,High,2626,1,2698
+21,Male,175.9,78.8,400m Sprint,Recovery,98,Low,949,11,2820
+39,Male,198.4,73.6,800m Run,Training,117,High,12693,13,4509
+28,Female,178.4,102.2,1500m Run,Recovery,42,High,9241,1,3731
+38,Male,185.5,77.9,Discus,Training,78,Medium,13394,2,3323
+30,Male,169.0,78.0,Shot Put,Recovery,132,Medium,4075,9,3490
+29,Male,189.8,54.0,800m Run,Training,87,Low,12651,13,2438
+26,Female,189.8,108.9,400m Sprint,Training,73,Medium,9582,5,4015
+23,Male,178.5,61.2,Discus,Recovery,76,High,9275,9,3331
+22,Female,198.9,49.8,100m Sprint,Recovery,130,Low,12838,13,2230
+32,Male,160.6,88.1,Discus,Recovery,79,Low,1658,5,2696
+37,Male,155.8,83.7,Long Jump,Training,92,Medium,12579,15,3471
+32,Male,189.7,72.0,High Jump,Competition,74,Medium,6932,7,3294
+27,Female,191.3,72.4,Discus,Competition,136,Medium,14248,14,3474
+32,Male,160.4,96.0,Triple Jump,Recovery,82,Low,8053,16,2879
+29,Female,167.0,57.7,Hammer,Competition,74,Medium,6959,6,2517
+18,Female,155.8,98.3,100m Sprint,Competition,44,High,1817,2,3906
+31,Female,168.2,87.2,Hammer,Recovery,45,Low,8382,16,2408
+19,Male,189.8,72.2,800m Run,Training,82,Medium,460,19,3410
+36,Male,178.3,74.8,Javelin,Recovery,92,High,7971,5,3534
+30,Male,170.7,61.7,1500m Run,Competition,98,High,14999,4,3860
+23,Male,171.7,93.9,200m Sprint,Training,84,Medium,6015,14,3910
+24,Female,155.1,78.3,100m Sprint,Competition,88,High,6376,6,3795
+38,Female,168.5,65.9,Triple Jump,Training,28,Low,2521,8,1993
+32,Female,184.1,83.7,Long Jump,Competition,45,Low,3476,3,2574
+31,Male,198.8,109.7,1500m Run,Recovery,47,High,2705,4,4471
+32,Female,193.1,73.3,Shot Put,Competition,59,Low,4366,1,2383
+21,Male,156.1,104.8,Javelin,Competition,46,Medium,9349,2,3636
+18,Female,195.4,67.4,Javelin,Training,57,High,12458,13,3511
+40,Male,190.2,48.6,200m Sprint,Competition,104,Low,13726,9,2536
+19,Male,190.1,58.3,Discus,Recovery,83,Medium,27,12,3107
+37,Female,175.6,72.2,Hammer,Recovery,49,Medium,4231,10,2656
+30,Female,172.9,59.3,Triple Jump,Recovery,118,Low,11164,10,2170
+17,Female,168.6,45.0,Javelin,Training,150,High,6548,18,3154
+40,Female,158.0,104.5,Discus,Training,31,Medium,3024,12,3014
+32,Male,165.3,99.9,Shot Put,Competition,110,Medium,13175,16,3886
+37,Female,166.1,93.2,100m Sprint,Competition,49,Medium,13816,6,3083
+35,Female,176.8,55.9,High Jump,Competition,57,Medium,1264,10,2302
+28,Female,188.6,52.8,Triple Jump,Training,104,High,9047,15,3276
+29,Male,176.3,49.4,400m Sprint,Training,79,Low,12217,9,2348
+31,Male,157.6,92.1,800m Run,Competition,57,Low,6587,2,2801
+15,Female,198.1,105.4,400m Sprint,Training,123,Low,6577,18,3628
+39,Male,197.4,73.0,High Jump,Training,48,Medium,1251,12,3144
+35,Female,190.3,52.7,Shot Put,Recovery,131,High,12796,3,3153
+31,Male,199.6,78.3,400m Sprint,Recovery,40,Low,3870,7,2782
+37,Male,179.5,67.7,Long Jump,Competition,138,High,1326,9,4176
+39,Male,198.3,69.4,Triple Jump,Competition,79,Low,6177,8,2779
+25,Male,158.4,85.4,Long Jump,Recovery,132,Medium,9217,6,3580
+31,Female,171.5,91.7,200m Sprint,Training,148,Low,361,1,3296
+40,Female,165.1,52.2,High Jump,Competition,77,Medium,1218,14,2308
+28,Female,163.8,47.3,200m Sprint,Competition,22,Medium,605,16,2105
+34,Male,161.3,109.6,200m Sprint,Competition,42,Low,5959,16,3011
+33,Female,183.0,60.1,200m Sprint,Training,102,High,13619,4,3419
+35,Female,190.2,48.5,Javelin,Recovery,74,Medium,1670,6,2270
+21,Female,181.0,57.3,100m Sprint,Competition,129,High,13003,15,3777
+38,Male,161.6,47.5,Javelin,Recovery,135,Low,10489,8,2011
+27,Male,191.5,70.5,100m Sprint,Recovery,81,Medium,10386,1,3231
+32,Male,183.6,97.2,High Jump,Training,106,High,4443,13,5184
+37,Female,172.5,67.2,Hammer,Training,119,Medium,1277,18,2839
+28,Female,185.3,73.9,1500m Run,Training,46,Low,398,18,2320
+15,Female,166.7,88.9,Javelin,Training,53,Medium,13645,13,3073
+21,Male,170.5,78.1,400m Sprint,Training,52,Low,13487,14,2563
+22,Male,196.3,101.0,100m Sprint,Training,111,High,2172,11,5383
+32,Female,168.1,101.3,Javelin,Competition,115,Medium,2810,7,4012
+23,Male,176.1,45.6,Discus,Recovery,114,High,14733,18,3043
+15,Male,195.1,95.6,Long Jump,Training,57,Low,6274,4,3264
+36,Male,186.8,74.9,Javelin,Competition,60,Low,5681,17,2722
+31,Male,157.8,109.3,100m Sprint,Recovery,98,High,10844,19,4855
+33,Female,161.6,76.4,Shot Put,Training,147,High,2939,14,4135
+20,Male,155.4,109.1,200m Sprint,Training,41,Low,9013,10,3112
+17,Male,183.4,94.0,100m Sprint,Competition,35,High,13189,6,4077
+38,Male,175.1,61.2,Hammer,Recovery,51,Low,944,18,2251
+19,Male,161.0,80.0,High Jump,Training,57,High,11670,4,3686
+16,Female,198.1,109.5,Long Jump,Recovery,117,Low,10971,11,3483
+34,Female,178.8,100.7,Long Jump,Competition,40,Low,5965,13,2749
+39,Male,165.9,51.3,1500m Run,Training,75,Medium,12621,8,2696
+18,Male,177.5,90.9,Javelin,Recovery,65,Low,13331,10,2970
+24,Male,185.6,67.5,800m Run,Competition,62,Low,6348,11,2636
+24,Male,158.4,45.5,Javelin,Competition,139,Medium,7770,3,2945
+38,Male,167.4,71.2,800m Run,Training,65,Medium,7099,15,2945
+35,Male,191.3,60.3,400m Sprint,Recovery,67,High,12642,8,3314
+25,Female,175.7,98.2,Discus,Training,103,High,1196,20,4415
+30,Male,179.6,66.9,Triple Jump,Training,50,Low,1212,18,2518
+40,Female,174.5,98.8,High Jump,Recovery,90,High,823,1,4164
+31,Female,157.0,45.0,Shot Put,Recovery,27,High,13313,8,1961
+30,Male,162.5,65.0,100m Sprint,Recovery,149,Low,10088,3,2554
+21,Female,175.0,60.7,High Jump,Competition,71,Medium,7084,1,2813
+30,Female,164.4,60.2,Discus,Competition,64,Medium,12455,20,2386
+17,Female,157.2,49.4,800m Run,Recovery,56,Low,10607,16,1862
+40,Female,193.0,57.2,High Jump,Competition,63,Low,535,9,2101
+30,Female,199.2,81.1,Hammer,Training,136,Low,14236,17,3061
+22,Female,190.7,63.9,100m Sprint,Recovery,57,Low,3010,16,2332
+26,Male,193.4,72.1,1500m Run,Training,118,Low,10819,6,3352
+17,Female,165.9,69.5,400m Sprint,Recovery,143,Low,7537,7,2597
+31,Female,198.2,101.9,1500m Run,Training,25,High,11969,16,3528
+35,Female,163.9,103.8,800m Run,Recovery,87,High,13907,8,4098
+32,Male,197.8,77.0,200m Sprint,Training,120,High,949,10,4850
+25,Female,199.8,66.5,Javelin,Recovery,32,Medium,11700,14,2648
+18,Male,187.0,51.9,800m Run,Recovery,49,Low,12494,11,2299
+30,Female,199.2,107.0,400m Sprint,Competition,119,Low,543,2,3644
+31,Male,180.6,48.9,100m Sprint,Training,21,High,3900,12,2747
+23,Male,166.7,64.3,Hammer,Competition,77,Medium,11945,20,2869
+20,Female,174.7,64.4,Discus,Training,55,High,4224,20,2995
+38,Female,181.7,65.8,Triple Jump,Competition,91,Low,13758,13,2453
+34,Male,158.3,55.7,1500m Run,Recovery,145,Low,14949,15,2270
+39,Female,183.0,95.9,800m Run,Competition,96,High,10274,12,4624
+16,Male,199.2,53.0,Discus,Competition,69,High,2866,13,3358
+23,Male,163.6,86.3,Hammer,Recovery,51,Low,2246,8,2679
+35,Male,190.7,53.0,1500m Run,Competition,117,High,1836,16,3863
+20,Male,195.9,49.6,800m Run,Recovery,62,Low,8268,3,2458
+17,Male,197.5,104.1,400m Sprint,Training,144,High,8560,13,6000
+34,Female,198.2,57.4,1500m Run,Competition,114,Medium,6976,12,3166
+20,Male,178.5,98.4,800m Run,Recovery,97,Low,12813,19,3263
+21,Male,199.0,80.4,100m Sprint,Recovery,73,Medium,348,2,3382
+15,Female,189.1,50.1,Hammer,Competition,66,High,4601,1,3224
+37,Male,162.3,107.1,400m Sprint,Training,33,Medium,12930,8,3464
+15,Female,176.5,61.1,Discus,Competition,74,High,4333,9,3262
+19,Female,187.3,100.9,Discus,Recovery,82,Medium,5399,8,3573
+20,Female,166.1,56.0,Triple Jump,Training,38,Medium,5696,17,2387
+27,Male,183.8,100.5,High Jump,Competition,110,Medium,1455,9,4426
+16,Male,185.0,45.9,200m Sprint,Recovery,120,Low,2185,6,2459
+29,Male,162.3,78.3,100m Sprint,Competition,56,Medium,7436,15,3077
+29,Female,180.4,95.0,400m Sprint,Training,126,High,3811,13,4918
+27,Male,189.7,105.8,1500m Run,Training,111,High,11464,12,5576
+40,Female,177.5,104.1,Discus,Training,71,Low,7309,13,2880
+39,Male,155.5,98.3,Javelin,Training,47,Low,14947,7,2723
+28,Female,155.4,102.7,Hammer,Training,55,High,13961,18,3892
+40,Male,171.1,57.9,100m Sprint,Competition,135,Medium,8086,14,3364
+36,Male,196.7,63.5,400m Sprint,Training,83,High,3682,11,3943
+21,Male,165.3,63.8,400m Sprint,Training,37,Low,1846,14,2267
+28,Female,183.5,69.5,1500m Run,Recovery,108,Low,1854,17,2472
+40,Female,165.0,70.6,400m Sprint,Training,97,High,2985,2,3617
+38,Male,169.5,80.4,Shot Put,Recovery,109,Medium,12642,19,3372
+24,Male,193.2,55.4,100m Sprint,Recovery,27,Medium,10817,16,2743
+31,Female,187.8,89.9,800m Run,Recovery,34,Low,2894,10,2525
+28,Female,159.3,55.9,Discus,Competition,26,High,7496,8,2314
+22,Female,174.3,65.2,Discus,Competition,36,High,558,5,2922
+18,Male,156.3,77.7,800m Run,Recovery,105,Low,2896,7,2630
+40,Female,176.6,96.8,100m Sprint,Competition,137,High,10109,13,5457
+30,Male,184.8,93.1,200m Sprint,Training,83,Low,1254,16,3303
+38,Female,160.3,87.0,Javelin,Competition,31,Medium,1681,5,2667
+27,Male,168.0,55.1,100m Sprint,Training,75,Medium,13457,16,2654
+36,Female,172.9,80.6,Long Jump,Training,120,High,5271,15,4054
+39,Female,196.4,50.7,400m Sprint,Competition,35,Medium,10006,9,2426
+34,Female,199.7,69.5,High Jump,Competition,21,Medium,6283,12,2705
+32,Female,157.0,71.9,1500m Run,Recovery,147,Low,8854,8,2465
+28,Female,189.2,47.6,Shot Put,Competition,111,Low,12308,13,2312
+32,Male,171.7,62.8,High Jump,Competition,124,High,3325,5,3993
+19,Female,172.7,107.1,800m Run,Competition,50,Low,14399,14,3026
+40,Female,188.9,107.0,1500m Run,Training,66,High,1241,16,4551
+23,Female,196.3,67.9,1500m Run,Training,62,High,3143,11,3390
+17,Male,197.8,47.8,Javelin,Training,84,Low,3037,20,2442
+22,Female,181.0,56.6,1500m Run,Recovery,69,Medium,8353,12,2496
+34,Male,171.1,70.5,Discus,Recovery,20,Medium,12417,15,2650
+36,Female,190.4,106.6,Shot Put,Recovery,141,Medium,14916,12,3973
+24,Female,166.3,54.2,Discus,Training,47,Medium,10142,9,2307
+36,Male,180.4,94.6,400m Sprint,Competition,105,High,12512,1,5063
+33,Female,171.1,52.1,Long Jump,Recovery,101,Medium,1781,3,2349
+35,Male,184.5,108.8,Triple Jump,Recovery,41,High,4675,12,4186
+17,Male,165.8,69.8,Javelin,Training,60,Low,1477,20,2412
+25,Female,163.6,95.4,Shot Put,Recovery,95,Low,11222,13,2670
+25,Male,196.3,67.3,High Jump,Competition,108,High,7148,6,4645
+31,Female,159.6,85.8,Hammer,Training,78,Medium,12178,10,3219
+30,Female,177.8,57.5,400m Sprint,Training,88,High,7551,10,3041
+21,Male,164.9,54.5,100m Sprint,Competition,142,Medium,106,16,3230
+18,Male,156.8,106.0,800m Run,Competition,93,Medium,2668,1,4303
+37,Male,156.6,104.6,Long Jump,Competition,26,High,4935,16,3477
+33,Male,162.9,102.7,400m Sprint,Recovery,120,High,7270,4,5082
+26,Female,194.0,85.7,100m Sprint,Competition,130,Medium,1164,6,4190
+29,Female,167.7,97.5,Long Jump,Training,71,High,14912,19,3978
+25,Male,197.8,49.5,100m Sprint,Competition,43,Medium,1157,2,2802
+19,Female,181.2,66.8,Shot Put,Training,45,High,2246,18,3124
+19,Female,174.6,65.4,Javelin,Training,144,Low,6653,10,2515
+29,Female,181.1,86.3,Hammer,Recovery,109,Medium,8858,4,3448
+32,Female,178.3,68.1,100m Sprint,Competition,141,Low,10318,1,2745
+25,Male,189.1,54.7,Long Jump,Recovery,29,High,14259,15,3070
+40,Male,167.7,83.8,100m Sprint,Competition,36,Low,11133,10,2503
+26,Female,170.9,97.9,Hammer,Competition,21,High,7649,18,3169
+16,Male,195.2,69.8,High Jump,Competition,131,Medium,511,16,4081
+34,Male,197.6,53.6,400m Sprint,Competition,46,High,8441,13,3294
+29,Male,195.2,57.8,Long Jump,Competition,90,High,888,15,3849
+34,Female,173.9,60.4,High Jump,Training,137,Medium,9215,2,3086
+18,Female,190.1,64.5,100m Sprint,Training,28,High,12886,20,3032
+36,Female,176.4,86.8,100m Sprint,Competition,105,Medium,7983,4,3655
+32,Male,177.4,84.1,1500m Run,Training,42,High,13040,1,3675
+20,Female,164.2,90.2,Long Jump,Recovery,92,Medium,8791,7,3291
+37,Female,181.6,68.6,Shot Put,Recovery,46,Low,3022,11,2180
+40,Male,163.4,98.6,100m Sprint,Recovery,112,High,2530,10,4259
+33,Female,169.9,58.3,800m Run,Competition,100,High,11075,1,3332
+25,Female,193.5,75.5,Discus,Competition,103,High,6315,11,4281
+38,Male,164.3,97.1,Triple Jump,Training,62,Medium,2064,10,3442
+16,Male,158.2,56.7,Discus,Training,26,High,9950,14,2948
+22,Male,158.1,52.1,Shot Put,Training,111,Medium,5413,14,2671
+25,Female,197.3,102.4,400m Sprint,Recovery,102,High,6537,7,4755
+19,Female,177.8,67.3,Javelin,Recovery,103,Low,14133,11,2325
+32,Female,173.4,89.5,200m Sprint,Recovery,63,High,3569,4,3473
+37,Male,191.5,46.6,800m Run,Recovery,59,Low,1242,2,2121
+32,Male,192.6,89.9,200m Sprint,Training,44,Medium,4329,7,3711
+28,Female,169.9,65.5,100m Sprint,Competition,78,Low,13701,19,2304
+36,Female,186.2,48.6,Hammer,Competition,122,High,10487,14,3114
+24,Male,189.7,84.6,400m Sprint,Recovery,105,High,1925,19,4416
+17,Male,184.5,60.7,High Jump,Competition,131,Medium,14387,7,3499
+23,Male,161.8,70.1,100m Sprint,Competition,105,High,10254,12,4213
+17,Male,194.4,50.2,200m Sprint,Competition,117,High,3395,3,3662
+25,Female,179.3,54.6,100m Sprint,Recovery,81,Medium,440,15,2455
+26,Male,167.7,64.4,Triple Jump,Training,27,Medium,5231,5,2678
+26,Female,174.1,50.8,1500m Run,Training,132,Low,8181,8,2209
+17,Female,156.7,104.2,Triple Jump,Competition,79,Medium,2743,14,3619
+35,Female,160.8,45.4,400m Sprint,Training,79,High,8039,4,2474
+21,Male,189.4,76.5,Hammer,Training,125,Medium,8198,7,3897
+28,Male,155.0,53.0,High Jump,Recovery,21,High,1586,7,2528
+38,Male,173.7,65.0,Triple Jump,Recovery,110,Low,825,18,2524
+25,Male,178.5,105.2,Long Jump,Competition,33,Medium,3824,14,3450
+21,Female,157.5,55.5,High Jump,Competition,67,High,1268,8,2707
+39,Male,198.8,107.8,Hammer,Competition,122,Medium,7615,12,4899
+35,Male,165.2,58.4,200m Sprint,Recovery,75,Medium,3436,10,2641
+24,Female,168.7,93.2,Triple Jump,Training,31,Medium,11630,14,2893
+25,Male,168.7,80.5,1500m Run,Recovery,74,Medium,8089,9,3202
+29,Female,165.4,102.5,High Jump,Recovery,129,Low,1310,6,2894
+33,Female,155.1,81.0,100m Sprint,Training,23,High,12225,5,2773
+30,Female,187.8,79.7,1500m Run,Training,55,Medium,9819,1,3099
+36,Female,198.5,57.7,100m Sprint,Competition,150,High,9228,1,4178
+35,Female,165.1,55.8,Hammer,Training,20,Low,13457,20,1783
+34,Female,184.8,104.6,Triple Jump,Training,36,High,477,17,3769
+26,Female,188.4,66.3,800m Run,Training,81,High,10870,11,3646
+32,Female,193.2,69.2,800m Run,Training,67,Low,8906,12,2472
+37,Male,174.0,94.4,200m Sprint,Competition,81,Medium,9868,3,3799
+27,Male,168.6,67.0,1500m Run,Competition,88,High,2162,6,3743
+19,Male,169.6,106.9,100m Sprint,Training,122,High,508,11,5389
+18,Male,187.1,93.0,Shot Put,Training,129,Medium,7319,13,4396
+28,Female,191.8,83.8,1500m Run,Competition,110,Medium,14392,11,4043
+22,Male,163.2,102.3,Long Jump,Competition,133,High,381,8,5449
+23,Female,171.7,48.2,200m Sprint,Training,108,Low,9372,10,2026
+39,Male,195.6,61.7,Discus,Recovery,75,Medium,1845,2,2847
+33,Male,191.3,75.2,Discus,Competition,97,Medium,7300,14,3598
+17,Male,199.3,59.8,100m Sprint,Competition,33,Low,13474,16,2531
+19,Female,188.9,93.4,800m Run,Competition,44,High,12562,17,3897
+35,Male,172.7,104.7,High Jump,Training,51,Medium,9910,11,3584
+40,Female,181.6,72.5,Long Jump,Training,101,High,9292,2,3695
+32,Female,184.7,67.2,Discus,Competition,97,High,10052,5,3652
+15,Male,158.5,107.5,100m Sprint,Training,125,High,10283,16,5632
+22,Male,179.5,73.9,100m Sprint,Training,39,Low,8909,16,2582
+33,Male,186.9,76.8,Triple Jump,Competition,93,High,7717,2,3998
+31,Female,162.5,67.9,800m Run,Training,29,High,8509,16,2782
+31,Male,190.1,104.1,1500m Run,Recovery,142,Medium,4629,5,4550
+25,Female,181.3,82.0,High Jump,Training,53,Medium,5704,8,3178
+16,Female,197.8,94.5,Triple Jump,Training,59,Low,1776,20,3048
+20,Male,156.9,97.8,Discus,Competition,146,Low,8103,14,3445
+36,Male,166.9,67.2,High Jump,Competition,52,Medium,2284,10,2666
+28,Female,182.1,73.2,200m Sprint,Recovery,90,Medium,14852,2,2861
+17,Female,168.3,100.2,800m Run,Training,117,Low,1244,3,3370
+26,Female,187.1,68.6,Discus,Recovery,143,High,1333,18,3804
+18,Male,189.2,96.6,Hammer,Recovery,62,Low,3669,2,3228
+26,Female,159.6,106.2,100m Sprint,Competition,133,High,1200,9,5798
+27,Male,178.1,85.5,Discus,Training,108,Medium,1794,2,3723
+16,Female,177.9,93.2,Shot Put,Competition,32,Medium,6181,7,2905
+16,Female,171.6,97.3,400m Sprint,Recovery,147,Medium,10893,7,4122
+29,Male,197.0,99.9,Hammer,Recovery,71,High,1454,14,4226
+37,Female,192.2,70.7,400m Sprint,Competition,36,Low,1933,5,2322
+31,Male,186.4,48.3,Discus,Competition,32,High,746,8,2860
+21,Male,187.1,71.1,Shot Put,Competition,103,Low,7370,18,2850
+28,Female,175.8,88.8,Discus,Competition,116,Low,9032,6,2887
+26,Male,196.4,74.3,400m Sprint,Competition,125,Low,7973,14,3189
+31,Male,186.3,93.7,Triple Jump,Recovery,115,Medium,10687,18,3635
+28,Female,187.8,68.2,200m Sprint,Competition,27,Low,13806,17,2202
+20,Male,193.8,86.3,400m Sprint,Training,75,Medium,6827,9,3703
+33,Male,167.3,57.1,200m Sprint,Recovery,123,Low,14460,13,2337
+38,Male,191.3,93.7,100m Sprint,Recovery,102,Low,9280,16,3066
+20,Female,163.8,80.5,200m Sprint,Training,63,Medium,792,10,2975
+32,Male,170.5,58.3,Triple Jump,Training,122,Medium,6927,10,3021
+38,Female,170.1,64.0,Shot Put,Recovery,131,High,1267,4,3429
+19,Female,199.0,93.7,200m Sprint,Competition,61,Low,9742,12,3136
+38,Male,193.5,76.4,High Jump,Recovery,49,Medium,6369,8,3056
+38,Male,186.6,59.0,1500m Run,Recovery,45,High,14800,15,3083
+20,Male,187.7,107.9,400m Sprint,Training,144,High,2690,19,6000
+16,Female,180.3,91.5,Shot Put,Recovery,38,Medium,7874,15,3076
+22,Male,197.6,107.2,Long Jump,Competition,72,Low,292,8,3427
+29,Male,177.3,72.8,Javelin,Training,104,High,6864,8,3982
+29,Male,172.1,75.9,100m Sprint,Recovery,36,Low,4022,19,2395
+25,Male,162.3,103.4,1500m Run,Recovery,123,Low,9596,9,3255
+36,Male,190.4,79.1,High Jump,Competition,124,High,1648,17,4711
+36,Female,188.0,91.0,800m Run,Recovery,123,Medium,14501,8,3799
+38,Female,172.3,61.4,Triple Jump,Recovery,143,Low,11008,12,2184
+15,Male,156.1,74.0,Discus,Recovery,100,Medium,12102,15,3020
+32,Male,192.8,53.0,1500m Run,Recovery,56,High,13529,4,3030
+26,Male,155.5,58.4,Shot Put,Competition,140,Low,11110,6,2432
+26,Male,186.7,45.1,Shot Put,Recovery,89,Medium,5171,16,2588
+39,Female,198.7,47.6,Shot Put,Recovery,149,Medium,9589,5,2664
+25,Male,174.7,108.5,100m Sprint,Recovery,78,Low,1693,13,3175
+22,Female,165.6,60.8,200m Sprint,Training,137,Medium,6710,15,3109
+21,Female,186.7,88.1,400m Sprint,Competition,56,Medium,1037,17,3408
+37,Male,191.8,99.5,800m Run,Training,50,High,3852,20,4374
+35,Female,179.6,80.8,Discus,Training,118,High,5459,5,4075
+16,Female,198.5,55.0,Shot Put,Competition,113,Medium,14937,19,3157
+25,Female,157.3,92.3,Discus,Training,25,Medium,9754,7,2770
+36,Female,177.7,84.0,Long Jump,Training,34,Low,9304,3,2408
+24,Male,187.3,92.5,100m Sprint,Training,35,High,7048,13,3891
+17,Male,193.8,95.0,Hammer,Competition,39,Low,6184,14,3118
+34,Female,163.1,108.4,Shot Put,Recovery,96,Medium,9483,16,3558
+24,Male,191.0,82.3,Long Jump,Competition,63,Low,1161,13,2904
+32,Male,179.9,67.2,800m Run,Competition,65,Medium,1029,2,3216
+28,Male,172.8,87.2,800m Run,Competition,114,High,12529,14,5347
+32,Male,160.9,49.4,400m Sprint,Training,83,High,12449,20,2944
+38,Male,193.9,103.3,High Jump,Recovery,150,Medium,10931,7,4351
+22,Female,162.1,52.8,400m Sprint,Competition,28,High,978,5,2429
+24,Male,168.9,66.3,200m Sprint,Competition,61,Medium,8709,14,2887
+36,Male,168.1,98.0,Discus,Recovery,92,Low,13185,9,2858
+27,Male,194.2,83.8,Triple Jump,Recovery,103,Medium,8974,10,3753

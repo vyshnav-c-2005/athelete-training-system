@@ -36,12 +36,37 @@
         .btn.small {
             font-size: 0.8rem;
         }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.2s;
+        }
+
+        .btn-back:hover {
+            color: #333;
+        }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="card">
+            <a href="{% url 'dashboard' %}" class="btn-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Dashboard
+            </a>
             <h2>Log Nutrition</h2>
 
             {% if messages %}

@@ -1,38 +1,144 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/coach_logs.css' %}">
+{% endblock %}
 
 {% block content %}
 <div class="dashboard-container">
-    <div class="back-link">
-        <a href="{% url 'coach_athlete_detail' athlete.pk %}">&larr; Back to Athlete</a>
+  <div class="back-link">
+    <a href="{% url 'coach_athlete_detail' athlete.pk %}">&larr; Back to Athlete</a>
+  </div>
+
+  <h1>Training Log &mdash; {{ athlete.user.username }}</h1>
+  <p style="color:#64748b;margin-bottom:1.5rem;">
+    {{ sessions_page.paginator.count }}
+    session{{ sessions_page.paginator.count|pluralize }} logged
+  </p>
+
+  {% for session in sessions_page %}
+  <div class="log-card">
+
+    {# ── Card Header ── #}
+    <div class="log-card-header">
+      <span class="log-date">{{ session.date|date:"D, d M Y" }}</span>
+      <span class="log-discipline">{{ session.get_discipline_display }}</span>
+      <span class="log-type">&#x25AA; {{ session.get_session_type_display }}</span>
+      <span class="badge-readonly">Read-only</span>
     </div>
 
-    <h1>Training Log: {{ athlete.user.username }}</h1>
-
-    <div class="table-container">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Discipline</th>
-                    <th>Type</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for session in sessions %}
-                <tr>
-                    <td>{{ session.date }}</td>
-                    <td>{{ session.discipline }}</td>
-                    <td>{{ session.get_session_type_display }}</td>
-                    <td>{{ session.notes|default:"-"|truncatechars:50 }}</td>
-                </tr>
-                {% empty %}
-                <tr>
-                    <td colspan="4">No training sessions logged yet.</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+    {# ── Thrower Section ── #}
+    {% if session.throwersession %}
+    <div class="log-section">
+      <div class="log-section-title">
+        &#x1F3AF; Thrower Details
+        {% if session.id == pb_session_id %}
+        &nbsp;<span class="badge-pb">&#x2B50; Personal Best</span>
+        {% endif %}
+      </div>
+      <div class="log-section-grid">
+        <div class="log-stat">
+          <span class="log-stat-label">Implement Weight</span>
+          <span class="log-stat-value">{{ session.throwersession.implement_weight_kg }} kg</span>
+        </div>
+        <div class="log-stat">
+          <span class="log-stat-label">Attempts</span>
+          <span class="log-stat-value">{{ session.throwersession.attempts }}</span>
+        </div>
+        <div class="log-stat">
+          <span class="log-stat-label">Best Throw</span>
+          <span class="log-stat-value {% if session.id == pb_session_id %}pb-value{% endif %}">
+            {{ session.throwersession.best_throw_m }} m
+          </span>
+        </div>
+      </div>
     </div>
+    {% endif %}
+
+    {# ── Runner Section ── #}
+    {% if session.runnersession %}
+    <div class="log-section">
+      <div class="log-section-title">&#x1F3C3; Runner Details</div>
+      <div class="log-section-grid">
+        <div class="log-stat">
+          <span class="log-stat-label">Distance</span>
+          <span class="log-stat-value">{{ session.runnersession.distance_m }} m</span>
+        </div>
+        <div class="log-stat">
+          <span class="log-stat-label">Duration</span>
+          <span class="log-stat-value">{{ session.runnersession.time_seconds }} s</span>
+        </div>
+        <div class="log-stat">
+          <span class="log-stat-label">Pace / km</span>
+          <span class="log-stat-value">
+            {% if session.pace_per_km %}{{ session.pace_per_km }} min/km{% else %}&mdash;{% endif %}
+          </span>
+        </div>
+        <div class="log-stat">
+          <span class="log-stat-label">Repetitions</span>
+          <span class="log-stat-value">{{ session.runnersession.repetitions }}</span>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {# ── Jumper Section ── #}
+    {% if session.jumpersession %}
+    <div class="log-section">
+      <div class="log-section-title">&#x1F945; Jumper Details</div>
+      <div class="log-section-grid">
+        <div class="log-stat">
+          <span class="log-stat-label">Attempts</span>
+          <span class="log-stat-value">{{ session.jumpersession.attempts }}</span>
+        </div>
+        <div class="log-stat">
+          <span class="log-stat-label">Best Jump</span>
+          <span class="log-stat-value">{{ session.jumpersession.best_jump_m }} m</span>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {# ── Notes ── #}
+    {% if session.notes %}
+    <div class="log-notes">
+      <span class="log-notes-label">Notes:</span>{{ session.notes }}
+    </div>
+    {% endif %}
+
+  </div>{# end .log-card #}
+  {% empty %}
+  <div class="log-empty-state">
+    <span class="empty-icon">&#x1F4CB;</span>
+    <p>No training sessions have been logged yet for this athlete.</p>
+  </div>
+  {% endfor %}
+
+  {# ── Pagination ── #}
+  {% if is_paginated %}
+  <nav class="pagination-controls" aria-label="Page navigation">
+    {% if sessions_page.has_previous %}
+    <a href="?page={{ sessions_page.previous_page_number }}">&laquo; Prev</a>
+    {% else %}
+    <span class="page-disabled">&laquo; Prev</span>
+    {% endif %}
+
+    {% for num in sessions_page.paginator.page_range %}
+      {% if num == sessions_page.number %}
+      <span class="page-current">{{ num }}</span>
+      {% elif num >= sessions_page.number|add:"-2" and num <= sessions_page.number|add:"2" %}
+      <a href="?page={{ num }}">{{ num }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if sessions_page.has_next %}
+    <a href="?page={{ sessions_page.next_page_number }}">Next &raquo;</a>
+    {% else %}
+    <span class="page-disabled">Next &raquo;</span>
+    {% endif %}
+  </nav>
+  {% endif %}
+
 </div>
 {% endblock %}

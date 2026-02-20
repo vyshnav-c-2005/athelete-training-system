@@ -197,3 +197,35 @@ textarea {
         text-align: center;
     }
 }
+
+/* ===== FIX: Runner Time Inputs Inline ===== */
+.time-input-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.time-input-group input {
+    width: 70px !important;
+    /* override global width:100% */
+    flex: 0 0 70px;
+    /* prevent stretching */
+    text-align: center;
+    padding: 10px 8px;
+}
+
+.time-separator {
+    flex: 0 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Mobile safety */
+@media (max-width: 480px) {
+    .time-input-group input {
+        width: 60px !important;
+        flex: 0 0 60px;
+    }
+}

@@ -18,14 +18,14 @@
                 <ul>
                     {% if user.is_authenticated %}
                     {% if user.userprofile.role == 'Coach' %}
-                    <li><a href="{% url 'coach_dashboard' %}">Coach Dashboard</a></li>
+                    <li><a href="{% url 'coach_dashboard' %}" class="nav-btn">Coach Dashboard</a></li>
                     {% else %}
-                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                    <li><a href="{% url 'dashboard' %}" class="nav-btn">Dashboard</a></li>
                     {% endif %}
-                    <li><a href="{% url 'user_profile' %}">👤 {{ user.username }}</a></li>
+                    <li><a href="{% url 'user_profile' %}" class="nav-btn outline">👤 {{ user.username }}</a></li>
                     {% else %}
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                    <li><a href="{% url 'login' %}" class="auth-btn">Login</a></li>
+                    <li><a href="{% url 'signup' %}" class="auth-btn primary">Sign Up</a></li>
                     {% endif %}
                 </ul>
             </nav>

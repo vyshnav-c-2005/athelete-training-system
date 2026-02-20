@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,22 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log Training</title>
-    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
-    <link rel="stylesheet" href="{% static 'css/training.css' %}">
+    <link rel="stylesheet" href="/static/css/profile.css">
+    <link rel="stylesheet" href="/static/css/training.css">
+    <style>
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .btn-back:hover {
+            color: #333;
+        }
+
+        .form-section {
+            display: none;
+        }
+
+        .form-section.active {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="card">
-            <h2>Log Training Session</h2>
 
-            {% if messages %}
-            <div class="messages">
-                {% for message in messages %}
-                <div class="alert">{{ message }}</div>
-                {% endfor %}
-            </div>
-            {% endif %}
+            <a href="{% url 'dashboard' %}" class="btn-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Dashboard
+            </a>
+
+            <h2>Log Training Session</h2>
 
             <form method="post">
                 {% csrf_token %}
@@ -69,8 +95,6 @@
                 <!-- Hidden Input for Logic -->
                 <input type="hidden" name="athlete_type" id="athleteTypeInput">
 
-                <!-- Dynamic Sections -->
-
                 <!-- Runner Fields -->
                 <div id="runnerFields" class="form-section">
                     <h4>Runner Details</h4>
@@ -79,8 +103,15 @@
                         <input type="number" step="0.01" name="distance_m" placeholder="e.g. 100">
                     </div>
                     <div class="form-group">
-                        <label>Time (seconds)</label>
-                        <input type="number" step="0.01" name="time_seconds" placeholder="e.g. 10.5">
+                        <label>Time (hh : mm : ss)</label>
+                        <div class="time-input-group">
+                            <input type="number" id="timeHours" placeholder="hh" min="0">
+                            <span class="time-separator"></span>
+                            <input type="number" id="timeMinutes" placeholder="mm" min="0" max="59">
+                            <span class="time-separator"></span>
+                            <input type="number" id="timeSeconds" placeholder="ss" min="0" max="59" step="0.01">
+                        </div>
+                        <input type="hidden" name="time_seconds" id="totalTimeSeconds">
                     </div>
                     <div class="form-group">
                         <label>Repetitions</label>
@@ -106,7 +137,9 @@
                     <h4>Thrower Details</h4>
                     <div class="form-group">
                         <label>Implement Weight (kg)</label>
-                        <input type="number" step="0.01" name="implement_weight_kg" placeholder="e.g. 7.26">
+                        <select name="implement_weight_kg" id="weightSelect">
+                            <option value="">Select Weight...</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Attempts</label>
@@ -125,7 +158,7 @@
 
                 <div class="actions">
                     <button type="submit" class="btn primary">Log Session</button>
-                    <a href="{% url 'training_history' %}" class="btn link">Cancel</a>
+                    <a href="/workouts/history/" class="btn link">Cancel</a>
                 </div>
 
             </form>
@@ -133,7 +166,29 @@
     </div>
 
     <script>
-        const distinctSelect = document.getElementById('disciplineSelect');
+        const weightMap = {
+            shot_put: [
+                { value: "4", label: "4 kg" },
+                { value: "5", label: "5 kg" },
+                { value: "7.26", label: "7.26 kg" }
+            ],
+            discus: [
+                { value: "1", label: "1 kg" },
+                { value: "2", label: "2 kg" }
+            ],
+            javelin: [
+                { value: "0.4", label: "400 g" },
+                { value: "0.6", label: "600 g" },
+                { value: "0.8", label: "800 g" }
+            ],
+            hammer: [
+                { value: "4", label: "4 kg" },
+                { value: "5", label: "5 kg" },
+                { value: "7.26", label: "7.26 kg" }
+            ]
+        };
+
+        const disciplineSelect = document.getElementById('disciplineSelect');
         const athleteTypeInput = document.getElementById('athleteTypeInput');
         const sections = {
             'Runner': document.getElementById('runnerFields'),
@@ -141,19 +196,49 @@
             'Thrower': document.getElementById('throwerFields')
         };
 
-        distinctSelect.addEventListener('change', function () {
-            // 1. Identify Type
+        disciplineSelect.addEventListener('change', function () {
             const selectedOption = this.options[this.selectedIndex];
             const type = selectedOption.getAttribute('data-type');
+            const disciplineValue = this.value;
+            const weightSelect = document.getElementById('weightSelect');
 
-            // 2. Update Hidden Input
+            // Update hidden athlete type
             athleteTypeInput.value = type || '';
 
-            // 3. Show/Hide Sections
+            // Show/hide discipline sections
             Object.values(sections).forEach(el => el.classList.remove('active'));
             if (type && sections[type]) {
                 sections[type].classList.add('active');
             }
+
+            // Populate implement weight dropdown
+            if (weightSelect) {
+                weightSelect.innerHTML = '<option value="">Select Weight...</option>';
+                if (weightMap[disciplineValue]) {
+                    weightMap[disciplineValue].forEach(w => {
+                        const opt = document.createElement('option');
+                        opt.value = w.value;
+                        opt.textContent = w.label;
+                        weightSelect.appendChild(opt);
+                    });
+                }
+            }
+        });
+
+        function updateTotalTime() {
+            const h = parseFloat(document.getElementById('timeHours')?.value) || 0;
+            const m = parseFloat(document.getElementById('timeMinutes')?.value) || 0;
+            const s = parseFloat(document.getElementById('timeSeconds')?.value) || 0;
+            const total = (h * 3600) + (m * 60) + s;
+            const hiddenField = document.getElementById('totalTimeSeconds');
+            if (hiddenField) {
+                hiddenField.value = total.toFixed(2);
+            }
+        }
+
+        ['timeHours', 'timeMinutes', 'timeSeconds'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.addEventListener('input', updateTotalTime);
         });
     </script>
 </body>

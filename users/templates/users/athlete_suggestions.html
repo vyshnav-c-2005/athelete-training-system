@@ -1,36 +1,215 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}My Suggestions{% endblock %}
+{% block title %}Coach Suggestions{% endblock %}
 
 {% block content %}
-<div class="container" style="max-width: 800px; margin-top: 30px;">
-    <h2>Performance Suggestions</h2>
-    <p class="text-muted">Feedback and instructions from your coach.</p>
+<style>
+    .page-wrapper {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    .btn-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #64748b;
+        text-decoration: none;
+        font-weight: 500;
+        margin-bottom: 24px;
+        transition: color 0.2s ease;
+    }
+
+    .btn-back:hover {
+        color: #0f172a;
+    }
+
+    .header-section {
+        margin-bottom: 40px;
+    }
+
+    .header-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 12px;
+        letter-spacing: -0.02em;
+    }
+
+    .header-section p {
+        color: #64748b;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .suggestions-grid {
+        display: grid;
+        gap: 24px;
+    }
+
+    .suggestion-card {
+        background: white;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        border: 1px solid #f1f5f9;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .suggestion-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+    }
+
+    .suggestion-card::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 6px;
+        background: linear-gradient(to bottom, #3b82f6, #2563eb);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .coach-avatar {
+        width: 48px;
+        height: 48px;
+        background: #eff6ff;
+        color: #2563eb;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-right: 16px;
+    }
+
+    .meta-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coach-name {
+        font-weight: 600;
+        color: #1e293b;
+        font-size: 1.1rem;
+    }
+
+    .suggestion-date {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        margin-top: 4px;
+    }
+
+    .suggestion-content {
+        color: #334155;
+        line-height: 1.7;
+        font-size: 1.05rem;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 80px 20px;
+        background: white;
+        border-radius: 16px;
+        border: 2px dashed #e2e8f0;
+    }
+
+    .empty-icon {
+        width: 64px;
+        height: 64px;
+        background: #f1f5f9;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 24px;
+        color: #94a3b8;
+    }
+
+    .empty-state h3 {
+        font-size: 1.25rem;
+        color: #1e293b;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .empty-state p {
+        color: #64748b;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 640px) {
+        .page-wrapper {
+            margin: 20px auto;
+        }
+
+        .suggestion-card {
+            padding: 24px;
+        }
+    }
+</style>
+
+<div class="page-wrapper">
+    <a href="{% url 'dashboard' %}" class="btn-back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Dashboard
+    </a>
+
+    <div class="header-section">
+        <h2>Coach Suggestions</h2>
+        <p>Feedback, strategy, and advice from your coaching team.</p>
+    </div>
 
     {% if suggestions %}
-    <div class="suggestions-list">
+    <div class="suggestions-grid">
         {% for suggestion in suggestions %}
-        <div class="card"
-            style="margin-bottom: 15px; padding: 20px; border: 1px solid #e0e0e0; border-left: 5px solid #0d47a1; border-radius: 4px;">
-            <div
-                style="display: flex; justify-content: space-between; margin-bottom: 10px; color: #666; font-size: 0.9em;">
-                <span><strong>Coach:</strong> {{ suggestion.coach.username }}</span>
-                <span>{{ suggestion.created_at|date:"M d, Y H:i" }}</span>
+        <div class="suggestion-card">
+            <div class="card-header">
+                <div class="coach-avatar">
+                    {{ suggestion.coach.username|make_list|first|upper }}
+                </div>
+                <div class="meta-info">
+                    <span class="coach-name">Coach {{ suggestion.coach.username }}</span>
+                    <span class="suggestion-date">{{ suggestion.created_at|date:"F j, Y • g:i A" }}</span>
+                </div>
             </div>
-            <div style="font-size: 1.1em; line-height: 1.5;">
+            <div class="suggestion-content">
                 {{ suggestion.message|linebreaks }}
             </div>
         </div>
         {% endfor %}
     </div>
     {% else %}
-    <div class="empty-state" style="text-align: center; padding: 40px; background: #f9f9f9; border-radius: 8px;">
-        <p>No suggestions found yet. Keep training!</p>
+    <div class="empty-state">
+        <div class="empty-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+        <h3>No suggestions yet</h3>
+        <p>Your coach hasn't sent any feedback yet. Keep training hard and check back soon!</p>
     </div>
     {% endif %}
-
-    <div style="margin-top: 20px;">
-        <a href="{% url 'dashboard' %}" class="btn">Back to Dashboard</a>
-    </div>
 </div>
 {% endblock %}

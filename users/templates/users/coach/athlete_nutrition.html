@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/coach_logs.css' %}">
+{% endblock %}
 
 {% block content %}
 <div class="dashboard-container">
@@ -6,35 +11,115 @@
         <a href="{% url 'coach_athlete_detail' athlete.pk %}">&larr; Back to Athlete</a>
     </div>
 
-    <h1>Nutrition Log: {{ athlete.user.username }}</h1>
+    <h1>Nutrition Log &mdash; {{ athlete.user.username }}</h1>
+    <p style="color:#64748b;margin-bottom:1.5rem;">
+        {{ logs_page.paginator.count }}
+        log{{ logs_page.paginator.count|pluralize }} recorded
+    </p>
 
-    <div class="table-container">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Meal</th>
-                    <th>Carbs (g)</th>
-                    <th>Protein (g)</th>
-                    <th>Fats (g)</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for log in logs %}
-                <tr>
-                    <td>{{ log.date }}</td>
-                    <td>{{ log.get_meal_type_display }}</td>
-                    <td>{{ log.carbohydrates_g }}</td>
-                    <td>{{ log.protein_g }}</td>
-                    <td>{{ log.fats_g }}</td>
-                </tr>
-                {% empty %}
-                <tr>
-                    <td colspan="5">No meals logged yet.</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+    {% for log in logs_page %}
+    <div class="log-card">
+
+        {# ── Card Header ── #}
+        <div class="log-card-header">
+            <span class="log-date">{{ log.date|date:"D, d M Y" }}</span>
+            <span class="log-discipline">{{ log.get_meal_type_display }}</span>
+            <span class="log-type">&#x25AA; {{ log.get_timing_display }}</span>
+            <span class="badge-readonly">Read-only</span>
+        </div>
+        <div class="log-card-subheader">
+            Day type: <strong>{{ log.get_day_type_display }}</strong>
+        </div>
+
+        {# ── Food Items Table ── #}
+        <div class="food-table-wrapper">
+            <table class="food-table">
+                <thead>
+                    <tr>
+                        <th>Food</th>
+                        <th>Qty (g)</th>
+                        <th>Carbs (g)</th>
+                        <th>Protein (g)</th>
+                        <th>Fats (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in log.items.all %}
+                    <tr>
+                        <td>{{ item.food_item.name }}</td>
+                        <td>{{ item.quantity_g }}</td>
+                        <td>{{ item.carbohydrates_g|floatformat:1 }}</td>
+                        <td>{{ item.protein_g|floatformat:1 }}</td>
+                        <td>{{ item.fats_g|floatformat:1 }}</td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="food-empty">No foods logged for this meal.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        {# ── Totals Row ── #}
+        <div class="totals-row">
+            <div class="total-item">
+                <span class="total-label">Total Carbs</span>
+                <span class="total-value">{{ log.total_carbs|floatformat:1 }} g</span>
+            </div>
+            <div class="total-item">
+                <span class="total-label">Total Protein</span>
+                <span class="total-value">{{ log.total_protein|floatformat:1 }} g</span>
+            </div>
+            <div class="total-item">
+                <span class="total-label">Total Fats</span>
+                <span class="total-value">{{ log.total_fats|floatformat:1 }} g</span>
+            </div>
+            <div class="total-item">
+                <span class="total-label">Hydration</span>
+                <span class="total-value">{{ log.hydration_liters|floatformat:2 }} L</span>
+            </div>
+        </div>
+
+        {# ── Notes ── #}
+        {% if log.notes %}
+        <div class="log-notes">
+            <span class="log-notes-label">Notes:</span>{{ log.notes }}
+        </div>
+        {% endif %}
+
+    </div>{# end .log-card #}
+    {% empty %}
+    <div class="log-empty-state">
+        <span class="empty-icon">&#x1F96C;</span>
+        <p>No nutrition logs have been recorded yet for this athlete.</p>
     </div>
+    {% endfor %}
+
+    {# ── Pagination ── #}
+    {% if is_paginated %}
+    <nav class="pagination-controls" aria-label="Page navigation">
+        {% if logs_page.has_previous %}
+        <a href="?page={{ logs_page.previous_page_number }}">&laquo; Prev</a>
+        {% else %}
+        <span class="page-disabled">&laquo; Prev</span>
+        {% endif %}
+
+        {% for num in logs_page.paginator.page_range %}
+        {% if num == logs_page.number %}
+        <span class="page-current">{{ num }}</span>
+        {% elif num >= logs_page.number|add:"-2" and num <= logs_page.number|add:"2" %} <a href="?page={{ num }}">{{ num
+            }}</a>
+            {% endif %}
+            {% endfor %}
+
+            {% if logs_page.has_next %}
+            <a href="?page={{ logs_page.next_page_number }}">Next &raquo;</a>
+            {% else %}
+            <span class="page-disabled">Next &raquo;</span>
+            {% endif %}
+    </nav>
+    {% endif %}
+
 </div>
 {% endblock %}

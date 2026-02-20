@@ -3,7 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
-from django.db.models import Avg, Sum
+from django.db.models import Avg, Sum, Max
+from django.core.paginator import Paginator
 from .models import UserProfile, Suggestion
 from .forms import UserProfileForm, SignupForm, LoginForm, AssignCoachForm, SuggestionForm
 # Import metrics models
@@ -258,29 +259,86 @@ def coach_athlete_detail_view(request, pk):
 @coach_required
 def coach_athlete_workouts_view(request, pk):
     """
-    Read-only view of athlete's training logs.
+    Read-only view of athlete's training logs (detailed cards).
     """
     athlete_profile = get_object_or_404(UserProfile, pk=pk, coach=request.user.userprofile)
     athlete_user = athlete_profile.user
-    # query specific logs
-    sessions = TrainingSession.objects.filter(user=athlete_user).order_by('-date')
+
+    # Optimised query: fetch sub-session data in one shot
+    queryset = TrainingSession.objects.filter(user=athlete_user).select_related(
+        'runnersession',
+        'throwersession',
+        'jumpersession'
+    ).order_by('-date')
+
+    # --- Personal Best detection (thrower) ---
+    pb_session_id = None
+    pb_agg = queryset.filter(throwersession__isnull=False).aggregate(
+        max_throw=Max('throwersession__best_throw_m')
+    )
+    if pb_agg['max_throw'] is not None:
+        pb_qs = queryset.filter(
+            throwersession__best_throw_m=pb_agg['max_throw']
+        ).first()
+        if pb_qs:
+            pb_session_id = pb_qs.id
+
+    # --- Pace calculation (attached to session objects) ---
+    for session in queryset:
+        rs = getattr(session, 'runnersession', None)
+        if rs is not None and rs.distance_m and rs.distance_m > 0:
+            pace_seconds = rs.time_seconds / (rs.distance_m / 1000.0)
+            mins = int(pace_seconds // 60)
+            secs = int(pace_seconds % 60)
+            session.pace_per_km = f"{mins}:{secs:02d}"
+        else:
+            session.pace_per_km = None
+
+    # --- Pagination ---
+    paginator = Paginator(queryset, 20)
+    page_obj = paginator.get_page(request.GET.get('page'))
+
     context = {
         'athlete': athlete_profile,
-        'sessions': sessions
+        'sessions_page': page_obj,
+        'pb_session_id': pb_session_id,
+        'is_paginated': paginator.num_pages > 1,
     }
     return render(request, 'users/coach/athlete_workouts.html', context)
+
 @coach_required
 def coach_athlete_nutrition_view(request, pk):
     """
-    Read-only view of athlete's nutrition logs.
+    Read-only view of athlete's nutrition logs (detailed cards).
     """
     athlete_profile = get_object_or_404(UserProfile, pk=pk, coach=request.user.userprofile)
     athlete_user = athlete_profile.user
-    # query specific logs
-    logs = NutritionLog.objects.filter(user=athlete_user).order_by('-date')
+
+    # Optimised query: prefetch food items
+    queryset = NutritionLog.objects.filter(user=athlete_user).prefetch_related(
+        'items__food_item'
+    ).order_by('-date')
+
+    # --- Compute per-log totals (items take priority; fallback to legacy fields) ---
+    for log in queryset:
+        items = list(log.items.all())
+        if items:
+            log.total_carbs = sum(i.carbohydrates_g for i in items)
+            log.total_protein = sum(i.protein_g for i in items)
+            log.total_fats = sum(i.fats_g for i in items)
+        else:
+            log.total_carbs = log.carbohydrates_g
+            log.total_protein = log.protein_g
+            log.total_fats = log.fats_g
+
+    # --- Pagination ---
+    paginator = Paginator(queryset, 20)
+    page_obj = paginator.get_page(request.GET.get('page'))
+
     context = {
         'athlete': athlete_profile,
-        'logs': logs
+        'logs_page': page_obj,
+        'is_paginated': paginator.num_pages > 1,
     }
     return render(request, 'users/coach/athlete_nutrition.html', context)
 
