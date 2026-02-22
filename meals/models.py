@@ -48,6 +48,7 @@ class NutritionLog(models.Model):
     hydration_liters = models.FloatField(help_text="Hydration in liters")
     
     notes = models.TextField(blank=True, null=True)
+    total_calories = models.FloatField(default=0, help_text="Total calories consumed")
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

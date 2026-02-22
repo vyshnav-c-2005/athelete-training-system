@@ -39,6 +39,7 @@ class TrainingSession(models.Model):
     session_type = models.CharField(max_length=20, choices=SESSION_TYPES, default='training')
     athlete_type = models.CharField(max_length=20, choices=ATHLETE_TYPES)
     notes = models.TextField(blank=True, null=True)
+    calories_burned = models.FloatField(default=0, help_text="Calories burned in this session")
     
     created_at = models.DateTimeField(auto_now_add=True)
 

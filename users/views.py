@@ -24,12 +24,31 @@ def dashboard_view(request):
     nutrition_qs = NutritionLog.objects.filter(user=request.user)
     nutrition_count = nutrition_qs.count()
     last_nutrition = nutrition_qs.order_by('-date').first()
+    # 3. Today's Calorie Stats
+    from django.utils import timezone
+    today = timezone.now().date()
+    
+    calories_burned_today = TrainingSession.objects.filter(
+        user=request.user, 
+        date=today
+    ).aggregate(total=Sum('calories_burned'))['total'] or 0
+    
+    calories_consumed_today = NutritionLog.objects.filter(
+        user=request.user, 
+        date=today
+    ).aggregate(total=Sum('total_calories'))['total'] or 0
+    
+    net_calories = calories_consumed_today - calories_burned_today
+
     context = {
         'user': request.user,
         'training_count': training_count,
         'last_training_date': last_training.date if last_training else None,
         'nutrition_count': nutrition_count,
         'last_nutrition_date': last_nutrition.date if last_nutrition else None,
+        'calories_burned_today': calories_burned_today,
+        'calories_consumed_today': calories_consumed_today,
+        'net_calories': net_calories,
     }
     return render(request, "users/dashboard.html", context)
 @login_required
