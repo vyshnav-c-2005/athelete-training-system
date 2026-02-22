@@ -38,13 +38,14 @@ def dashboard_view(request):
         date=today
     ).aggregate(total=Sum('total_calories'))['total'] or 0
     
-    # Burned Calories
-    calories_burned_today = TrainingSession.objects.filter(
-        user=request.user, 
+    # 3. Burned Calories (Hybrid Calculation Result)
+    today_sessions = TrainingSession.objects.filter(
+        user=request.user,
         date=today
-    ).aggregate(total=Sum('calories_burned'))['total'] or 0
+    )
+    burned_today = round(sum(s.calories_burned for s in today_sessions), 2)
     
-    net_calories = calories_consumed_today - calories_burned_today
+    net_calories = calories_consumed_today - burned_today
 
     context = {
         'user': request.user,
@@ -52,7 +53,7 @@ def dashboard_view(request):
         'last_training_date': last_training.date if last_training else None,
         'nutrition_count': nutrition_count,
         'last_nutrition_date': last_nutrition.date if last_nutrition else None,
-        'calories_burned_today': calories_burned_today,
+        'calories_burned_today': burned_today,
         'calories_consumed_today': calories_consumed_today,
         'net_calories': net_calories,
     }
