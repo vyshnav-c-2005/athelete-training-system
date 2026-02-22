@@ -32,8 +32,6 @@ def dashboard_view(request):
         'last_nutrition_date': last_nutrition.date if last_nutrition else None,
     }
     return render(request, "users/dashboard.html", context)
-from .ml_utils import analyze_performance_trend
-from .plan_generator import generate_training_plan, generate_diet_plan
 @login_required
 def insights_view(request):
     """
@@ -41,14 +39,6 @@ def insights_view(request):
     NO ML, NO AI. Just logic.
     """
     insights = []
-    # --- ML TREND ANALYSIS (Step 10) ---
-    try:
-        ml_insight = analyze_performance_trend(request.user)
-        if ml_insight:
-            insights.append(ml_insight)
-    except Exception as e:
-        # Graceful failure if libraries missing or data issue
-        insights.append(f"AI Analysis unavailable: {e}")
     # --- Rule 1: Runner Fueling & Performance ---
     # Need last 6 sessions of a specific discipline (e.g. user's main event?).
     # Simplify: Check ALL runner sessions, group by discipline?
@@ -114,17 +104,6 @@ def insights_view(request):
                      insights.append(f"<b>Load Impact ({recent_discipline}):</b> Implement weight increased ({avg_weight_prev}kg -> {avg_weight_recent}kg) but distance dropped ({avg_dist_prev}m -> {avg_dist_recent}m). Ensure technique is maintained under load.")
              except:
                  pass # Handle missing child data safely
-    # --- Step 4: Generate Automatic Plans ---
-    # We append these regardless of other alerts, as they are "Suggestions"
-    try:
-        training_plan = generate_training_plan(request.user)
-        if training_plan:
-            insights.append(training_plan)
-        diet_plan = generate_diet_plan(request.user)
-        if diet_plan:
-            insights.append(diet_plan)
-    except Exception as e:
-        insights.append(f"Error generating plans: {e}")
     if not insights:
         insights.append("Log at least 2 sessions and 2 meals to see performance insights.")
     return render(request, "users/insights.html", {'insights': insights})
@@ -149,41 +128,16 @@ def signup_page(request):
     if request.user.is_authenticated:
         return redirect(get_role_redirect(request.user))
     if request.method == "POST":
-        import traceback
-        with open('c:/project02/signup_debug.log', 'a') as f:
-            f.write(f"\\n--- Signup Request {request.method} ---")
         form = SignupForm(request.POST)
         if form.is_valid():
             try:
-                with open('c:/project02/signup_debug.log', 'a') as f:
-                     f.write("\\nForm valid. Saving...")
                 user = form.save()
-                with open('c:/project02/signup_debug.log', 'a') as f:
-                     f.write(f"\\nUser saved: {user.username} (id: {user.id})")
-                
-                # Check profile
-                has_profile = hasattr(user, 'userprofile')
-                role = "N/A"
-                if has_profile:
-                    role = user.userprofile.role
-                with open('c:/project02/signup_debug.log', 'a') as f:
-                     f.write(f"\\nHas Profile: {has_profile}. Role: {role}")
-
                 login(request, user, backend='users.backends.EmailOrUsernameBackend')
                 messages.success(request, f"Account created! Welcome, {user.username}.")
-                
-                redir = get_role_redirect(user)
-                with open('c:/project02/signup_debug.log', 'a') as f:
-                     f.write(f"\\nRedirecting to: {redir}")
-                
-                return redirect(redir)
+                return redirect(get_role_redirect(user))
             except Exception as e:
-                with open('c:/project02/signup_debug.log', 'a') as f:
-                     f.write(f"\\nEXCEPTION: {e}\\n{traceback.format_exc()}")
                 messages.error(request, f"Error creating account: {e}")
         else:
-            with open('c:/project02/signup_debug.log', 'a') as f:
-                 f.write(f"\\nForm Invalid: {form.errors}")
             for field, errors in form.errors.items():
                 for error in errors:
                     messages.error(request, f"{field}: {error}")

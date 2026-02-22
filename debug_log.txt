@@ -1,1 +1,0 @@
-EXCEPTION: Reverse for 'edit_profile' not found. 'edit_profile' is not a valid view function or pattern name.
