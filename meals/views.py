@@ -6,8 +6,6 @@ from .models import NutritionLog, FoodItem, NutritionItem
 
 @login_required
 def log_nutrition(request):
-    foods = FoodItem.objects.all().order_by('name')
-    
     if request.method == "POST":
         try:
             # 1. Base Data
@@ -18,81 +16,62 @@ def log_nutrition(request):
             notes = request.POST.get('notes')
             hydration = float(request.POST.get('hydration_liters') or 0)
             
-            # 2. Nutrition Items Logic
-            import json
-            items_json = request.POST.get('items_json', '[]')
-            items_data = json.loads(items_json)
-
-            # Initialize totals
-            total_carbs = 0.0
-            total_protein = 0.0
-            total_fats = 0.0
-            
-            # Create Log first
+            # 2. Create NutritionLog first (Dashboard filtered by user/date)
             log = NutritionLog.objects.create(
                 user=request.user,
                 date=date,
                 day_type=day_type,
                 meal_type=meal_type,
                 timing=timing,
-                # Set totals to 0 initially, will update after processing items
+                hydration_liters=hydration,
+                notes=notes,
                 carbohydrates_g=0,
                 protein_g=0,
                 fats_g=0,
-                hydration_liters=hydration,
-                notes=notes
+                total_calories=0
             )
 
-            # Process items
+            # 3. Process Multiple Items (from JSON table)
+            import json
+            items_json = request.POST.get('items_json', '[]')
+            items_data = json.loads(items_json)
+
             for item in items_data:
                 food_id = item.get('id')
-                qty_val = float(item.get('qty', 0))
+                qty = float(item.get('qty', 0))
                 
-                if food_id and qty_val > 0:
+                if food_id and qty > 0:
                     food_obj = FoodItem.objects.get(id=food_id)
-                    ratio = qty_val / 100.0
-                    
-                    item_carbs = round(food_obj.carbs_per_100g * ratio, 1)
-                    item_protein = round(food_obj.protein_per_100g * ratio, 1)
-                    item_fats = round(food_obj.fats_per_100g * ratio, 1)
-                    
+                    # Let NutritionItem.save() handle calculations and log update
                     NutritionItem.objects.create(
                         nutrition_log=log,
                         food_item=food_obj,
-                        quantity_g=qty_val,
-                        carbohydrates_g=item_carbs,
-                        protein_g=item_protein,
-                        fats_g=item_fats
+                        quantity_g=qty
                     )
-                    
-                    total_carbs += item_carbs
-                    total_protein += item_protein
-                    total_fats += item_fats
+
+            # 4. Validation/Fallback: Single item submission (if bypass JS)
+            single_food_id = request.POST.get('food_item')
+            single_qty = request.POST.get('quantity_g')
             
-            # If manual entry was also allowed, we might check for manual specific fields, 
-            # but per requirements we are moving to multi-item. 
-            # If user entered manual macros without food items, we should handle that? 
-            # The prompt says: "Allow multiple food items... click Add Food...". it doesn't strictly say remove manual.
-            # However, for simplicity and goal "NutritionLog stores... Total macros... computed as SUM", 
-            # let's assume if they want manual they might need a "Manual Food" item or just rely on items.
-            # But let's check correctly if we also want to allow manual overrides or additions.
-            # Seeing the new UI requirement "Table/List", manual override purely by text might be ambiguous.
-            # Let's trust the "Totals computed as SUM of its items" requirement.
-            
-            # Update log totals
-            log.carbohydrates_g = round(total_carbs, 1)
-            log.protein_g = round(total_protein, 1)
-            log.fats_g = round(total_fats, 1)
-            log.save()
+            if single_food_id and single_qty:
+                qty_val = float(single_qty)
+                if qty_val > 0:
+                    food_obj = FoodItem.objects.get(id=single_food_id)
+                    # Create if not already in JSON items (prevent duplication)
+                    if not log.items.filter(food_item=food_obj, quantity_g=qty_val).exists():
+                        NutritionItem.objects.create(
+                            nutrition_log=log,
+                            food_item=food_obj,
+                            quantity_g=qty_val
+                        )
 
             messages.success(request, "Nutrition log added successfully!")
             return redirect('nutrition_history')
         except Exception as e:
             messages.error(request, f"Error logging nutrition: {e}")
-            # In production, pass data back to form
             return redirect('log_nutrition')
 
-    return render(request, "meals/log_nutrition.html", {}) # Removed 'foods' to prevent loading all items
+    return render(request, "meals/log_nutrition.html", {})
 
 def search_foods(request):
     """

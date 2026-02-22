@@ -66,16 +66,11 @@ class RunnerSession(models.Model):
     time_seconds = models.FloatField(help_text="Time in seconds")
     repetitions = models.IntegerField(default=1, help_text="Number of reps")
 
-    def __str__(self):
-        return f"Run: {self.distance_m}m x {self.repetitions}"
-
 class JumperSession(models.Model):
     session = models.OneToOneField(TrainingSession, on_delete=models.CASCADE)
     attempts = models.IntegerField(default=1)
     best_jump_m = models.FloatField(help_text="Best result in meters")
 
-    def __str__(self):
-        return f"Jump: {self.best_jump_m}m (Best)"
 
 class ThrowerSession(models.Model):
     session = models.OneToOneField(TrainingSession, on_delete=models.CASCADE)
@@ -83,5 +78,4 @@ class ThrowerSession(models.Model):
     attempts = models.IntegerField(default=1)
     best_throw_m = models.FloatField(help_text="Best result in meters")
 
-    def __str__(self):
-        return f"Throw: {self.best_throw_m}m ({self.implement_weight_kg}kg)"
+    

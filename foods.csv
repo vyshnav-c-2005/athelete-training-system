@@ -1,0 +1,347 @@
+name,category,calories_per_100g,protein_per_100g,carbs_per_100g,fats_per_100g,region
+White Rice,solid,130,2.7,28,0.3,global
+Brown Rice,solid,111,2.6,23,0.9,global
+Basmati Rice,solid,121,3.5,25,0.4,global
+Oats,solid,389,16.9,66.3,6.9,global
+Quinoa,solid,120,4.4,21.3,1.9,global
+Barley,solid,354,12,73,2.3,global
+Wheat Flour,solid,364,10.3,76.3,1,global
+Pasta,solid,131,5,25,1.1,global
+Whole Wheat Bread,solid,247,13,41,3.4,global
+Corn,solid,86,3.2,19,1.2,global
+Millet,solid,378,11,73,4.2,global
+Rye,solid,338,10,76,1.6,global
+Buckwheat,solid,343,13,72,3.4,global
+Couscous,solid,112,3.8,23,0.2,global
+Wild Rice,solid,101,4,21,0.3,global
+Cornmeal,solid,365,9,79,4,global
+Bulgur,solid,83,3,18,0.2,global
+Farro,solid,333,12,68,2.5,global
+Spelt,solid,338,15,70,2.4,global
+Freekeh,solid,345,12,70,2,global
+Chicken Breast,solid,165,31,0,3.6,global
+Chicken Thigh,solid,209,26,0,10.9,global
+Mutton,solid,294,25,0,21,global
+Beef,solid,250,26,0,15,global
+Salmon,solid,208,20,0,13,global
+Tuna,solid,132,28,0,1,global
+Sardine,solid,208,25,0,11,global
+Cod,solid,82,18,0,0.7,global
+Mackerel,solid,205,19,0,14,global
+Shrimp,solid,99,24,0.2,0.3,global
+Tofu,solid,76,8,1.9,4.8,global
+Paneer,solid,265,18,1.2,20,global
+Soy Chunks,solid,345,52,33,0.5,global
+Lentils,solid,116,9,20,0.4,global
+Chickpeas,solid,164,9,27,2.6,global
+Kidney Beans,solid,127,9,23,0.5,global
+Black Beans,solid,132,9,24,0.5,global
+Pinto Beans,solid,143,9,26,0.7,global
+Edamame,solid,122,11,10,5,global
+Pork,solid,242,27,0,14,global
+Turkey Breast,solid,135,30,0,0.7,global
+Duck,solid,337,19,0,28,global
+Crab,solid,84,18,0,1.1,global
+Lobster,solid,89,19,0,0.9,global
+Scallops,solid,111,21,5,0.8,global
+Seitan,solid,370,75,14,1.9,global
+Tempeh,solid,192,20,9,11,global
+Split Peas,solid,118,8,21,0.4,global
+Carrot,solid,41,0.9,10,0.2,global
+Broccoli,solid,34,2.8,7,0.4,global
+Spinach,solid,23,2.9,3.6,0.4,global
+Cabbage,solid,25,1.3,6,0.1,global
+Tomato,solid,18,0.9,3.9,0.2,global
+Onion,solid,40,1.1,9,0.1,global
+Capsicum,solid,31,1,6,0.3,global
+Potato,solid,77,2,17,0.1,global
+Sweet Potato,solid,86,1.6,20,0.1,global
+Cauliflower,solid,25,1.9,5,0.3,global
+Cucumber,solid,15,0.7,3.6,0.1,global
+Zucchini,solid,17,1.2,3.1,0.3,global
+Eggplant,solid,25,1,6,0.2,global
+Green Beans,solid,31,1.8,7,0.2,global
+Asparagus,solid,20,2.2,3.9,0.1,global
+Green Peas,solid,81,5.4,14,0.4,global
+Mushrooms,solid,22,3.1,3.3,0.3,global
+Kale,solid,49,4.3,9,0.9,global
+Lettuce,solid,15,1.4,2.9,0.2,global
+Radish,solid,16,0.7,3.4,0.1,global
+Beetroot,solid,43,1.6,10,0.2,global
+Garlic,solid,149,6.4,33,0.5,global
+Ginger,solid,80,1.8,18,0.8,global
+Celery,solid,16,0.7,3,0.2,global
+Pumpkin,solid,26,1,6.5,0.1,global
+Okra,solid,33,1.9,7.5,0.2,global
+Brussels Sprouts,solid,43,3.4,9,0.3,global
+Artichoke,solid,47,3.3,10.5,0.2,global
+Leeks,solid,61,1.5,14,0.3,global
+Swiss Chard,solid,19,1.8,3.7,0.2,global
+Peas,solid,81,5.4,14.5,0.4,global
+Corn (Sweet),solid,86,3.3,18.7,1.4,global
+Sweet Pepper,solid,20,0.9,4.6,0.2,global
+Turnip,solid,28,0.9,6,0.1,global
+Chives,solid,30,3.3,4.4,0.7,global
+Bok Choy,solid,13,1.5,2.2,0.2,global
+Watercress,solid,11,2.3,1.3,0.1,global
+Seaweed (Nori),solid,35,5.8,5,0.3,global
+Banana,solid,89,1.1,23,0.3,global
+Apple,solid,52,0.3,14,0.2,global
+Mango,solid,60,0.8,15,0.4,global
+Orange,solid,47,0.9,12,0.1,global
+Grapes,solid,69,0.7,18,0.2,global
+Papaya,solid,43,0.5,11,0.3,global
+Watermelon,solid,30,0.6,8,0.2,global
+Pineapple,solid,50,0.5,13,0.1,global
+Strawberry,solid,32,0.7,8,0.3,global
+Blueberry,solid,57,0.7,14,0.3,global
+Pear,solid,57,0.4,15,0.1,global
+Peach,solid,39,0.9,10,0.3,global
+Plum,solid,46,0.7,11,0.3,global
+Cherry,solid,50,1,12,0.3,global
+Kiwi,solid,61,1.1,15,0.5,global
+Melon (Cantaloupe),solid,34,0.8,8,0.2,global
+Melon (Honeydew),solid,36,0.5,9,0.1,global
+Avocado,solid,160,2,9,15,global
+Pomegranate,solid,83,1.7,19,1.2,global
+Lemon,solid,29,1.1,9,0.3,global
+Lime,solid,30,0.7,10,0.2,global
+Grapefruit,solid,42,0.8,11,0.1,global
+Apricot,solid,48,1.4,11,0.4,global
+Guava,solid,68,2.6,14,1,global
+Dragon Fruit,solid,60,1.2,13,1.5,global
+Passion Fruit,solid,97,2.2,23,0.7,global
+Lychee,solid,66,0.8,17,0.4,global
+Date,solid,282,2.5,75,0.4,global
+Fig,solid,74,0.8,19,0.3,global
+Raisins,solid,299,3,79,0.5,global
+Prunes,solid,240,2.2,64,0.4,global
+Blackberry,solid,43,1.4,10,0.5,global
+Raspberry,solid,52,1.2,12,0.7,global
+Cranberry,solid,46,0.4,12,0.1,global
+Jackfruit,solid,95,1.7,23,0.6,global
+Milk (Whole),liquid,61,3.2,4.8,3.3,global
+Milk (Skim),liquid,34,3.4,5,0.1,global
+Curd/Yogurt,solid,97,3.5,4.7,3.3,global
+Greek Yogurt,solid,59,10,3.6,0.4,global
+Butter,solid,717,0.9,0.1,81,global
+Cheese (Cheddar),solid,403,25,1.3,33,global
+Cheese (Mozzarella),solid,280,28,2,17,global
+Cheese (Parmesan),solid,431,38,4,29,global
+Cream,liquid,340,2,3,37,global
+Cottage Cheese,solid,98,11,3.4,4.3,global
+Soy Milk,liquid,33,2.8,1.8,1.6,global
+Almond Milk,liquid,15,0.5,0.3,1.2,global
+Oat Milk,liquid,50,1,7,2,global
+Coconut Milk,liquid,230,2.3,6,24,global
+Condensed Milk,liquid,321,8,54,9,global
+Ghee,solid,900,0,0,100,global
+Almonds,solid,579,21,22,50,global
+Cashews,solid,553,18,30,44,global
+Walnuts,solid,654,15,14,65,global
+Peanuts,solid,567,26,16,49,global
+Pistachios,solid,562,20,28,45,global
+Chia Seeds,solid,486,17,42,31,global
+Flax Seeds,solid,534,18,29,42,global
+Sunflower Seeds,solid,584,21,20,51,global
+Pumpkin Seeds,solid,559,30,11,49,global
+Sesame Seeds,solid,573,18,23,50,global
+Hazelnuts,solid,628,15,17,61,global
+Macadamia Nuts,solid,718,8,14,76,global
+Pecans,solid,691,9,14,72,global
+Brazil Nuts,solid,656,14,12,66,global
+Pine Nuts,solid,673,14,13,68,global
+Hemp Seeds,solid,553,31,9,49,global
+Buttermilk,liquid,40,3.3,4.8,0.9,global
+Coconut Water,liquid,19,0.7,3.7,0.2,global
+Orange Juice,liquid,45,0.7,10,0.2,global
+Lemon Juice,liquid,22,0.4,7,0.2,global
+Apple Juice,liquid,46,0.1,11,0.1,global
+Grape Juice,liquid,60,0.6,15,0.1,global
+Tomato Juice,liquid,17,0.8,4,0.1,global
+Protein Shake,liquid,80,15,3,1,global
+Black Coffee,liquid,1,0.1,0,0,global
+Green Tea,liquid,1,0,0,0,global
+Wine (Red),liquid,85,0.1,2.6,0,global
+Beer,liquid,43,0.5,3.6,0,global
+Soy Sauce,liquid,53,8,5,0.5,global
+Vinegar,liquid,18,0,0,0,global
+Whole Egg,piece,155,13,1.1,11,global
+Boiled Egg,piece,155,13,1.1,11,global
+Egg White,piece,52,11,0.7,0.2,global
+Banana (piece),piece,89,1.1,23,0.3,global
+Apple (piece),piece,52,0.3,14,0.2,global
+Orange (piece),piece,47,0.9,12,0.1,global
+Peach (piece),piece,39,0.9,10,0.3,global
+Pear (piece),piece,57,0.4,15,0.1,global
+Plum (piece),piece,46,0.7,11,0.3,global
+Kiwi (piece),piece,61,1.1,15,0.5,global
+Honey,solid,304,0.3,82,0,global
+Sugar,solid,387,0,100,0,global
+Dark Chocolate,solid,598,7.8,46,43,global
+Olive Oil,liquid,884,0,0,100,global
+Coconut Oil,liquid,862,0,0,100,global
+Peanut Butter,solid,588,25,20,50,global
+Jam,solid,278,0.4,69,0.1,global
+Mayonnaise,solid,680,1,1,75,global
+Ketchup,solid,101,1,25,0.1,global
+Mustard,solid,66,4.4,8,3.3,global
+Salt,solid,0,0,0,0,global
+Black Pepper,solid,251,10,64,3.3,global
+Cinnamon,solid,247,4,81,1.2,global
+Turmeric,solid,312,9,67,3.3,global
+Appam,piece,120,2,25,1.5,kerala
+Puttu (Rice),solid,210,4,45,1,kerala
+Idiyappam,piece,100,2,22,0.5,kerala
+Dosa,piece,168,4,29,4,kerala
+Idli,piece,58,2,12,0.2,kerala
+Uppumavu,solid,200,4,35,5,kerala
+Kerala Parotta,piece,300,6,40,12,kerala
+Pazham Pori,piece,250,2,45,7,kerala
+Vada (Medu),piece,150,4,15,8,kerala
+Masala Dosa,piece,250,5,35,10,kerala
+Puttu (Wheat),solid,190,5,40,1,kerala
+Vellayappam,piece,110,2,23,1,kerala
+Palappam,piece,130,2,27,2,kerala
+Noolputtu,piece,100,2,22,0.5,kerala
+Pathiri,piece,100,2,22,0.5,kerala
+Kappa (Boiled),solid,160,1.3,38,0.3,kerala
+Chana Curry,solid,140,7,20,4,kerala
+Vegetable Stew,solid,90,2,12,4,kerala
+Matta Rice,solid,130,2.5,28,0.5,kerala
+Ghee Rice,solid,180,3,30,5,kerala
+Lemon Rice,solid,160,3,32,2,kerala
+Coconut Rice,solid,170,3,30,4,kerala
+Chicken Biryani,solid,200,12,25,6,kerala
+Beef Biryani,solid,220,14,25,8,kerala
+Mutton Biryani,solid,230,13,25,9,kerala
+Egg Biryani,solid,180,8,28,5,kerala
+Vegetable Biryani,solid,160,4,30,4,kerala
+Kanji (Rice Porridge),solid,50,1,11,0.1,kerala
+Pidi,solid,150,3,32,2,kerala
+Thengachoru,solid,180,3,30,5,kerala
+Avial,solid,110,2,12,6,kerala
+Sambar,solid,70,3,12,1.5,kerala
+Thoran (Cabbage),solid,80,1.5,8,5,kerala
+Thoran (Beans),solid,90,2.5,9,5,kerala
+Mezhukkupuratti (Yam),solid,150,2,25,5,kerala
+Fish Curry,solid,120,15,2,6,kerala
+Beef Curry,solid,210,18,3,14,kerala
+Chicken Roast,solid,190,18,5,10,kerala
+Egg Roast,solid,160,10,4,11,kerala
+Parippu Curry,solid,110,7,18,1,kerala
+Olan,solid,60,1,5,4,kerala
+Kalan,solid,130,2,10,9,kerala
+Erissery,solid,120,3,15,6,kerala
+Pulissery,solid,80,2,8,4,kerala
+Morum Curry,liquid,40,2,3,2,kerala
+Ulli Sambar,solid,75,2.5,13,1.5,kerala
+Theeyal,solid,120,2,10,8,kerala
+Inji Puli,solid,150,1,30,3,kerala
+Beef Fry (Ularthiyathu),solid,250,22,2,17,kerala
+Chicken Fry (Nadan),solid,230,20,2,15,kerala
+Duck Roast,solid,260,17,4,20,kerala
+Mutton Curry,solid,220,18,3,15,kerala
+Fish Moilee,solid,140,15,4,7,kerala
+Chemmeen Roast (Prawns),solid,150,18,4,7,kerala
+Kaka Irachi Roast,solid,160,20,3,8,kerala
+Kallumakkaya Roast,solid,170,19,5,8,kerala
+Banana Chips,solid,520,2.5,58,30,kerala
+Jackfruit Chips,solid,500,3,62,26,kerala
+Achappam,piece,450,4,65,20,kerala
+Unniyappam,piece,320,3,55,10,kerala
+Kozhukatta,piece,150,3,30,2,kerala
+Neyyappam,piece,350,3,60,12,kerala
+Sukhiyan,piece,240,6,45,4,kerala
+Parippu Vada,piece,200,8,25,8,kerala
+Uzhunnu Vada,piece,150,5,12,9,kerala
+Bonda,piece,180,3,25,8,kerala
+Samosa (Kerala),piece,220,4,22,13,kerala
+Elayappam,piece,180,4,35,3,kerala
+Kumbilappam,piece,200,3,40,3,kerala
+Diamond Cuts,solid,480,5,65,22,kerala
+Kuzhalappam,piece,460,5,68,18,kerala
+Murukku,solid,470,6,60,22,kerala
+Aval Vilayichathu,solid,350,4,70,6,kerala
+Puri,piece,300,6,45,11,kerala
+Churuttu,piece,400,4,75,10,kerala
+Karimeen Pollichathu,solid,140,18,2,7,kerala
+Fish Fry (King Fish),solid,180,20,1,11,kerala
+Prawns Curry (Thengapal),solid,130,15,4,6,kerala
+Squid Fry,solid,160,16,3,9,kerala
+Mussels (Kallumakkaya) Fry,solid,180,20,4,10,kerala
+Crab Roast,solid,120,16,4,4,kerala
+Anchovy (Natholi) Fry,solid,210,25,0,12,kerala
+Shark (Sravu) Mulakittathu,solid,110,19,1,3,kerala
+Mathi (Sardine) Fry,solid,230,22,1,15,kerala
+Ayala (Mackerel) Curry,solid,150,19,2,8,kerala
+Paal Payasam,liquid,150,3,25,4,kerala
+Ada Prathaman,liquid,180,2,35,4,kerala
+Semiya Payasam,liquid,160,3,28,4,kerala
+Kheer,liquid,140,3,22,4,kerala
+Parippu Prathaman,liquid,170,5,30,3,kerala
+Suleimani Tea,liquid,20,0,5,0,kerala
+Sambharam (Buttermilk),liquid,30,1,2,1,kerala
+Kuluki Sarbath,liquid,80,0,20,0,kerala
+Toddy (Sweet),liquid,50,0.5,12,0,kerala
+Moru Vellam,liquid,15,0.5,1,0.5,kerala
+Nannari Sarbath,liquid,90,0,23,0,kerala
+Pachamulagu Tea,liquid,10,0,2,0,kerala
+Aval Milk,liquid,280,5,45,8,kerala
+Sarkara Upperi,solid,450,3,70,18,kerala
+Kozhikodan Halwa,solid,400,2,75,12,kerala
+Chakka Varattiyathu,solid,300,2,65,5,kerala
+Idli Podi,solid,350,12,50,12,kerala
+Chammanthi (Coconut),solid,250,4,10,22,kerala
+Mulaku Chammanthi,solid,120,2,10,8,kerala
+Aadu Attakkal (Goat Head),solid,180,20,0,11,kerala
+Venison,solid,158,30,0,3.2,global
+Bison,solid,146,28,0,2.4,global
+Rabbit,solid,173,33,0,3.5,global
+Goose,solid,371,15,0,33,global
+Quail,solid,134,21,0,4.5,global
+Pheasant,solid,133,24,0,3.6,global
+Trout,solid,148,21,0,6.6,global
+Catfish,solid,105,16,0,4.4,global
+Halibut,solid,111,22,0,2.3,global
+Snapper,solid,100,20,0,1.3,global
+Tilapia,solid,128,26,0,2.7,global
+Octopus,solid,82,15,2,1,global
+Clams,solid,74,12,2.6,1,global
+Mussels (Global),solid,86,12,3.7,2,global
+Oysters,solid,81,9,5,2,global
+Swordfish,solid,144,19,0,6.7,global
+Anchovies (Global),solid,131,20,0,4.8,global
+Pollock,solid,92,19,0,1,global
+Haddock,solid,87,19,0,0.7,global
+Sole,solid,91,18,0,1.2,global
+Flounder,solid,91,18,0,1.2,global
+Grouper,solid,92,19,0,1,global
+Sea Bass,solid,97,18,0,2.3,global
+Caviar,solid,264,24,4,18,global
+Abalone,solid,105,17,6,0.8,global
+Squid (Global),solid,92,15,3,1.4,global
+Eel,solid,184,18,0,11,global
+Taro,solid,112,1.5,26,0.2,global
+Yam,solid,118,1.5,28,0.2,global
+Cassava,solid,160,1.4,38,0.3,global
+Plantain,solid,122,1.3,32,0.4,global
+Endive,solid,17,1.2,3.3,0.2,global
+Radicchio,solid,23,1.4,4.5,0.1,global
+Water Chestnuts,solid,97,1.4,24,0.1,global
+Bamboo Shoots,solid,27,2.6,5,0.3,global
+Bean Sprouts,solid,30,3,6,0.2,global
+Peas (Sugar Snap),solid,42,2.8,7.5,0.2,global
+Peas (Snow),solid,42,2.8,7.5,0.2,global
+Rhubarb,solid,21,0.9,4.5,0.2,global
+Kohlrabi,solid,27,1.7,6,0.1,global
+Fennel,solid,31,1.2,7,0.2,global
+Daikon,solid,18,0.6,4.1,0.1,global
+Swede (Rutabaga),solid,37,1.1,9,0.2,global
+Parsnip,solid,75,1.2,18,0.3,global
+Celeriac,solid,42,1.5,9,0.3,global
+Jerusalem Artichoke,solid,73,2,17,0,global
+Spirulina,solid,290,57,24,8,global
+Wakame,solid,45,3,9,0.6,global
+Dulse,solid,25,4,4,0.1,global
+Nori,solid,35,5.8,5.1,0.3,global
